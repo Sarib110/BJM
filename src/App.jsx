@@ -39,7 +39,15 @@ const App = () => {
 
   if (activeCaseStudy) return <CaseStudyPage cs={activeCaseStudy} onBack={handleBack} />;
   
-  if (activeToolUrl) return <ToolPage url={activeToolUrl} onBack={() => setActiveToolUrl(null)} />;
+  if (activeToolUrl) {
+    return (
+      <div className="font-sans">
+        <Cursor />
+        <Navbar onToolSelect={setActiveToolUrl} />
+        <ToolPage url={activeToolUrl} />
+      </div>
+    );
+  }
 
   return (
     <div className="font-sans">
