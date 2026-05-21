@@ -20,11 +20,13 @@ import CalendlySection from './components/sections/CalendlySection';
 import CTA from './components/sections/CTA';
 import CaseStudyPage from './components/pages/CaseStudyPage';
 import ToolPage from './components/pages/ToolPage';
+import FreeToolsPage from './components/pages/FreeToolsPage';
 
 const App = () => {
   const [done, setDone] = useState(false);
   const [activeCaseStudy, setActiveCaseStudy] = useState(null);
   const [activeToolUrl, setActiveToolUrl] = useState(null);
+  const [showToolsPage, setShowToolsPage] = useState(false);
   useReveal(activeCaseStudy);
 
   const handleSelectCaseStudy = id => {
@@ -43,8 +45,27 @@ const App = () => {
     return (
       <div className="font-sans">
         <Cursor />
-        <Navbar onToolSelect={setActiveToolUrl} />
+        <Navbar 
+          onToolSelect={url => { setActiveToolUrl(url); setShowToolsPage(false); }} 
+          onShowTools={() => { setActiveToolUrl(null); setShowToolsPage(true); }}
+          onHome={() => { setActiveToolUrl(null); setShowToolsPage(false); }}
+        />
         <ToolPage url={activeToolUrl} />
+      </div>
+    );
+  }
+
+  if (showToolsPage) {
+    return (
+      <div className="font-sans min-h-screen bg-white">
+        <Cursor />
+        <Navbar 
+          onToolSelect={url => { setActiveToolUrl(url); setShowToolsPage(false); }} 
+          onShowTools={() => { setActiveToolUrl(null); setShowToolsPage(true); }}
+          onHome={() => { setActiveToolUrl(null); setShowToolsPage(false); }}
+        />
+        <FreeToolsPage onSelectTool={url => setActiveToolUrl(url)} />
+        <Footer />
       </div>
     );
   }
@@ -53,7 +74,11 @@ const App = () => {
     <div className="font-sans">
       {!done && <Intro onDone={() => setDone(true)} />}
       <Cursor />
-      <Navbar onToolSelect={setActiveToolUrl} />
+      <Navbar 
+        onToolSelect={url => { setActiveToolUrl(url); setShowToolsPage(false); }} 
+        onShowTools={() => { setActiveToolUrl(null); setShowToolsPage(true); }}
+        onHome={() => { setActiveToolUrl(null); setShowToolsPage(false); }}
+      />
       <Hero />
       <Marquee />
       <Services />
