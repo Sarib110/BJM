@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import Ic from '../ui/Icon';
 import Logo from '../ui/Logo';
 
-const Navbar = () => {
+const Navbar = ({ onToolSelect }) => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const links = [['Services', 'services'], ['Work', 'work'], ['Process', 'process'], ['Impact', 'impact'], ['About', 'about'], ['Contact', 'contact']];
-  const externalLinks = [['Visibility Check', '/visibility-check'], ['AI Crawl Audit', '/ai-audit']];
+  const externalLinks = [['Visibility Check', 'https://veloq-visibility-check.vercel.app/'], ['AI Crawl Audit', 'https://veloq-ai-crawl-audit.vercel.app/']];
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', fn);
@@ -25,8 +25,8 @@ const Navbar = () => {
             {links.map(([l, id]) => (
               <button key={id} onClick={() => go(id)} className="nav-link font-sans text-[13px] font-medium text-zinc-500 hover:text-black transition-colors duration-200">{l}</button>
             ))}
-            {externalLinks.map(([l, path]) => (
-              <a key={path} href={path} className="nav-link font-sans text-[13px] font-medium text-zinc-500 hover:text-black transition-colors duration-200">{l}</a>
+            {externalLinks.map(([l, url]) => (
+              <button key={url} onClick={() => onToolSelect(url)} className="nav-link font-sans text-[13px] font-medium text-zinc-500 hover:text-black transition-colors duration-200">{l}</button>
             ))}
           </div>
           <button onClick={() => go('book')} className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 btn-shine">
@@ -40,8 +40,8 @@ const Navbar = () => {
           <button key={id} onClick={() => go(id)} className="font-serif text-2xl text-left text-black hover:text-zinc-400 transition-colors">{l}</button>
         ))}
         <div className="h-[1px] bg-zinc-100 my-2"></div>
-        {externalLinks.map(([l, path]) => (
-          <a key={path} href={path} className="font-serif text-2xl text-left text-black hover:text-zinc-400 transition-colors">{l}</a>
+        {externalLinks.map(([l, url]) => (
+          <button key={url} onClick={() => { onToolSelect(url); setOpen(false); }} className="font-serif text-2xl text-left text-black hover:text-zinc-400 transition-colors">{l}</button>
         ))}
         <button onClick={() => { go('book'); setOpen(false); }} className="mt-2 px-5 py-3 rounded-xl bg-black text-white font-sans font-medium text-sm text-center">Book a Call</button>
       </div>

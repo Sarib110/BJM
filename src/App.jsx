@@ -19,10 +19,12 @@ import Contact from './components/sections/Contact';
 import CalendlySection from './components/sections/CalendlySection';
 import CTA from './components/sections/CTA';
 import CaseStudyPage from './components/pages/CaseStudyPage';
+import ToolPage from './components/pages/ToolPage';
 
 const App = () => {
   const [done, setDone] = useState(false);
   const [activeCaseStudy, setActiveCaseStudy] = useState(null);
+  const [activeToolUrl, setActiveToolUrl] = useState(null);
   useReveal(activeCaseStudy);
 
   const handleSelectCaseStudy = id => {
@@ -36,12 +38,14 @@ const App = () => {
   };
 
   if (activeCaseStudy) return <CaseStudyPage cs={activeCaseStudy} onBack={handleBack} />;
+  
+  if (activeToolUrl) return <ToolPage url={activeToolUrl} onBack={() => setActiveToolUrl(null)} />;
 
   return (
     <div className="font-sans">
       {!done && <Intro onDone={() => setDone(true)} />}
       <Cursor />
-      <Navbar />
+      <Navbar onToolSelect={setActiveToolUrl} />
       <Hero />
       <Marquee />
       <Services />
