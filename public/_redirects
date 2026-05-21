@@ -1,0 +1,5 @@
+/visibility-check/*  https://veloq-visibility-check.vercel.app/:splat  200
+/visibility-check    https://veloq-visibility-check.vercel.app/        200
+/ai-audit/*          https://veloq-ai-crawl-audit.vercel.app/:splat    200
+/ai-audit            https://veloq-ai-crawl-audit.vercel.app/          200
+/*                   /index.html                                       200
