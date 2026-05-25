@@ -4,10 +4,6 @@ import { services } from '../../data/services';
 const Services = () => (
   <section id="services" className="py-28 px-6 bg-white">
     <div className="max-w-6xl mx-auto">
-      <div className="mb-16 reveal">
-        <span className="tag-pill mb-5 inline-block">What we build</span>
-        <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.5rem)] text-black leading-[1.06]">Engineering capabilities<br /><em className="not-italic text-[#a3e635]">that scale with you.</em></h2>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((s, i) => (
           <div key={i} className={`glass-card rounded-2xl p-7 hover-lift hover-glow group cursor-default transition-colors duration-300 reveal delay-${(i % 3) + 1}`}>

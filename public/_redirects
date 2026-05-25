@@ -1,1 +1,2 @@
-/*    /index.html   200
+# SSG: serve pre-rendered HTML files. 404 fallback below.
+/*    /404.html   404

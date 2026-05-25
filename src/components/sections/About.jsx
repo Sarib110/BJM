@@ -1,5 +1,5 @@
 const About = () => (
-  <section id="about" className="py-28 px-6 bg-white">
+  <section id="about" className="pt-36 pb-28 px-6 bg-white">
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       <div className="reveal">
         <span className="tag-pill mb-6 inline-block">The team</span>

@@ -1,7 +1,9 @@
 import { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { projects } from '../../data/projects';
 
-const Work = ({ onSelect }) => {
+const Work = () => {
+  const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
   const [dragging, setDragging] = useState(false);
   const dragStart = useRef(null);
@@ -58,7 +60,7 @@ const Work = ({ onSelect }) => {
                     <div>
                       <div className="font-mono text-[9px] text-zinc-700 uppercase tracking-widest mb-3">Stack</div>
                       <div className="flex flex-wrap gap-2 mb-8">{p.stack.map(t => <span key={t} className="px-3 py-1 rounded-full font-mono text-[10px] text-zinc-400 border border-zinc-800 bg-zinc-950">{t}</span>)}</div>
-                      <button onClick={() => onSelect(p.caseStudyId)} className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-[#a3e635] text-black font-sans font-semibold text-[12.5px] transition-all duration-200 hover:bg-[#b5f059] hover:scale-[1.02] active:scale-95">
+                      <button onClick={() => navigate(`/work/${p.caseStudyId}`)} className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-[#a3e635] text-black font-sans font-semibold text-[12.5px] transition-all duration-200 hover:bg-[#b5f059] hover:scale-[1.02] active:scale-95">
                         View Case Study <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M7 7h10v10" /></svg>
                       </button>
                     </div>
