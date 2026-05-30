@@ -9,7 +9,6 @@ const Hero = () => {
   const layer4Ref = useRef(null);
   const scanRef = useRef(null);
   const mouseGlowRef = useRef(null);
-  const statsRef = useRef(null);
   const heroRef = useRef(null);
   const contentRef = useRef(null);
 
@@ -47,13 +46,6 @@ const Hero = () => {
     return () => { hero.removeEventListener('mousemove', fn); hero.removeEventListener('mouseleave', reset); };
   }, []);
 
-  useEffect(() => {
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.querySelectorAll('.stat-card').forEach(c => c.classList.add('visible')); });
-    }, { threshold: 0.2 });
-    if (statsRef.current) obs.observe(statsRef.current);
-    return () => obs.disconnect();
-  }, []);
 
   useEffect(() => {
     const els = document.querySelectorAll('.hero-reveal');
@@ -62,7 +54,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" ref={heroRef} className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6">
+    <section id="hero" ref={heroRef} className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-6 px-6">
       <div ref={layer0Ref} className="parallax-layer-0 pointer-events-none"><div className="grid-lines" style={{ inset: 0, position: 'absolute' }} /></div>
       <div ref={layer1Ref} className="parallax-layer-1">
         <div className="absolute" style={{ top: '10%', left: '4%', width: 380, height: 380, borderRadius: '50%', background: 'radial-gradient(circle, rgba(204,251,128,0.28) 0%, transparent 68%)' }} />
@@ -95,21 +87,16 @@ const Hero = () => {
       <div id="hero-mouse-glow" ref={mouseGlowRef} />
       <div className="depth-vignette" />
       <div ref={contentRef} className="hero-content max-w-5xl mx-auto text-center w-full" style={{ transition: 'transform 0.45s cubic-bezier(0.16,1,0.3,1)', willChange: 'transform' }}>
-        <div className="hero-reveal hr-d1 inline-flex items-center gap-2 mb-10 px-4 py-2 rounded-full bg-white border border-zinc-200 shadow-sm font-mono text-[11px] text-zinc-500">
-          <span className="lime-dot" style={{ width: 6, height: 6, animation: 'pulse 2s infinite' }} />
-          Currently accepting new clients · Est. 2025
-        </div>
         <h1 className="hero-reveal hr-d2 font-serif text-[clamp(3rem,7.2vw,6rem)] leading-[0.93] tracking-tight text-black mb-7 hero-headline">
-          We don't build<br /><em className="not-italic text-[#a3e635]">demos</em>. We build<br />
-          <span className="relative inline-block">infrastructure<em className="not-italic text-[#a3e635]">.</em>
+          We don't build<br /><em className="not-italic text-[#a3e635]">tools</em>. We build<br />
+          <span className="relative inline-block">workforces<em className="not-italic text-[#a3e635]">.</em>
             <svg className="absolute -bottom-2 left-0 w-full" height="5" viewBox="0 0 400 5" preserveAspectRatio="none" fill="none"><path d="M0 2.5 Q100 0 200 2.5 Q300 5 400 2.5" stroke="#a3e635" strokeWidth="2.5" strokeLinecap="round" /></svg>
           </span>
         </h1>
-        <p className="hero-reveal hr-d3 font-sans text-[14.5px] text-zinc-500 max-w-xl mx-auto mt-10 mb-12 leading-[1.8]">
-          Veloq is an engineer-led AI software house. We build full-stack AI applications, automation systems, and GenAI-powered products that deliver{' '}
-          <strong className="font-semibold text-black">measurable ROI</strong><br /> not just cool demos.
+        <p className="hero-reveal hr-d3 font-sans text-[14.5px] text-zinc-500 max-w-xl mx-auto mt-6 mb-8 leading-[1.8]">
+          We engineer AI that replaces headcount. Our agentic systems execute full business roles without supervision, scaling operations across logistics, healthcare, construction, and energy. No templates. No wrappers. <strong className="font-semibold text-black">Purpose-built for your business.</strong>
         </p>
-        <div className="hero-reveal hr-d4 flex flex-wrap gap-3 justify-center mb-20">
+        <div className="hero-reveal hr-d4 flex flex-wrap gap-3 justify-center mb-6">
           <button onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-sm hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 shadow-md btn-shine">
             View Our Work <Ic n="arrow_r" size={14} color="white" />
           </button>
@@ -117,13 +104,32 @@ const Hero = () => {
             Book a Strategy Call
           </button>
         </div>
-        <div ref={statsRef} className="hero-reveal hr-d5 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto">
-          {[['10+', 'Systems Deployed'], ['3×', 'Avg ROI Delivered'], ['2025', 'Founded'], ['100%', 'Production-Grade']].map(([v, l], i) => (
-            <div key={i} className="stat-card glass-card rounded-2xl py-4 px-3 text-center hover-lift">
-              <div className="font-mono text-xl font-bold text-black leading-none mb-1.5">{v}</div>
-              <div className="font-sans text-[11px] text-zinc-500">{l}</div>
-            </div>
-          ))}
+      </div>
+      <div className="hero-reveal hr-d5 w-full mt-6 text-center">
+        <p className="font-mono text-[10px] text-zinc-400 uppercase tracking-widest mb-5">Trusted by</p>
+        <div className="mq-wrap">
+          <div className="mq-track" style={{ animationDuration: '18s' }}>
+            {[
+              { src: '/assets/logos/autoscale.png', alt: 'AutoScale' },
+              { src: '/assets/logos/diyar.png', alt: 'Diyar' },
+              { src: '/assets/logos/ezmd.webp', alt: 'EZMD' },
+              { src: '/assets/logos/phunware.webp', alt: 'Phunware' },
+              { src: '/assets/logos/autoscale.png', alt: 'AutoScale2' },
+              { src: '/assets/logos/diyar.png', alt: 'Diyar2' },
+              { src: '/assets/logos/ezmd.webp', alt: 'EZMD2' },
+              { src: '/assets/logos/phunware.webp', alt: 'Phunware2' },
+            ].map(l => (
+              <div key={l.alt} style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 52px' }}>
+                <img
+                  src={l.src}
+                  alt={l.alt}
+                  style={{ height: 40, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.55, transition: 'filter 0.25s, opacity 0.25s' }}
+                  onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0)'; e.currentTarget.style.opacity = '1'; }}
+                  onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(1)'; e.currentTarget.style.opacity = '0.55'; }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

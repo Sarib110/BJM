@@ -6,7 +6,6 @@ import Hero from '../components/sections/Hero';
 import Marquee from '../components/sections/Marquee';
 import Work from '../components/sections/Work';
 import Impact from '../components/sections/Impact';
-import PartnerMarquee from '../components/sections/PartnerMarquee';
 import CTA from '../components/sections/CTA';
 import { services } from '../data/services';
 import Ic from '../components/ui/Icon';
@@ -66,7 +65,6 @@ const Home = () => {
       {showIntro && <Intro onDone={handleIntroDone} />}
 
       <Hero />
-      <Marquee />
 
       {/* Services preview */}
       <section className="py-24 px-6 bg-white">
@@ -86,6 +84,8 @@ const Home = () => {
         </div>
       </section>
 
+      <Marquee />
+
       <Work />
 
       {/* Work index link */}
@@ -95,8 +95,9 @@ const Home = () => {
         </Link>
       </div>
 
+      <Marquee reverse />
+
       <Impact />
-      <PartnerMarquee />
       <CTA />
     </>
   );
