@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
 import Intro from '../components/sections/Intro';
 import Hero from '../components/sections/Hero';
@@ -16,8 +16,9 @@ const RowArrow = () => (
   </svg>
 );
 
-const ServiceRow = ({ icon, title, desc, tags, index }) => {
+const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -95,7 +96,7 @@ const ServiceRow = ({ icon, title, desc, tags, index }) => {
 
       {/* Arrow link button */}
       <button
-        onClick={() => {}}
+        onClick={() => navigate(`/services#${id}`)}
         style={{
           marginLeft: 20, flexShrink: 0,
           width: 34, height: 34, borderRadius: 9,
