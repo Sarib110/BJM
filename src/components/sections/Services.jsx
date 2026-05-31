@@ -22,6 +22,7 @@ const ServiceBlock = ({ service, index }) => {
       display: 'flex',
       flexDirection: 'column',
       minWidth: 0,
+      overflow: 'hidden',
     }}>
       {/* Badge */}
       <div style={{
@@ -29,13 +30,13 @@ const ServiceBlock = ({ service, index }) => {
         fontSize: 10,
         color: '#a3e635',
         letterSpacing: '0.12em',
-        marginBottom: 32,
+        marginBottom: 20,
       }}>
         {String(index + 1).padStart(2, '0')} &bull; {service.category}
       </div>
 
       {/* Metric */}
-      <div style={{ marginBottom: 28 }}>
+      <div style={{ marginBottom: 20 }}>
         <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
           <span style={{
             fontFamily: 'Space Mono, monospace',
@@ -64,7 +65,7 @@ const ServiceBlock = ({ service, index }) => {
       </div>
 
       {/* Divider */}
-      <div style={{ height: 1, background: 'rgba(255,255,255,0.07)', marginBottom: 28 }} />
+      <div style={{ height: 1, background: 'rgba(255,255,255,0.07)', marginBottom: 18 }} />
 
       {/* Title */}
       <h2 style={{
@@ -73,7 +74,7 @@ const ServiceBlock = ({ service, index }) => {
         fontWeight: 600,
         color: '#fff',
         lineHeight: 1.2,
-        marginBottom: 16,
+        marginBottom: 12,
       }}>
         {service.title}
       </h2>
@@ -82,9 +83,9 @@ const ServiceBlock = ({ service, index }) => {
       <p style={{
         fontSize: 13.5,
         color: 'rgba(255,255,255,0.55)',
-        lineHeight: 1.85,
+        lineHeight: 1.8,
         flex: 1,
-        marginBottom: 32,
+        marginBottom: 20,
       }}>
         {service.longDesc}
       </p>
@@ -115,7 +116,6 @@ const ServiceBlock = ({ service, index }) => {
       flex: 1,
       borderRadius: 20,
       overflow: 'hidden',
-      minHeight: 360,
       position: 'relative',
     }}>
       <img
@@ -138,7 +138,7 @@ const ServiceBlock = ({ service, index }) => {
     <section id={service.id} style={{ background: sectionBg, padding: '52px 24px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
         {/* Desktop: side by side. Mobile: card only (image hidden via CSS) */}
-        <div className="services-block" style={{ display: 'flex', gap: 14, alignItems: 'stretch' }}>
+        <div className="services-block" style={{ display: 'flex', gap: 14, height: 490 }}>
           {isEven ? card : image}
           {isEven ? image : card}
         </div>
