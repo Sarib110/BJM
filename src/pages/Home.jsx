@@ -10,18 +10,65 @@ import CTA from '../components/sections/CTA';
 import { services } from '../data/services';
 import Ic from '../components/ui/Icon';
 
-const ServicePreviewCard = ({ icon, title, desc, tags }) => (
-  <div className="glass-card rounded-2xl p-7 hover-lift flex flex-col gap-4">
-    <div className="w-10 h-10 rounded-xl bg-[#f5f4f0] flex items-center justify-center">
-      <Ic n={icon} size={18} color="#111" />
+const ServicePreviewCard = ({ icon, title, desc, tags, index }) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        background: '#fff',
+        border: `1px solid ${hovered ? 'rgba(163,230,53,0.45)' : 'rgba(0,0,0,0.08)'}`,
+        borderRadius: 16,
+        padding: '32px 28px 26px',
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative',
+        overflow: 'hidden',
+        transition: 'border-color 0.22s, box-shadow 0.22s',
+        boxShadow: hovered ? '0 8px 40px rgba(0,0,0,0.06)' : '0 1px 4px rgba(0,0,0,0.03)',
+        cursor: 'default',
+      }}
+    >
+      <div style={{
+        position: 'absolute', top: 0, left: 0, right: 0, height: 2,
+        background: 'linear-gradient(90deg, #a3e635, rgba(163,230,53,0.2))',
+        opacity: hovered ? 1 : 0,
+        transition: 'opacity 0.22s',
+      }} />
+
+      {/* Number (left) + Icon (right) */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
+        <div style={{
+          fontFamily: 'Space Mono, monospace',
+          fontSize: 13,
+          fontWeight: 700,
+          color: hovered ? '#a3e635' : 'rgba(163,230,53,0.45)',
+          letterSpacing: '0.06em',
+          transition: 'color 0.22s',
+        }}>
+          {String(index + 1).padStart(2, '0')}
+        </div>
+        <div style={{
+          width: 36, height: 36, borderRadius: 10,
+          background: hovered ? '#0d0d0b' : '#f5f4f0',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          transition: 'background 0.22s',
+          flexShrink: 0,
+        }}>
+          <Ic n={icon} size={16} color={hovered ? '#a3e635' : '#555'} />
+        </div>
+      </div>
+
+      <h3 style={{ fontSize: 15.5, fontWeight: 600, color: '#0d0d0b', lineHeight: 1.32, marginBottom: 10 }}>{title}</h3>
+      <p style={{ fontSize: 13, color: '#666', lineHeight: 1.78, flex: 1, marginBottom: 20 }}>{desc}</p>
+
+      <div style={{ paddingTop: 16, borderTop: '1px solid rgba(0,0,0,0.06)', fontFamily: 'Space Mono, monospace', fontSize: 10, color: '#aaa', letterSpacing: '0.02em' }}>
+        {tags.join(' / ')}
+      </div>
     </div>
-    <h3 className="font-sans font-semibold text-[15px] text-black leading-snug">{title}</h3>
-    <p className="font-sans text-[13px] text-zinc-500 leading-[1.75] flex-1">{desc}</p>
-    <div className="flex flex-wrap gap-1.5">
-      {tags.map(t => <span key={t} className="tag-pill">{t}</span>)}
-    </div>
-  </div>
-);
+  );
+};
 
 const Home = () => {
   const [showIntro, setShowIntro] = useState(false);
@@ -79,7 +126,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map(s => <ServicePreviewCard key={s.title} {...s} />)}
+            {services.map((s, i) => <ServicePreviewCard key={s.title} {...s} index={i} />)}
           </div>
         </div>
       </section>
