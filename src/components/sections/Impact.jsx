@@ -19,9 +19,10 @@ const Stars = () => (
   </div>
 );
 
-const ClientCard = ({ t, isActive, onClick }) => (
+const ClientCard = ({ t, isActive, onClick, extraClass }) => (
   <div
     onClick={onClick}
+    className={extraClass}
     style={{
       position: 'relative',
       borderRadius: 20,
@@ -197,17 +198,25 @@ const Impact = () => {
           </div>
 
           {/* Right: photo cards */}
-          <div
-            className="flex-1 overflow-x-auto lg:overflow-visible -mx-6 lg:mx-0 px-6 lg:px-0"
-            style={{ WebkitOverflowScrolling: 'touch' }}
-          >
-            <div style={{ display: 'flex', gap: 10, height: 470, minWidth: 480 }}>
+          <div className="flex-1 min-w-0">
+            {/* Mobile: single active card */}
+            <div className="block lg:hidden" style={{ height: 380, borderRadius: 20, overflow: 'hidden', position: 'relative' }}>
+              <ClientCard
+                t={tms[activeCard]}
+                isActive={true}
+                onClick={() => {}}
+                extraClass=""
+              />
+            </div>
+            {/* Desktop: expanding flex cards */}
+            <div className="hidden lg:flex" style={{ gap: 10, height: 470 }}>
               {tms.map((t, i) => (
                 <ClientCard
                   key={i}
                   t={t}
                   isActive={i === activeCard}
                   onClick={() => setActiveCard(i)}
+                  extraClass=""
                 />
               ))}
             </div>

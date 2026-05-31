@@ -46,7 +46,7 @@ const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
       }} />
 
       {/* Number */}
-      <div style={{
+      <div className="sr-num" style={{
         fontFamily: 'Space Mono, monospace', fontSize: 10, fontWeight: 700,
         color: hovered ? '#a3e635' : 'rgba(163,230,53,0.65)',
         width: 28, flexShrink: 0,
@@ -57,7 +57,7 @@ const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
       </div>
 
       {/* Icon box */}
-      <div style={{
+      <div className="sr-icon" style={{
         width: 42, height: 42, borderRadius: 11,
         background: hovered ? '#0d0d0b' : '#f5f4f0',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -68,9 +68,9 @@ const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
       </div>
 
       {/* Title + tags */}
-      <div style={{ width: 210, flexShrink: 0, marginRight: 28 }}>
+      <div className="sr-title" style={{ width: 210, flexShrink: 0, marginRight: 28 }}>
         <div style={{ fontSize: 15, fontWeight: 600, color: '#0d0d0b', lineHeight: 1.25, marginBottom: 7 }}>{title}</div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+        <div className="sr-tags" style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
           {tags.map(t => (
             <span key={t} style={{
               padding: '2px 8px', borderRadius: 999,
@@ -160,6 +160,14 @@ const Home = () => {
 
       {/* Services preview */}
       <section className="py-24 px-6 bg-white">
+        <style>{`
+          @media (max-width: 767px) {
+            .sr-title { width: auto !important; flex: 1 !important; min-width: 0 !important; margin-right: 8px !important; }
+            .sr-tags { display: none !important; }
+            .sr-num { width: 20px !important; font-size: 9px !important; }
+            .sr-icon { width: 34px !important; height: 34px !important; margin-right: 12px !important; }
+          }
+        `}</style>
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
             <div>

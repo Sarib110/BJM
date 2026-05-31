@@ -1,10 +1,21 @@
+import { useEffect } from 'react';
 import { Head } from 'vite-react-ssg';
 import Services from '../components/sections/Services';
 import Process from '../components/sections/Process';
 import TechStack from '../components/sections/TechStack';
 import CTA from '../components/sections/CTA';
 
-const ServicesPage = () => (
+const ServicesPage = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+    }
+  }, []);
+
+  return (
   <>
     <Head>
       <title>AI Services — Veloq</title>
@@ -30,6 +41,7 @@ const ServicesPage = () => (
     <TechStack />
     <CTA />
   </>
-);
+  );
+};
 
 export default ServicesPage;
