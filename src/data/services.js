@@ -58,6 +58,7 @@ export const services = [
     metric: '3',
     metricLabel: 'live voice deployments',
     image: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80',
+    imagePosition: 'center 65%',
   },
   {
     id: 'ai-integrations',

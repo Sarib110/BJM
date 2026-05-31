@@ -123,7 +123,7 @@ const ServiceBlock = ({ service, index }) => {
         alt={service.title}
         style={{
           width: '100%', height: '100%',
-          objectFit: 'cover', objectPosition: 'center',
+          objectFit: 'cover', objectPosition: service.imagePosition || 'center',
           display: 'block',
         }}
       />
