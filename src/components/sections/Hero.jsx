@@ -114,16 +114,22 @@ const Hero = () => {
               { src: '/assets/logos/diyar.png', alt: 'Diyar' },
               { src: '/assets/logos/ezmd.webp', alt: 'EZMD' },
               { src: '/assets/logos/phunware.webp', alt: 'Phunware' },
+              { src: '/assets/logos/blackpine.png', alt: 'Blackpine', darkBg: true },
+              { src: '/assets/logos/choicesflooringmackay.webp', alt: 'Choices Flooring Mackay' },
+              { src: '/assets/logos/trueclaim.avif', alt: 'TrueClaim', darkBg: true },
               { src: '/assets/logos/autoscale.png', alt: 'AutoScale2' },
               { src: '/assets/logos/diyar.png', alt: 'Diyar2' },
               { src: '/assets/logos/ezmd.webp', alt: 'EZMD2' },
               { src: '/assets/logos/phunware.webp', alt: 'Phunware2' },
+              { src: '/assets/logos/blackpine.png', alt: 'Blackpine2' },
+              { src: '/assets/logos/choicesflooringmackay.webp', alt: 'Choices Flooring Mackay2' },
+              { src: '/assets/logos/trueclaim.avif', alt: 'TrueClaim2', darkBg: true },
             ].map(l => (
               <div key={l.alt} style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 52px' }}>
                 <img
                   src={l.src}
                   alt={l.alt}
-                  style={{ height: 40, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.55, transition: 'filter 0.25s, opacity 0.25s' }}
+                  style={{ height: 40, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.55, transition: 'filter 0.25s, opacity 0.25s', ...(l.darkBg && { background: '#333', borderRadius: 6, padding: '4px 8px' }) }}
                   onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0)'; e.currentTarget.style.opacity = '1'; }}
                   onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(1)'; e.currentTarget.style.opacity = '0.55'; }}
                 />
