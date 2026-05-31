@@ -18,7 +18,7 @@ const ServiceBlock = ({ service, index }) => {
       background: cardBg,
       border: cardBorder,
       borderRadius: 20,
-      padding: '44px 40px',
+      padding: '36px 36px',
       display: 'flex',
       flexDirection: 'column',
       minWidth: 0,
@@ -115,7 +115,7 @@ const ServiceBlock = ({ service, index }) => {
       flex: 1,
       borderRadius: 20,
       overflow: 'hidden',
-      minHeight: 440,
+      minHeight: 360,
       position: 'relative',
     }}>
       <img
@@ -135,7 +135,7 @@ const ServiceBlock = ({ service, index }) => {
   );
 
   return (
-    <section id={service.id} style={{ background: sectionBg, padding: '72px 24px' }}>
+    <section id={service.id} style={{ background: sectionBg, padding: '52px 24px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
         {/* Desktop: side by side. Mobile: card only (image hidden via CSS) */}
         <div className="services-block" style={{ display: 'flex', gap: 14, alignItems: 'stretch' }}>

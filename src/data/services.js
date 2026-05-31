@@ -9,7 +9,7 @@ export const services = [
     tags: ['LangGraph', 'OpenAI', 'Python', 'AutoGen'],
     metric: '24+',
     metricLabel: 'agents deployed in production',
-    image: 'https://images.unsplash.com/photo-1677442135703-1787d2b4aa2e?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 'rag-knowledge',
@@ -45,7 +45,7 @@ export const services = [
     tags: ['n8n', 'Zapier', 'Python', 'Webhooks'],
     metric: '50k+',
     metricLabel: 'operational hours saved',
-    image: 'https://images.unsplash.com/photo-1518770660439-464ac72b6474?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 'voice-ai',
