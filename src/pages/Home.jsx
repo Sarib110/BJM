@@ -10,62 +10,106 @@ import CTA from '../components/sections/CTA';
 import { services } from '../data/services';
 import Ic from '../components/ui/Icon';
 
-const ServicePreviewCard = ({ icon, title, desc, tags, index }) => {
+const RowArrow = () => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M7 17 17 7M7 7h10v10" />
+  </svg>
+);
+
+const ServiceRow = ({ icon, title, desc, tags, index }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        background: '#fff',
-        border: `1px solid ${hovered ? 'rgba(163,230,53,0.45)' : 'rgba(0,0,0,0.08)'}`,
-        borderRadius: 16,
-        padding: '32px 28px 26px',
         display: 'flex',
-        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 0,
+        padding: '22px 16px 22px 20px',
+        borderRadius: 14,
         position: 'relative',
-        overflow: 'hidden',
-        transition: 'border-color 0.22s, box-shadow 0.22s',
-        boxShadow: hovered ? '0 8px 40px rgba(0,0,0,0.06)' : '0 1px 4px rgba(0,0,0,0.03)',
+        background: hovered ? 'rgba(163,230,53,0.04)' : 'transparent',
+        transition: 'background 0.25s',
         cursor: 'default',
+        borderBottom: '1px solid rgba(0,0,0,0.06)',
       }}
     >
+      {/* Left lime accent */}
       <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: 2,
-        background: 'linear-gradient(90deg, #a3e635, rgba(163,230,53,0.2))',
-        opacity: hovered ? 1 : 0,
-        transition: 'opacity 0.22s',
+        position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)',
+        width: 2, borderRadius: 1,
+        height: hovered ? '60%' : 0,
+        background: '#a3e635',
+        transition: 'height 0.3s cubic-bezier(0.4,0,0.2,1)',
       }} />
 
-      {/* Number (left) + Icon (right) */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
-        <div style={{
-          fontFamily: 'Space Mono, monospace',
-          fontSize: 13,
-          fontWeight: 700,
-          color: hovered ? '#a3e635' : 'rgba(163,230,53,0.45)',
-          letterSpacing: '0.06em',
-          transition: 'color 0.22s',
-        }}>
-          {String(index + 1).padStart(2, '0')}
+      {/* Number */}
+      <div style={{
+        fontFamily: 'Space Mono, monospace', fontSize: 10, fontWeight: 700,
+        color: hovered ? '#a3e635' : 'rgba(163,230,53,0.65)',
+        width: 28, flexShrink: 0,
+        transition: 'color 0.22s',
+        letterSpacing: '0.04em',
+      }}>
+        {String(index + 1).padStart(2, '0')}
+      </div>
+
+      {/* Icon box */}
+      <div style={{
+        width: 42, height: 42, borderRadius: 11,
+        background: hovered ? '#0d0d0b' : '#f5f4f0',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        flexShrink: 0, marginRight: 20,
+        transition: 'background 0.22s',
+      }}>
+        <Ic n={icon} size={17} color={hovered ? '#a3e635' : '#666'} />
+      </div>
+
+      {/* Title + tags */}
+      <div style={{ width: 210, flexShrink: 0, marginRight: 28 }}>
+        <div style={{ fontSize: 15, fontWeight: 600, color: '#0d0d0b', lineHeight: 1.25, marginBottom: 7 }}>{title}</div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+          {tags.map(t => (
+            <span key={t} style={{
+              padding: '2px 8px', borderRadius: 999,
+              fontFamily: 'Space Mono, monospace', fontSize: 9,
+              color: hovered ? 'rgba(0,0,0,0.6)' : 'rgba(0,0,0,0.42)',
+              border: '1px solid rgba(0,0,0,0.08)',
+              transition: 'color 0.2s',
+            }}>{t}</span>
+          ))}
         </div>
-        <div style={{
-          width: 36, height: 36, borderRadius: 10,
-          background: hovered ? '#0d0d0b' : '#f5f4f0',
+      </div>
+
+      {/* Description */}
+      <div style={{
+        flex: 1, fontSize: 12.5, lineHeight: 1.78,
+        color: hovered ? '#222' : 'rgba(0,0,0,0.5)',
+        transition: 'color 0.28s',
+        minWidth: 0,
+        fontSize: 13.5,
+      }} className="hidden md:block">
+        {desc}
+      </div>
+
+      {/* Arrow link button */}
+      <button
+        onClick={() => {}}
+        style={{
+          marginLeft: 20, flexShrink: 0,
+          width: 34, height: 34, borderRadius: 9,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          transition: 'background 0.22s',
-          flexShrink: 0,
-        }}>
-          <Ic n={icon} size={16} color={hovered ? '#a3e635' : '#555'} />
-        </div>
-      </div>
-
-      <h3 style={{ fontSize: 15.5, fontWeight: 600, color: '#0d0d0b', lineHeight: 1.32, marginBottom: 10 }}>{title}</h3>
-      <p style={{ fontSize: 13, color: '#666', lineHeight: 1.78, flex: 1, marginBottom: 20 }}>{desc}</p>
-
-      <div style={{ paddingTop: 16, borderTop: '1px solid rgba(0,0,0,0.06)', fontFamily: 'Space Mono, monospace', fontSize: 10, color: '#aaa', letterSpacing: '0.02em' }}>
-        {tags.join(' / ')}
-      </div>
+          border: `1px solid ${hovered ? 'rgba(163,230,53,0.5)' : 'rgba(0,0,0,0.08)'}`,
+          background: hovered ? 'rgba(163,230,53,0.08)' : 'transparent',
+          color: hovered ? '#a3e635' : 'rgba(0,0,0,0.22)',
+          cursor: 'pointer',
+          transition: 'all 0.22s',
+        }}
+        aria-label={`Learn more about ${title}`}
+      >
+        <RowArrow />
+      </button>
     </div>
   );
 };
@@ -125,8 +169,8 @@ const Home = () => {
               View all services <Ic n="arrow_r" size={13} color="currentColor" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((s, i) => <ServicePreviewCard key={s.title} {...s} index={i} />)}
+          <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+            {services.map((s, i) => <ServiceRow key={s.title} {...s} index={i} />)}
           </div>
         </div>
       </section>
