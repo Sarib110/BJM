@@ -96,7 +96,7 @@ const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
 
       {/* Arrow link button */}
       <button
-        onClick={() => navigate(`/services#${id}`)}
+        onClick={() => navigate(`/services/${id}`)}
         style={{
           marginLeft: 20, flexShrink: 0,
           width: 34, height: 34, borderRadius: 9,

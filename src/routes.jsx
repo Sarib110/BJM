@@ -1,6 +1,7 @@
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import ServicesPage from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
 import WorkIndex from './pages/WorkIndex';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import AboutPage from './pages/About';
@@ -10,6 +11,7 @@ import FreeToolsPage from './components/pages/FreeToolsPage';
 import ToolPage from './components/pages/ToolPage';
 import NotFound from './pages/NotFound';
 import { caseStudies } from './data/caseStudies';
+import { services } from './data/services';
 
 export const routes = [
   {
@@ -18,6 +20,11 @@ export const routes = [
     children: [
       { index: true, element: <Home /> },
       { path: 'services', element: <ServicesPage /> },
+      {
+        path: 'services/:serviceId',
+        element: <ServiceDetail />,
+        getStaticPaths: () => services.map(s => `services/${s.id}`),
+      },
       { path: 'work', element: <WorkIndex /> },
       { path: 'about', element: <AboutPage /> },
       { path: 'careers', element: <CareersPage /> },
@@ -41,3 +48,4 @@ export const routes = [
     getStaticPaths: () => caseStudies.map(cs => `work/${cs.id}`),
   },
 ];
+

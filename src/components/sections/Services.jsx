@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { services } from '../../data/services';
 
 const ArrowUpRight = () => (
@@ -68,16 +69,22 @@ const ServiceBlock = ({ service, index }) => {
       <div style={{ height: 1, background: 'rgba(255,255,255,0.07)', marginBottom: 18 }} />
 
       {/* Title */}
-      <h2 style={{
-        fontFamily: 'serif',
-        fontSize: 'clamp(1.4rem, 2.2vw, 1.85rem)',
-        fontWeight: 600,
-        color: '#fff',
-        lineHeight: 1.2,
-        marginBottom: 12,
-      }}>
-        {service.title}
-      </h2>
+      <Link to={`/services/${service.id}`} style={{ textDecoration: 'none' }}>
+        <h2 style={{
+          fontFamily: 'serif',
+          fontSize: 'clamp(1.4rem, 2.2vw, 1.85rem)',
+          fontWeight: 600,
+          color: '#fff',
+          lineHeight: 1.2,
+          marginBottom: 12,
+          transition: 'color 0.2s',
+        }}
+          onMouseEnter={e => e.currentTarget.style.color = '#a3e635'}
+          onMouseLeave={e => e.currentTarget.style.color = '#fff'}
+        >
+          {service.title}
+        </h2>
+      </Link>
 
       {/* Description */}
       <p style={{
@@ -108,6 +115,27 @@ const ServiceBlock = ({ service, index }) => {
           </span>
         ))}
       </div>
+
+      {/* Learn more link */}
+      <Link
+        to={`/services/${service.id}`}
+        style={{
+          display: 'inline-flex', alignItems: 'center', gap: 7,
+          marginTop: 18, padding: '9px 18px', borderRadius: 10,
+          background: 'rgba(163,230,53,0.08)',
+          border: '1px solid rgba(163,230,53,0.2)',
+          color: '#a3e635',
+          fontFamily: 'Space Mono, monospace', fontSize: 10.5,
+          textDecoration: 'none',
+          transition: 'background 0.2s, border-color 0.2s',
+          width: 'fit-content'
+        }}
+        onMouseEnter={e => { e.currentTarget.style.background = 'rgba(163,230,53,0.14)'; e.currentTarget.style.borderColor = 'rgba(163,230,53,0.4)'; }}
+        onMouseLeave={e => { e.currentTarget.style.background = 'rgba(163,230,53,0.08)'; e.currentTarget.style.borderColor = 'rgba(163,230,53,0.2)'; }}
+      >
+        Learn more
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+      </Link>
     </div>
   );
 
@@ -138,7 +166,7 @@ const ServiceBlock = ({ service, index }) => {
     <section id={service.id} style={{ background: sectionBg, padding: '52px 24px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
         {/* Desktop: side by side. Mobile: card only (image hidden via CSS) */}
-        <div className="services-block" style={{ display: 'flex', gap: 14, height: 490 }}>
+        <div className="services-block" style={{ display: 'flex', gap: 14, height: 540 }}>
           {isEven ? card : image}
           {isEven ? image : card}
         </div>

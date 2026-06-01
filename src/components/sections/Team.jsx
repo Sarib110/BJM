@@ -50,7 +50,7 @@ const Card = ({ p, paused, isDragging }) => {
       )}
 
       {/* Photo */}
-      <img src={p.img} alt={p.name} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', filter: expanded ? 'blur(6px) brightness(0.25)' : 'none', transition: 'filter 0.35s' }} />
+      <img src={p.img} alt={p.name} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: p.objectPosition || 'center top', filter: expanded ? 'blur(6px) brightness(0.25)' : 'grayscale(0.12) contrast(1.04) brightness(0.96)', transition: 'filter 0.35s' }} />
 
       {/* Default gradient + bottom info */}
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.55) 42%, transparent 100%)', opacity: expanded ? 0 : 1, transition: 'opacity 0.3s' }} />

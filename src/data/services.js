@@ -10,6 +10,12 @@ export const services = [
     metric: '24+',
     metricLabel: 'agents deployed in production',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80',
+    relatedCaseStudies: ['pyragogy', 'nebras', 'agentic-cert'],
+    capabilities: [
+      { title: 'Multi-Agent Orchestration', desc: 'Design and deploy coordinated agent teams using LangGraph and custom orchestration layers. Each agent owns a specific domain — research, validation, execution — and they collaborate through structured communication protocols.' },
+      { title: 'Autonomous Execution', desc: 'Your agents don't wait for human input. They reason, plan, and execute across tools and APIs 24/7. Built with retry logic, fallback strategies, and self-healing capabilities for production reliability.' },
+      { title: 'Failure Recovery & Observability', desc: 'Every agent pipeline includes circuit breakers, dead-letter queues, and real-time observability dashboards. When something breaks, the system recovers automatically — and you see exactly what happened.' },
+    ],
   },
   {
     id: 'rag-knowledge',
@@ -22,6 +28,12 @@ export const services = [
     metric: '10M+',
     metricLabel: 'documents processed',
     image: 'https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?auto=format&fit=crop&w=900&q=80',
+    relatedCaseStudies: ['pyragogy', 'nebras', 'vocalmind'],
+    capabilities: [
+      { title: 'Intelligent Document Ingestion', desc: 'We parse PDFs, Word docs, Notion exports, Confluence wikis, and raw databases. Every document is chunked, embedded, and indexed into vector stores like Pinecone or Qdrant for instant semantic retrieval.' },
+      { title: 'Sub-100ms Retrieval', desc: 'Our RAG pipelines retrieve the most relevant context from millions of documents in under 100 milliseconds. Hybrid search combining dense embeddings and sparse keyword matching ensures nothing gets missed.' },
+      { title: 'Contextual Answer Generation', desc: 'Retrieved context feeds directly into LLMs with custom prompt engineering. Every answer is grounded in your actual data — with source citations, confidence scores, and hallucination guards built in.' },
+    ],
   },
   {
     id: 'fullstack-ai',
@@ -34,6 +46,12 @@ export const services = [
     metric: '12',
     metricLabel: 'SaaS products shipped',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80',
+    relatedCaseStudies: ['vmaconnect', 'leadgen', 'voicehealth'],
+    capabilities: [
+      { title: 'End-to-End Product Engineering', desc: 'We build complete products — auth, dashboards, billing, APIs, admin panels — using Next.js, Supabase, and modern infrastructure. Every layer is production-grade from day one, not bolted on later.' },
+      { title: 'AI-Native Architecture', desc: 'AI isn't an afterthought. We design database schemas, API layers, and frontend flows around AI capabilities from the start. Real-time inference, async processing, and intelligent UX patterns built into the core.' },
+      { title: 'Scale-Ready Infrastructure', desc: 'Deployed on Vercel and AWS with auto-scaling, edge caching, and CI/CD pipelines. Your product handles 10 users or 10,000 without architecture changes. Stripe integration for instant monetization.' },
+    ],
   },
   {
     id: 'workflow-automation',
@@ -46,6 +64,12 @@ export const services = [
     metric: '50k+',
     metricLabel: 'operational hours saved',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80',
+    relatedCaseStudies: ['agentic-cert', 'yana', 'leadgen'],
+    capabilities: [
+      { title: 'Process Mapping & Optimization', desc: 'We audit your operations to find the highest-friction workflows. Every manual step is documented, measured, and ranked by automation ROI. No guesswork — data-driven prioritization.' },
+      { title: 'Event-Driven Pipelines', desc: 'Built on n8n and custom Python workers with proper error handling, dead-letter queues, and retry logic. These aren't fragile Zapier chains — they're production-grade pipelines that handle edge cases.' },
+      { title: 'Real-Time Monitoring', desc: 'Every automated workflow includes observability dashboards, alerting, and audit trails. You see exactly what's running, what failed, and what was recovered — with zero blind spots.' },
+    ],
   },
   {
     id: 'voice-ai',
@@ -59,6 +83,12 @@ export const services = [
     metricLabel: 'live voice deployments',
     image: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80',
     imagePosition: 'center 65%',
+    relatedCaseStudies: ['voicehealth', 'vocalmind'],
+    capabilities: [
+      { title: 'Natural Conversation Flow', desc: 'Our voice agents handle interruptions, pauses, and context switches naturally. Built on Retell AI and Deepgram for sub-600ms response times — faster than human reaction time with natural turn-taking.' },
+      { title: 'CRM & Calendar Integration', desc: 'Voice agents connect directly to your CRM, calendar, and booking systems. Appointments are scheduled, patient records updated, and leads qualified — all within the same phone call, zero manual input.' },
+      { title: '24/7 Availability', desc: 'Your voice agents never sleep, never call in sick, and never have a bad day. They handle inbound and outbound calls around the clock with consistent quality and unlimited scalability.' },
+    ],
   },
   {
     id: 'ai-integrations',
@@ -71,5 +101,11 @@ export const services = [
     metric: '20+',
     metricLabel: 'enterprise integrations built',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
+    relatedCaseStudies: ['yana', 'vmaconnect', 'nebras'],
+    capabilities: [
+      { title: 'API-First Integration Layer', desc: 'We build clean REST and GraphQL integration layers that connect AI capabilities to your existing CRM, ERP, and internal tools. OAuth, API keys, webhooks — whatever your systems need, we speak their language.' },
+      { title: 'Data Pipeline Engineering', desc: 'Real-time and batch data pipelines that move information between your systems and AI models. Event-driven architectures using webhooks and message queues ensure data flows reliably with zero data loss.' },
+      { title: 'Zero-Downtime Migration', desc: 'AI capabilities are injected into your existing stack without disruption. We deploy alongside your current systems, validate outputs, and cut over seamlessly. No rip-and-replace — just new capabilities, added.' },
+    ],
   },
 ];
