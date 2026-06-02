@@ -69,7 +69,20 @@ const WorkIndex = () => (
     <section className="py-16 px-6 bg-[#f5f4f0]">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {caseStudies.map(cs => <WorkCard key={cs.id} {...cs} />)}
+          {caseStudies.map(cs => (
+            <WorkCard
+              key={cs.id}
+              id={cs.id}
+              label={cs.label}
+              title={cs.title}
+              tagline={cs.tagline}
+              summary={cs.summary}
+              image={cs.image}
+              stack={cs.stack}
+              metric={cs.metric}
+              bg={cs.bg}
+            />
+          ))}
         </div>
       </div>
     </section>

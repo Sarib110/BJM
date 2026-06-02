@@ -85,7 +85,8 @@ const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
 
       {/* Description */}
       <div style={{
-        flex: 1, fontSize: 12.5, lineHeight: 1.78,
+        flex: 1,
+        lineHeight: 1.78,
         color: hovered ? '#222' : 'rgba(0,0,0,0.5)',
         transition: 'color 0.28s',
         minWidth: 0,
@@ -179,7 +180,17 @@ const Home = () => {
             </Link>
           </div>
           <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
-            {services.map((s, i) => <ServiceRow key={s.title} {...s} index={i} />)}
+            {services.map((s, i) => (
+              <ServiceRow
+                key={s.title}
+                id={s.id}
+                icon={s.icon}
+                title={s.title}
+                desc={s.desc}
+                tags={s.tags}
+                index={i}
+              />
+            ))}
           </div>
         </div>
       </section>

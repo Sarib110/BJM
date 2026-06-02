@@ -13,7 +13,7 @@ export const services = [
     relatedCaseStudies: ['pyragogy', 'nebras', 'agentic-cert'],
     capabilities: [
       { title: 'Multi-Agent Orchestration', desc: 'Design and deploy coordinated agent teams using LangGraph and custom orchestration layers. Each agent owns a specific domain — research, validation, execution — and they collaborate through structured communication protocols.' },
-      { title: 'Autonomous Execution', desc: 'Your agents don't wait for human input. They reason, plan, and execute across tools and APIs 24/7. Built with retry logic, fallback strategies, and self-healing capabilities for production reliability.' },
+      { title: 'Autonomous Execution', desc: 'Your agents don\'t wait for human input. They reason, plan, and execute across tools and APIs 24/7. Built with retry logic, fallback strategies, and self-healing capabilities for production reliability.' },
       { title: 'Failure Recovery & Observability', desc: 'Every agent pipeline includes circuit breakers, dead-letter queues, and real-time observability dashboards. When something breaks, the system recovers automatically — and you see exactly what happened.' },
     ],
   },
@@ -46,10 +46,10 @@ export const services = [
     metric: '12',
     metricLabel: 'SaaS products shipped',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80',
-    relatedCaseStudies: ['vmaconnect', 'leadgen', 'voicehealth'],
+    relatedCaseStudies: ['ezmdconnect', 'leadgen', 'voicehealth'],
     capabilities: [
       { title: 'End-to-End Product Engineering', desc: 'We build complete products — auth, dashboards, billing, APIs, admin panels — using Next.js, Supabase, and modern infrastructure. Every layer is production-grade from day one, not bolted on later.' },
-      { title: 'AI-Native Architecture', desc: 'AI isn't an afterthought. We design database schemas, API layers, and frontend flows around AI capabilities from the start. Real-time inference, async processing, and intelligent UX patterns built into the core.' },
+      { title: 'AI-Native Architecture', desc: 'AI isn\'t an afterthought. We design database schemas, API layers, and frontend flows around AI capabilities from the start. Real-time inference, async processing, and intelligent UX patterns built into the core.' },
       { title: 'Scale-Ready Infrastructure', desc: 'Deployed on Vercel and AWS with auto-scaling, edge caching, and CI/CD pipelines. Your product handles 10 users or 10,000 without architecture changes. Stripe integration for instant monetization.' },
     ],
   },
@@ -67,8 +67,8 @@ export const services = [
     relatedCaseStudies: ['agentic-cert', 'yana', 'leadgen'],
     capabilities: [
       { title: 'Process Mapping & Optimization', desc: 'We audit your operations to find the highest-friction workflows. Every manual step is documented, measured, and ranked by automation ROI. No guesswork — data-driven prioritization.' },
-      { title: 'Event-Driven Pipelines', desc: 'Built on n8n and custom Python workers with proper error handling, dead-letter queues, and retry logic. These aren't fragile Zapier chains — they're production-grade pipelines that handle edge cases.' },
-      { title: 'Real-Time Monitoring', desc: 'Every automated workflow includes observability dashboards, alerting, and audit trails. You see exactly what's running, what failed, and what was recovered — with zero blind spots.' },
+      { title: 'Event-Driven Pipelines', desc: 'Built on n8n and custom Python workers with proper error handling, dead-letter queues, and retry logic. These aren\'t fragile Zapier chains — they\'re production-grade pipelines that handle edge cases.' },
+      { title: 'Real-Time Monitoring', desc: 'Every automated workflow includes observability dashboards, alerting, and audit trails. You see exactly what\'s running, what failed, and what was recovered — with zero blind spots.' },
     ],
   },
   {
@@ -101,7 +101,7 @@ export const services = [
     metric: '20+',
     metricLabel: 'enterprise integrations built',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80',
-    relatedCaseStudies: ['yana', 'vmaconnect', 'nebras'],
+    relatedCaseStudies: ['yana', 'ezmdconnect', 'nebras'],
     capabilities: [
       { title: 'API-First Integration Layer', desc: 'We build clean REST and GraphQL integration layers that connect AI capabilities to your existing CRM, ERP, and internal tools. OAuth, API keys, webhooks — whatever your systems need, we speak their language.' },
       { title: 'Data Pipeline Engineering', desc: 'Real-time and batch data pipelines that move information between your systems and AI models. Event-driven architectures using webhooks and message queues ensure data flows reliably with zero data loss.' },
