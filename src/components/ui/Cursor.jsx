@@ -1,8 +1,17 @@
 import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Cursor = () => {
   const dot = useRef(null);
   const ring = useRef(null);
+  let location;
+  
+  try {
+    location = useLocation();
+  } catch (e) {
+    location = { pathname: '' };
+  }
+
   useEffect(() => {
     const fn = e => {
       const x = e.clientX, y = e.clientY;
@@ -12,6 +21,12 @@ const Cursor = () => {
     window.addEventListener('mousemove', fn);
     return () => window.removeEventListener('mousemove', fn);
   }, []);
+
+  // Hide the custom cursor completely on tools detail pages (which contain iframes)
+  if (location && location.pathname.startsWith('/tools/')) {
+    return null;
+  }
+
   return (
     <>
       <div ref={dot} className="cursor-dot hidden md:block" />
