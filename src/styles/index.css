@@ -91,6 +91,11 @@ body::after { content: ''; position: fixed; inset: 0; background-image: url("dat
 /* Custom cursor */
 .cursor-dot { width: 7px; height: 7px; border-radius: 50%; background: #111; position: fixed; pointer-events: none; z-index: 99999; transform: translate(-50%,-50%); transition: transform 0.1s ease; }
 .cursor-ring { width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.2); position: fixed; pointer-events: none; z-index: 99998; transform: translate(-50%,-50%); transition: left 0.12s ease, top 0.12s ease; }
+body.iframe-hovered .cursor-dot,
+body.iframe-hovered .cursor-ring {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 3px; }

@@ -111,6 +111,12 @@ const ClientCard = ({ t, isActive, onClick, extraClass }) => (
 
 const Impact = () => {
   const [activeCard, setActiveCard] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const handleSelectCard = (i) => {
+    setActiveCard(i);
+    setIsAutoPlaying(false);
+  };
 
   const tms = [
     {
@@ -140,11 +146,12 @@ const Impact = () => {
   ];
 
   useEffect(() => {
+    if (!isAutoPlaying) return;
     const timer = setInterval(() => {
       setActiveCard(prev => (prev + 1) % tms.length);
     }, 4500);
     return () => clearInterval(timer);
-  }, [tms.length]);
+  }, [isAutoPlaying, tms.length]);
 
   return (
     <section id="impact" className="py-28 px-6 bg-[#0d0d0b] text-white">
@@ -181,7 +188,7 @@ const Impact = () => {
               {tms.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => setActiveCard(i)}
+                  onClick={() => handleSelectCard(i)}
                   style={{
                     width: i === activeCard ? 28 : 8,
                     height: 8,
@@ -215,7 +222,7 @@ const Impact = () => {
                   key={i}
                   t={t}
                   isActive={i === activeCard}
-                  onClick={() => setActiveCard(i)}
+                  onClick={() => handleSelectCard(i)}
                   extraClass=""
                 />
               ))}
