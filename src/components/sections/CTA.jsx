@@ -103,12 +103,28 @@ const CTA = () => {
                 <span className="lime-dot" style={{ width: 6, height: 6 }} /> Currently accepting new clients
               </div>
               <h2 className="font-serif text-[clamp(2rem,4.5vw,3.2rem)] text-black leading-[1.06] mb-6">
-                Ready to stop managing<br /><em className="not-italic text-[#a3e635]">friction?</em>
+                Tell us what's<br /><em className="not-italic text-[#a3e635]">slowing you down.</em>
               </h2>
-              <p className="font-sans text-[13.5px] text-zinc-500 max-w-lg mb-10 leading-[1.8]">
-                Let's build an intelligent system that works while you sleep. Send us a message and we'll map your automation opportunity.
+              <p className="font-sans text-[13.5px] text-zinc-500 max-w-lg mb-8 leading-[1.8]">
+                You don't need to know the technical term for it. Describe the repetitive task, the manual process, or the bottleneck. We'll tell you exactly how we'd automate it.
               </p>
-              
+
+              <div className="flex flex-col gap-4 mb-10">
+                {[
+                  { n: '01', title: 'You describe the problem', desc: 'A few sentences is enough. No brief needed.' },
+                  { n: '02', title: 'We map the solution', desc: 'We send back a clear breakdown of what we\'d build and why.' },
+                  { n: '03', title: 'We build it', desc: 'Fixed scope, production-ready, no hand-holding required.' },
+                ].map(({ n, title, desc }) => (
+                  <div key={n} className="flex items-start gap-4">
+                    <span className="font-mono text-[10px] text-[#a3e635] pt-0.5 flex-shrink-0">{n}</span>
+                    <div>
+                      <span className="font-sans font-semibold text-[13px] text-black">{title}. </span>
+                      <span className="font-sans text-[13px] text-zinc-500">{desc}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
               <div className="flex flex-wrap gap-3.5">
                 <a href="https://www.linkedin.com/company/veloqq" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-[13px] hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
                   <Ic n="linkedin" size={13} color="#333" /> LinkedIn
@@ -125,25 +141,33 @@ const CTA = () => {
               <div style={{ marginBottom: 16 }}><label style={lbl}>Email address <span style={{ color: '#ef4444' }}>*</span></label><input style={inp} type="email" value={form.email} onChange={set('email')} placeholder="you@company.com" onFocus={focus} onBlur={blur} /></div>
               <div style={{ marginBottom: 16 }}><label style={lbl}>Company</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Your company (optional)" onFocus={focus} onBlur={blur} /></div>
               <div style={{ marginBottom: 16 }}>
-                <label style={lbl}>What are you looking to build?</label>
+                <label style={lbl}>What best describes your situation?</label>
                 <select style={inp} value={form.service} onChange={set('service')} onFocus={focus} onBlur={blur}>
-                  <option value="">Select a service...</option>
-                  {['Agentic AI System', 'RAG / Knowledge System', 'Full-Stack AI Product', 'Workflow Automation', 'Voice AI Agent', 'Custom AI Integration', 'Something else'].map(s => <option key={s} value={s} style={{ background: '#fff', color: '#000' }}>{s}</option>)}
+                  <option value="">Pick the closest match...</option>
+                  {[
+                    'I want to automate a repetitive task',
+                    'I need a smarter internal tool or dashboard',
+                    'I want AI integrated into my product',
+                    'I need a chatbot or voice agent for my business',
+                    'I want to build a full AI-powered product',
+                    'I have data I want to make searchable / queryable',
+                    'Something else, I\'ll explain',
+                  ].map(s => <option key={s} value={s} style={{ background: '#fff', color: '#000' }}>{s}</option>)}
                 </select>
               </div>
-              <div style={{ marginBottom: 8 }}><label style={lbl}>Tell us about your project <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder="Describe the problem you're solving, your current bottleneck, or what you have in mind..." onFocus={focus} onBlur={blur} /></div>
+              <div style={{ marginBottom: 8 }}><label style={lbl}>Describe the problem in your own words <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder={'e.g. "We manually copy data between 3 tools every morning" or "Our team spends hours on reports that could be automated"'} onFocus={focus} onBlur={blur} /></div>
 
               <button onClick={handleSubmit} disabled={loading}
                 style={{ width: '100%', padding: '14px 24px', borderRadius: 12, background: loading ? 'rgba(0,0,0,0.5)' : '#000', color: '#fff', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13.5, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 8, transition: 'background 0.2s' }}
                 onMouseEnter={e => { if (!loading) e.currentTarget.style.background = '#222'; }}
                 onMouseLeave={e => { if (!loading) e.currentTarget.style.background = '#000'; }}>
-                {loading ? 'Sending...' : 'Send message'}
+                {loading ? 'Sending...' : 'Send Message'}
                 {!loading && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>}
               </button>
 
               {status === 'success' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(163,230,53,0.15)', border: '1px solid rgba(163,230,53,0.35)', color: '#4a7a10', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>Message sent — we'll be in touch within 24 hours.</div>}
               {status === 'error-ratelimit' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>Too many messages sent. Please try again in a few minutes.</div>}
-              {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : 'Something went wrong — please email us directly at contact@veloq.tech'}</div>}
+              {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : 'Something went wrong — please email us directly at hello@veloq.tech'}</div>}
             </div>
           </div>
         </div>
