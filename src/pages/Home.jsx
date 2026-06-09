@@ -151,7 +151,7 @@ const Home = () => {
             "https://www.linkedin.com/company/veloqq",
             "https://www.upwork.com/companies/veloq",
           ],
-          contactPoint: { "@type": "ContactPoint", email: "contact@veloq.tech", contactType: "customer service" },
+          contactPoint: { "@type": "ContactPoint", email: "hello@veloq.tech", contactType: "customer service" },
         })}</script>
       </Head>
 
