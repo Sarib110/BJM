@@ -37,7 +37,7 @@ const Footer = () => (
           <p className="font-mono text-[10px] text-zinc-600 uppercase tracking-widest mb-4">Connect</p>
           {[
             ['arrow_ur', 'Upwork', 'https://www.upwork.com/companies/veloq'],
-            ['mail', 'contact@veloq.tech', 'mailto:contact@veloq.tech'],
+            ['mail', 'hello@veloq.tech', 'mailto:hello@veloq.tech'],
             ['linkedin', 'LinkedIn', 'https://www.linkedin.com/company/veloqq'],
           ].map(([icon, label, href]) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 font-sans text-[12.5px] text-zinc-500 hover:text-white transition-colors mb-2.5">

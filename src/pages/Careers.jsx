@@ -63,7 +63,7 @@ const CareersPage = () => (
                   <p className="font-sans text-[13px] text-zinc-500 leading-[1.7] max-w-xl">{job.blurb}</p>
                 </div>
                 <a
-                  href={`mailto:contact@veloq.tech?subject=Application: ${job.title}`}
+                  href={`mailto:hello@veloq.tech?subject=Application: ${job.title}`}
                   className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all"
                 >
                   Apply
@@ -81,7 +81,7 @@ const CareersPage = () => (
               We're not actively hiring at the moment, but we're always interested in engineers who build things. Send us your work and we'll keep you in mind.
             </p>
             <a
-              href="mailto:contact@veloq.tech?subject=General Application — I build things"
+              href="mailto:hello@veloq.tech?subject=General Application — I build things"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all"
             >
               Send Your Resume
@@ -123,7 +123,7 @@ const CareersPage = () => (
           No open roles doesn't mean not interested. Send us a short note and links to things you've built. That's all we need to know.
         </p>
         <a
-          href="mailto:contact@veloq.tech?subject=Hey, I build things"
+          href="mailto:hello@veloq.tech?subject=Hey, I build things"
           className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all btn-shine"
         >
           Get in Touch
