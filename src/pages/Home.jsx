@@ -117,13 +117,9 @@ const ServiceRow = ({ id, icon, title, desc, tags, index }) => {
 };
 
 const Home = () => {
-  const [showIntro, setShowIntro] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && !sessionStorage.getItem('intro-shown')) {
-      setShowIntro(true);
-    }
-  }, []);
+  const [showIntro, setShowIntro] = useState(() =>
+    typeof window !== 'undefined' && !sessionStorage.getItem('intro-shown')
+  );
 
   const handleIntroDone = () => {
     if (typeof window !== 'undefined') sessionStorage.setItem('intro-shown', '1');
