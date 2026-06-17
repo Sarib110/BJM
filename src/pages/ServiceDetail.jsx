@@ -312,7 +312,7 @@ const ServiceDetail = () => {
             <div>
               <span style={{ display: 'inline-block', fontFamily: 'Space Mono,monospace', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20 }}>Get started</span>
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] text-white leading-[1.06] mb-5">
-                Ready to build<br /><em className="not-italic text-[#a3e635]">{service.title.toLowerCase()}?</em>
+                Ready to<br /><em className="not-italic text-[#a3e635]">get started?</em>
               </h2>
               <p style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 14, color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, marginBottom: 28 }}>
                 Drop us a message about your project and we'll get back to you within one business day with a strategy outline.

@@ -88,13 +88,13 @@ const Hero = () => {
       <div className="depth-vignette" />
       <div ref={contentRef} className="hero-content max-w-5xl mx-auto text-center w-full" style={{ transition: 'transform 0.45s cubic-bezier(0.16,1,0.3,1)', willChange: 'transform' }}>
         <h1 className="hero-reveal hr-d2 font-serif text-[clamp(3rem,7.2vw,6rem)] leading-[0.93] tracking-tight text-black mb-7 hero-headline">
-          We don't build<br /><em className="not-italic text-[#a3e635]">tools</em>. We build<br />
-          <span className="relative inline-block">workforces<em className="not-italic text-[#a3e635]">.</em>
+          We build the <em className="not-italic text-[#a3e635]">AI</em><br />your business
+          <span className="relative inline-block"><em className="not-italic text-[#a3e635]"> actually needs</em><em className="not-italic text-[#a3e635]">.</em>
             <svg className="absolute -bottom-2 left-0 w-full" height="5" viewBox="0 0 400 5" preserveAspectRatio="none" fill="none"><path d="M0 2.5 Q100 0 200 2.5 Q300 5 400 2.5" stroke="#a3e635" strokeWidth="2.5" strokeLinecap="round" /></svg>
           </span>
         </h1>
         <p className="hero-reveal hr-d3 font-sans text-[14.5px] text-zinc-500 max-w-xl mx-auto mt-6 mb-8 leading-[1.8]">
-          We engineer AI that replaces headcount. Our agentic systems execute full business roles without supervision, scaling operations across logistics, healthcare, construction, and energy. No templates. No wrappers. <strong className="font-semibold text-black">Purpose-built for your business.</strong>
+          Veloq is an engineer-led AI software house. From autonomous agents and workflow automation to full AI products, <strong className="font-semibold text-black">you tell us the problem, we build the system that solves it.</strong>
         </p>
         <div className="hero-reveal hr-d4 flex flex-wrap gap-3 justify-center mb-6">
           <button onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-sm hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 shadow-md btn-shine">

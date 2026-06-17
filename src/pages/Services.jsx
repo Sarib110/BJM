@@ -28,10 +28,10 @@ const ServicesPage = () => {
     <div className="pt-32 pb-4 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] text-black leading-[1.04] mb-5">
-          What we<br /><em className="not-italic text-[#a3e635]">actually build.</em>
+          Everything<br /><em className="not-italic text-[#a3e635]">we build.</em>
         </h1>
         <p className="font-sans text-[14px] text-zinc-500 max-w-lg leading-[1.8]">
-          Six service lines. All production-grade. All engineer-led. None of it is demo-ware.
+          Six capabilities. All production-ready. All built by engineers, not assembled from templates.
         </p>
       </div>
     </div>

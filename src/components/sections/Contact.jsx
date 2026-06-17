@@ -76,7 +76,7 @@ const Contact = () => {
     <section id="contact" style={{ background: '#0d0d0b', padding: '112px 24px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <span style={{ display: 'inline-block', fontFamily: 'Space Mono,monospace', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '3px 12px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20 }}>Get in touch</span>
-        <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06, marginBottom: 14 }}>Not sure where to start?<br /><em style={{ fontStyle: 'normal', color: '#a3e635' }}>Start here.</em></h2>
+        <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06, marginBottom: 14 }}>Tell us what<br />you're trying to <em style={{ fontStyle: 'normal', color: '#a3e635' }}>fix.</em></h2>
         <p style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 13.5, color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, maxWidth: 440, marginBottom: 0 }}>You don't need a brief or a spec. Just tell us what you're trying to fix, and we'll figure out the rest. We respond within one business day.</p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 64, marginTop: 56, alignItems: 'start' }}>
