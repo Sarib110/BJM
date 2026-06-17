@@ -121,8 +121,13 @@ const Home = () => {
     typeof window !== 'undefined' && !sessionStorage.getItem('intro-shown')
   );
 
+  useEffect(() => {
+    if (!showIntro) document.body.style.background = '';
+  }, []);
+
   const handleIntroDone = () => {
     if (typeof window !== 'undefined') sessionStorage.setItem('intro-shown', '1');
+    document.body.style.background = '';
     setShowIntro(false);
   };
 
