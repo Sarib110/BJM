@@ -205,15 +205,34 @@ const Impact = () => {
           </div>
 
           {/* Right: photo cards */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 w-full">
             {/* Mobile: single active card */}
-            <div className="block lg:hidden" style={{ height: 380, borderRadius: 20, overflow: 'hidden', position: 'relative' }}>
-              <ClientCard
-                t={tms[activeCard]}
-                isActive={true}
-                onClick={() => {}}
-                extraClass=""
-              />
+            <div className="block lg:hidden" style={{ height: 380, borderRadius: 20, overflow: 'hidden', position: 'relative', width: '100%' }}>
+              <div style={{ position: 'relative', width: '100%', height: '100%', borderRadius: 20, overflow: 'hidden' }}>
+                <img
+                  src={tms[activeCard].img}
+                  alt={tms[activeCard].name}
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(160deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.9) 100%)' }} />
+                <div style={{ position: 'absolute', inset: 0, padding: '22px 20px', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                    <Stars />
+                    <p style={{ fontFamily: 'sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.88)', lineHeight: 1.78, marginTop: 14, flex: 1 }}>
+                      &ldquo;{tms[activeCard].q}&rdquo;
+                    </p>
+                  </div>
+                  <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 8 }}>
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ fontFamily: 'sans-serif', fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>{tms[activeCard].name}</div>
+                      <div style={{ fontFamily: 'Space Mono, monospace', fontSize: 10, color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>{tms[activeCard].role} · {tms[activeCard].co}</div>
+                    </div>
+                    <a href={tms[activeCard].linkedin} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.3)', flexShrink: 0, lineHeight: 0 }}>
+                      <LinkedInIcon />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* Desktop: expanding flex cards */}
             <div className="hidden lg:flex" style={{ gap: 10, height: 470 }}>
