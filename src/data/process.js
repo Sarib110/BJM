@@ -1,6 +1,6 @@
 export const processSteps = [
-  { n: '01', icon: 'cpu', title: 'Practice Assessment', desc: 'We review your specialty mix, payer mix, denial patterns, and current billing workflows to pinpoint where revenue is leaking.' },
-  { n: '02', icon: 'server', title: 'RCM Blueprint', desc: 'We design a clear operating plan covering coding, claim scrubbing, denial handling, and A/R cadence tailored to your practice.' },
-  { n: '03', icon: 'shield', title: 'Compliance & Quality Checks', desc: 'Coding accuracy, documentation alignment, and HIPAA-aware processes are validated before we scale volume.' },
-  { n: '04', icon: 'trending', title: 'Go-Live & Optimization', desc: 'We onboard your EMR/clearinghouse workflows, start billing, and continuously tune KPIs like clean claims and days in A/R.' },
+  { n: '01', icon: 'cpu', title: 'Billing Assessment', desc: 'We document your specialty, providers, locations, payer mix, EHR and clearinghouse, current workqueues, aging, denials, and reporting requirements.' },
+  { n: '02', icon: 'server', title: 'Workflow & Responsibility Map', desc: 'We define how eligibility, coding, charge entry, claim submission, payment posting, denials, and A/R move between your practice and our billing team.' },
+  { n: '03', icon: 'shield', title: 'Access, Rules & Quality Setup', desc: 'System access, payer portals, provider records, fee schedules, coding guidance, claim edits, escalation rules, and quality checks are configured before go-live.' },
+  { n: '04', icon: 'trending', title: 'Go-Live & Ongoing Reporting', desc: 'Daily workqueues begin on an agreed schedule, with documented claim activity and recurring reports covering submissions, rejections, denials, payments, and aging.' },
 ];

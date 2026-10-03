@@ -11,7 +11,7 @@ const Footer = () => (
           <div className="flex items-center mb-4">
             <Logo size={36} onDark={true} />
           </div>
-          <p className="font-sans text-[12px] text-zinc-500 leading-relaxed">Revenue-first · Compliance-driven · Results-focused</p>
+          <p className="font-sans text-[12px] text-zinc-500 leading-relaxed">Medical billing · Revenue cycle management · Payer follow-up</p>
         </div>
 
         <div>
@@ -50,8 +50,8 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-zinc-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <span className="font-mono text-[11px] text-zinc-600">© 2026 bjm. All rights reserved.</span>
-        <span className="font-mono text-[10px] text-zinc-700">Medical Billing & RCM Partner</span>
+        <span className="font-mono text-[11px] text-zinc-600">© 2026 BJ Medical Billing Service. All rights reserved.</span>
+        <span className="font-mono text-[10px] text-zinc-700">Medical Billing & Revenue Cycle Management</span>
       </div>
     </div>
   </footer>

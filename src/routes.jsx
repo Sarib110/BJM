@@ -8,7 +8,7 @@ import AboutPage from './pages/About';
 import CareersPage from './pages/Careers';
 import ContactPage from './pages/Contact';
 import NotFound from './pages/NotFound';
-import { caseStudies } from './data/caseStudies';
+import { caseStudies } from './data/billingCaseStudies';
 import { services } from './data/services';
 
 export const routes = [

@@ -23,9 +23,9 @@ const values = [
 const CareersPage = () => (
   <>
     <Head>
-      <title>Careers — BJM</title>
-      <meta name="description" content="Join BJM — a medical billing and RCM team focused on clean claims, denial recovery, and collections clarity for practices." />
-      <meta property="og:title" content="Careers at BJM — Build Better Revenue Cycles" />
+      <title>Careers — BJ Medical Billing Service</title>
+      <meta name="description" content="Career opportunities with BJ Medical Billing Service across eligibility, medical coding, claim submission, payment posting, denial management, insurance A/R, credentialing, and client reporting." />
+      <meta property="og:title" content="Careers at BJ Medical Billing Service" />
       <meta property="og:description" content="Billing professionals who want ownership, accuracy, and real impact on practice cash flow." />
       <meta property="og:url" content="https://veloq.tech/careers" />
     </Head>
@@ -38,7 +38,7 @@ const CareersPage = () => (
           Protect practice revenue.<br /><em className="not-italic text-[#a3e635]">Own the cycle.</em>
         </h1>
         <p className="font-sans text-[14px] text-zinc-400 max-w-xl leading-[1.8]">
-          BJM is a lean medical billing and RCM partner. We run coding, claims, denials, and A/R for real practices. People here own outcomes across the revenue cycle — not just a single isolated task.
+          BJ Medical Billing Service supports healthcare practices across eligibility, coding, charge entry, claim submission, payment posting, denials, insurance follow-up, credentialing, and reporting. Each role is expected to document work clearly and understand how its decisions affect the next revenue-cycle queue.
         </p>
       </div>
     </div>
@@ -100,7 +100,7 @@ const CareersPage = () => (
             Operators and specialists.<br /><em className="not-italic text-[#a3e635]">Not ticket takers.</em>
           </h2>
           <p className="font-sans text-[14px] text-zinc-500 max-w-lg leading-[1.8]">
-            BJM is run by people who understand the revenue cycle end to end. Here's what that means day-to-day.
+            Our medical billing work depends on accurate data, payer-specific follow-up, complete notes, and reliable handoffs. Here's what that means day-to-day.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -6,10 +6,10 @@ import Impact from '../components/sections/Impact';
 const AboutPage = () => (
   <>
     <Head>
-      <title>About — BJM</title>
-      <meta name="description" content="BJM is a medical billing and RCM partner. A focused team that helps practices protect revenue through coding, claims, denials, and A/R excellence." />
-      <meta property="og:title" content="About BJM — Medical Billing Partners" />
-      <meta property="og:description" content="Revenue-first billing operators who own outcomes — clean claims, denial recovery, and collections clarity." />
+      <title>About BJ Medical Billing Service</title>
+      <meta name="description" content="Learn how BJ Medical Billing Service manages eligibility, medical coding, claim submission, payment posting, denials, insurance A/R, credentialing, and revenue cycle reporting." />
+      <meta property="og:title" content="About BJ Medical Billing Service" />
+      <meta property="og:description" content="A medical billing team focused on accurate claims, documented payer follow-up, denial resolution, and clear revenue cycle reporting." />
       <meta property="og:url" content="https://veloq.tech/about" />
     </Head>
 

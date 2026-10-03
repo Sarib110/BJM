@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs';
-import { caseStudies } from '../src/data/caseStudies.js';
+import { caseStudies } from '../src/data/billingCaseStudies.js';
 
 const BASE_URL = 'https://sarib110.github.io/BJM';
 const today = new Date().toISOString().split('T')[0];

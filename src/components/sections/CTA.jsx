@@ -103,17 +103,17 @@ const CTA = () => {
                 <span className="lime-dot" style={{ width: 6, height: 6 }} /> Currently accepting new clients
               </div>
               <h2 className="font-serif text-[clamp(2rem,4.5vw,3.2rem)] text-black leading-[1.06] mb-6">
-                Tell us what's<br /><em className="not-italic text-[#a3e635]">slowing you down.</em>
+                Tell us where your<br /><em className="not-italic text-[#a3e635]">billing needs support.</em>
               </h2>
               <p className="font-sans text-[13.5px] text-zinc-500 max-w-lg mb-8 leading-[1.8]">
-                You don't need perfect billing vocabulary. Describe the denials, aging, coding gaps, or front-desk friction. We'll tell you exactly how we'd fix it.
+                Share your specialty, current billing setup, claim volume, payer issues, denial concerns, or aging A/R. We will review the workflow and identify the billing service that fits your practice.
               </p>
 
               <div className="flex flex-col gap-4 mb-10">
                 {[
-                  { n: '01', title: 'You describe the problem', desc: 'A few sentences is enough. No brief needed.' },
-                  { n: '02', title: 'We map the RCM plan', desc: 'We send back a clear breakdown of where revenue is leaking and how we\'d recover it.' },
-                  { n: '03', title: 'We run the cycle', desc: 'Coding, claims, denials, and A/R — with reporting you can actually use.' },
+                  { n: '01', title: 'You describe the practice', desc: 'Tell us the specialty, providers, systems, and billing areas that need support.' },
+                  { n: '02', title: 'We review the revenue cycle', desc: 'We identify the workqueues, access, reports, and responsibilities required for onboarding.' },
+                  { n: '03', title: 'We manage the agreed scope', desc: 'Billing activity is documented and reported across coding, claims, denials, payments, and A/R.' },
                 ].map(({ n, title, desc }) => (
                   <div key={n} className="flex items-start gap-4">
                     <span className="font-mono text-[10px] text-[#a3e635] pt-0.5 flex-shrink-0">{n}</span>
@@ -139,23 +139,23 @@ const CTA = () => {
                 <div><label style={lbl}>Last name</label><input style={inp} value={form.lname} onChange={set('lname')} placeholder="Last Name" onFocus={focus} onBlur={blur} /></div>
               </div>
               <div style={{ marginBottom: 16 }}><label style={lbl}>Email address <span style={{ color: '#ef4444' }}>*</span></label><input style={inp} type="email" value={form.email} onChange={set('email')} placeholder="you@company.com" onFocus={focus} onBlur={blur} /></div>
-              <div style={{ marginBottom: 16 }}><label style={lbl}>Company</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Your company (optional)" onFocus={focus} onBlur={blur} /></div>
+              <div style={{ marginBottom: 16 }}><label style={lbl}>Practice or organization</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Practice name and specialty (optional)" onFocus={focus} onBlur={blur} /></div>
               <div style={{ marginBottom: 16 }}>
                 <label style={lbl}>What best describes your situation?</label>
                 <select style={inp} value={form.service} onChange={set('service')} onFocus={focus} onBlur={blur}>
                   <option value="">Pick the closest match...</option>
                   {[
-                    'Our denial rate is too high',
-                    'Days in A/R keep climbing',
-                    'We need better medical coding support',
-                    'Eligibility / front-end is leaking revenue',
-                    'We need full RCM / billing partnership',
-                    'Provider credentialing is delayed',
+                    'We need complete medical billing and RCM',
+                    'We need medical coding or charge entry support',
+                    'Our claims are rejecting or denying too often',
+                    'Our A/R needs insurance follow-up',
+                    'We need eligibility or benefits verification',
+                    'We need provider credentialing and enrollment',
                     'Something else, I\'ll explain',
                   ].map(s => <option key={s} value={s} style={{ background: '#fff', color: '#000' }}>{s}</option>)}
                 </select>
               </div>
-              <div style={{ marginBottom: 8 }}><label style={lbl}>Describe the problem in your own words <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder={'e.g. "Our denial rate jumped last quarter" or "We have $200K stuck over 90 days"'} onFocus={focus} onBlur={blur} /></div>
+              <div style={{ marginBottom: 8 }}><label style={lbl}>Describe your billing needs <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder="Include your specialty, EHR or billing system, monthly claim volume, payer concerns, denials, or aging A/R." onFocus={focus} onBlur={blur} /></div>
 
               <button onClick={handleSubmit} disabled={loading}
                 style={{ width: '100%', padding: '14px 24px', borderRadius: 12, background: loading ? 'rgba(0,0,0,0.5)' : '#000', color: '#fff', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13.5, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 8, transition: 'background 0.2s' }}

@@ -4,13 +4,7 @@ import { useLocation } from 'react-router-dom';
 const Cursor = () => {
   const dot = useRef(null);
   const ring = useRef(null);
-  let location;
-  
-  try {
-    location = useLocation();
-  } catch (e) {
-    location = { pathname: '' };
-  }
+  const location = useLocation();
 
   useEffect(() => {
     const fn = e => {

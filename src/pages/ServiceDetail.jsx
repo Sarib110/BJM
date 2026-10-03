@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import { Head } from 'vite-react-ssg';
 import emailjs from '@emailjs/browser';
 import { services } from '../data/services';
-import { caseStudies } from '../data/caseStudies';
+import { caseStudies } from '../data/billingCaseStudies';
 import Ic from '../components/ui/Icon';
 import { withBase } from '../utils/withBase';
 
@@ -39,7 +39,7 @@ const ProjectCard = ({ cs }) => (
       </div>
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <span className="font-mono text-[11px] font-bold text-white tracking-widest uppercase bg-black/50 px-4 py-2 rounded-full border border-white/20 backdrop-blur-sm">
-          Read Case Study →
+          View Billing Workflow →
         </span>
       </div>
     </div>
@@ -123,15 +123,15 @@ const ServiceCTAForm = ({ serviceName }) => {
         <div><label style={lbl}>Last name</label><input style={inp} value={form.lname} onChange={set('lname')} placeholder="Last Name" onFocus={focus} onBlur={blur} /></div>
       </div>
       <div style={{ marginBottom: 16 }}><label style={lbl}>Email address <span style={{ color: '#ef4444' }}>*</span></label><input style={inp} type="email" value={form.email} onChange={set('email')} placeholder="you@company.com" onFocus={focus} onBlur={blur} /></div>
-      <div style={{ marginBottom: 16 }}><label style={lbl}>Company</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Your company (optional)" onFocus={focus} onBlur={blur} /></div>
+      <div style={{ marginBottom: 16 }}><label style={lbl}>Practice or organization</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Practice name and specialty (optional)" onFocus={focus} onBlur={blur} /></div>
       <div style={{ marginBottom: 16 }}>
-        <label style={lbl}>What are you looking to build?</label>
+        <label style={lbl}>Which billing service do you need?</label>
         <select style={{ ...inp, appearance: 'none' }} value={form.service} onChange={set('service')} onFocus={focus} onBlur={blur}>
           <option value="">Select a service...</option>
           {['Medical Coding', 'Claim Submission', 'Denial Management', 'Eligibility & Benefits', 'AR Follow-Up', 'Credentialing & Full RCM', 'Something else'].map(s => <option key={s} value={s} style={{ background: '#1a1a18' }}>{s}</option>)}
         </select>
       </div>
-      <div style={{ marginBottom: 8 }}><label style={lbl}>Tell us about your project <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder="Describe the problem you're solving, your current bottleneck, or what you have in mind..." onFocus={focus} onBlur={blur} /></div>
+      <div style={{ marginBottom: 8 }}><label style={lbl}>Tell us about your billing workflow <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder="Include your specialty, billing system, claim volume, payer mix, denial concerns, or aging A/R." onFocus={focus} onBlur={blur} /></div>
 
       <button onClick={handleSubmit} disabled={loading}
         style={{ width: '100%', padding: '14px 24px', borderRadius: 12, background: loading ? 'rgba(163,230,53,0.5)' : '#a3e635', color: '#000', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13.5, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 8, transition: 'background 0.2s' }}
@@ -165,9 +165,9 @@ const ServiceDetail = () => {
   return (
     <>
       <Head>
-        <title>{service.title} — BJM</title>
+        <title>{service.title} — BJ Medical Billing Service</title>
         <meta name="description" content={service.longDesc} />
-        <meta property="og:title" content={`${service.title} — BJM`} />
+        <meta property="og:title" content={`${service.title} — BJ Medical Billing Service`} />
         <meta property="og:description" content={service.desc} />
         <meta property="og:url" content={`https://veloq.tech/services/${service.id}`} />
       </Head>
@@ -243,7 +243,7 @@ const ServiceDetail = () => {
             <div className="mb-14 reveal">
               <span className="inline-block px-4 py-2 rounded-full font-mono text-[11px] bg-[#e8e7e3] text-zinc-500 mb-5">What we deliver</span>
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] text-black leading-[1.06]">
-                Built for production.<br /><em className="not-italic text-[#a3e635]">Not for demos.</em>
+                Built for daily billing.<br /><em className="not-italic text-[#a3e635]">Designed for accountability.</em>
               </h2>
             </div>
 
@@ -285,7 +285,7 @@ const ServiceDetail = () => {
             <div className="mb-14 reveal">
               <span style={{ display: 'inline-block', fontFamily: 'Space Mono,monospace', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '5px 14px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20 }}>Related work</span>
               <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] text-white leading-[1.06]">
-                Projects built with<br /><em className="not-italic text-[#a3e635]">this capability.</em>
+                Billing workflows that use<br /><em className="not-italic text-[#a3e635]">this service.</em>
               </h2>
             </div>
 
@@ -297,7 +297,7 @@ const ServiceDetail = () => {
 
             <div className="mt-10 text-center">
               <Link to="/work" className="inline-flex items-center gap-2 font-mono text-[11px] text-zinc-500 hover:text-[#a3e635] transition-colors uppercase tracking-widest">
-                View all case studies <Ic n="arrow_ur" size={11} color="currentColor" />
+                View all billing workflows <Ic n="arrow_ur" size={11} color="currentColor" />
               </Link>
             </div>
           </div>
@@ -316,7 +316,7 @@ const ServiceDetail = () => {
                 Ready to<br /><em className="not-italic text-[#a3e635]">get started?</em>
               </h2>
               <p style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 14, color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, marginBottom: 28 }}>
-                Drop us a message about your project and we'll get back to you within one business day with a strategy outline.
+                Tell us how your practice currently handles this part of the revenue cycle. We will respond within one business day with the information needed for a focused billing review.
               </p>
 
               {/* Quick info */}

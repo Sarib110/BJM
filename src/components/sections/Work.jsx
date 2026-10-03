@@ -43,10 +43,10 @@ const Work = () => {
         {/* Header */}
         <div className="mb-12 reveal">
           <div style={{ background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20, display: 'inline-block' }} className="px-4 py-2 rounded-full font-mono text-[11px]">
-            Selected work
+            Billing workflows
           </div>
           <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.5rem)] text-white leading-[1.06]">
-            Revenue outcomes.<br /><em className="not-italic text-[#a3e635]">Real results.</em>
+            Medical billing work.<br /><em className="not-italic text-[#a3e635]">Clearly managed.</em>
           </h2>
         </div>
 
@@ -219,7 +219,7 @@ const Work = () => {
                 onMouseEnter={e => { e.currentTarget.style.background = 'rgba(163,230,53,0.14)'; e.currentTarget.style.borderColor = 'rgba(163,230,53,0.4)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'rgba(163,230,53,0.08)'; e.currentTarget.style.borderColor = 'rgba(163,230,53,0.2)'; }}
               >
-                View case study <ArrowIcon />
+                View billing workflow <ArrowIcon />
               </button>
             </div>
 

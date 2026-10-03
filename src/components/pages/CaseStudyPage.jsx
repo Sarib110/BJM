@@ -12,10 +12,10 @@ const CaseStudyPage = ({ cs, onBack }) => {
     <div className="page-enter" style={{ background: '#070b12', minHeight: '100vh' }}>
       <nav className="cs-nav" style={{ position: 'sticky', top: 0, zIndex: 50, padding: '14px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button className="back-btn text-[#fefcfd]" onClick={onBack}><ArrowLeft /> Back to Work</button>
+          <button className="back-btn text-[#fefcfd]" onClick={onBack}><ArrowLeft /> Back to Billing Workflows</button>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <span className="tag-pill" style={{ background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)' }}>{cs.label}</span>
-            <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>CASE_ID: {cs.id.toUpperCase().replace('-', '_')}</span>
+            <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>WORKFLOW: {cs.id.toUpperCase().replace('-', '_')}</span>
           </div>
         </div>
       </nav>
@@ -40,7 +40,7 @@ const CaseStudyPage = ({ cs, onBack }) => {
         <div className="cs-section reveal">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'start' }}>
             <div>
-              <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Business Context</span>
+              <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Practice Context</span>
               <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 20 }}>{cs.context.heading}</h2>
               <p style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 13.5, color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}>{cs.context.body}</p>
             </div>
@@ -56,7 +56,7 @@ const CaseStudyPage = ({ cs, onBack }) => {
         </div>
         {/* Problem */}
         <div className="cs-section reveal">
-          <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Problem Analysis</span>
+          <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Billing Risk Analysis</span>
           <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 32 }}>{cs.problem.heading}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16 }}>
             {cs.problem.points.map((p, i) => (
@@ -73,7 +73,7 @@ const CaseStudyPage = ({ cs, onBack }) => {
         </div>
         {/* Solution */}
         <div className="cs-section reveal">
-          <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Solution Architecture</span>
+          <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Billing Workflow</span>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'start' }}>
             <div>
               <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 16 }}>{cs.solution.heading}</h2>
@@ -94,11 +94,11 @@ const CaseStudyPage = ({ cs, onBack }) => {
         </div>
         {/* Comparison */}
         <div className="cs-section reveal">
-          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(163,230,53,0.7)', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '3px 10px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', border: '1px solid rgba(163,230,53,0.15)', display: 'inline-block', marginBottom: 16 }}>Performance Analysis</span>
-          <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 32 }}>Before vs. After</h2>
+          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(163,230,53,0.7)', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '3px 10px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', border: '1px solid rgba(163,230,53,0.15)', display: 'inline-block', marginBottom: 16 }}>Workflow Comparison</span>
+          <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 32 }}>Unstructured vs. Managed</h2>
           <div style={{ border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, overflow: 'hidden' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', background: 'rgba(255,255,255,0.04)', borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
-              {['Metric', 'Before', 'After', 'Delta'].map((h, i) => (
+              {['Workflow area', 'Unstructured', 'Managed', 'Improvement'].map((h, i) => (
                 <div key={i} style={{ padding: '12px 20px', fontFamily: 'Space Mono,monospace', fontSize: 10, fontWeight: 700, color: 'rgba(255,255,255,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: i === 0 ? 'left' : 'center' }}>{h}</div>
               ))}
             </div>
@@ -116,8 +116,8 @@ const CaseStudyPage = ({ cs, onBack }) => {
         </div>
         {/* Results */}
         <div className="cs-section reveal">
-          <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Results</span>
-          <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 32 }}>The Numbers Don't Lie.</h2>
+          <span className="tag-dark" style={{ marginBottom: 16, display: 'inline-block' }}>Operational Outcome</span>
+          <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(1.6rem,3vw,2.4rem)', color: '#fff', lineHeight: 1.1, marginBottom: 32 }}>What the Workflow Makes Clear.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 32 }}>
             {cs.results.map((r, i) => (
               <div key={i} style={{ background: 'rgba(163,230,53,0.04)', border: '1px solid rgba(163,230,53,0.12)', borderRadius: 16, padding: '28px 20px', textAlign: 'center' }}>
@@ -128,20 +128,20 @@ const CaseStudyPage = ({ cs, onBack }) => {
           </div>
           <div style={{ background: 'rgba(163,230,53,0.06)', border: '1px solid rgba(163,230,53,0.2)', borderRadius: 16, padding: '24px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
-              <div style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(163,230,53,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>Total ROI</div>
+              <div style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(163,230,53,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>Operational Value</div>
               <div style={{ fontFamily: 'DM Serif Display,serif', fontSize: 48, color: '#a3e635', lineHeight: 1 }}>{cs.roi}</div>
               <div style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.4)', marginTop: 4 }}>{cs.roiPeriod}</div>
             </div>
             <a href="mailto:hello@veloq.tech" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 24px', background: '#a3e635', color: '#000', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13, borderRadius: 12, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#b5f059'} onMouseLeave={e => e.currentTarget.style.background = '#a3e635'}>
-              Get Similar Results <ArrowRight />
+              Discuss This Billing Workflow <ArrowRight />
             </a>
           </div>
         </div>
       </div>
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', padding: '32px 24px', marginTop: 80 }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button className="back-btn text-[#fefcfd]" onClick={onBack}><ArrowLeft /> All Case Studies</button>
-          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>bjm © 2026</span>
+          <button className="back-btn text-[#fefcfd]" onClick={onBack}><ArrowLeft /> All Billing Workflows</button>
+          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>BJ Medical Billing Service © 2026</span>
         </div>
       </div>
     </div>

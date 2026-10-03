@@ -2,24 +2,6 @@ import { useState, useEffect } from 'react';
 import Counter from '../ui/Counter';
 import { withBase } from '../../utils/withBase';
 
-const LinkedInIcon = () => (
-  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
-
-const Stars = () => (
-  <div style={{ display: 'flex', gap: 3 }}>
-    {[...Array(5)].map((_, i) => (
-      <svg key={i} width="13" height="13" viewBox="0 0 24 24" fill="#a3e635" stroke="none">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-      </svg>
-    ))}
-  </div>
-);
-
 const ClientCard = ({ t, isActive, onClick, extraClass }) => (
   <div
     onClick={onClick}
@@ -56,7 +38,7 @@ const ClientCard = ({ t, isActive, onClick, extraClass }) => (
     <div style={{ position: 'absolute', inset: 0, padding: '22px 20px', display: 'flex', flexDirection: 'column' }}>
       {isActive && (
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <Stars />
+          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 9.5, color: '#a3e635', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Service standard</span>
           <p style={{
             fontFamily: 'sans-serif',
             fontSize: 12.5,
@@ -93,18 +75,6 @@ const ClientCard = ({ t, isActive, onClick, extraClass }) => (
             textOverflow: isActive ? 'unset' : 'ellipsis',
           }}>{t.role} · {t.co}</div>
         </div>
-        <a
-          href={t.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={e => e.stopPropagation()}
-          style={{ color: 'rgba(255,255,255,0.3)', flexShrink: 0, transition: 'color 0.2s', lineHeight: 0 }}
-          onMouseEnter={e => e.currentTarget.style.color = '#a3e635'}
-          onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}
-          title="View on LinkedIn"
-        >
-          <LinkedInIcon />
-        </a>
       </div>
     </div>
   </div>
@@ -121,28 +91,25 @@ const Impact = () => {
 
   const tms = [
     {
-      q: "BJM cleaned up our denials and gave us a process we can actually trust. Cash came back into the practice without adding headcount at the front desk.",
-      name: 'Stephen Chen',
-      role: 'Practice Administrator',
-      co: 'Multi-Specialty Clinic',
-      img: '/clients/stephen.png',
-      linkedin: 'https://www.linkedin.com/in/stephenchen/',
+      q: 'Every submitted claim should be traceable from charge entry through clearinghouse acceptance, payer adjudication, payment posting, or a documented follow-up action.',
+      name: 'Claim Visibility',
+      role: 'Operational priority',
+      co: 'Medical Billing',
+      img: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80',
     },
     {
-      q: "Our days in A/R finally moved in the right direction. The weekly reporting made it obvious where money was stuck — and what got recovered.",
-      name: 'Tanzim Siddiqui',
-      role: 'Operations Director',
-      co: 'Ambulatory Group',
-      img: '/clients/tanzim.png',
-      linkedin: 'https://www.linkedin.com/in/tanzimsiddiqui/',
+      q: 'Rejections and denials require reason-specific action, filing-deadline awareness, supporting documentation, and feedback to the workflow that caused the issue.',
+      name: 'Denial Accountability',
+      role: 'Operational priority',
+      co: 'Revenue Cycle',
+      img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80',
     },
     {
-      q: "Credentialing and billing used to live in different worlds. BJM connected enrollment to clean claims so new providers became billable faster.",
-      name: 'Khalil Shawareb',
-      role: 'Clinic Owner',
-      co: 'Specialty Practice',
-      img: '/clients/khalil.png',
-      linkedin: 'https://www.linkedin.com/in/khalil-shawareb-3a3a43112/',
+      q: 'Practice leaders need reports that explain what was submitted, paid, rejected, denied, aged, or waiting on payer or practice action—not just a total balance.',
+      name: 'Actionable Reporting',
+      role: 'Operational priority',
+      co: 'Practice Management',
+      img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80',
     },
   ];
 
@@ -160,7 +127,7 @@ const Impact = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-20 reveal">
-          {[['$2.3M', 'Revenue Recovered', 'Denial + A/R programs'], ['35%', 'Days in A/R Reduced', 'Partner practices'], ['95%+', 'Clean Claim Rate', 'First-pass target']].map(([v, l, sub], i) => (
+          {[['6', 'Core Billing Services', 'Focused or full RCM support'], ['4', 'Claim Control Stages', 'Prepare · submit · post · follow up'], ['1', 'Connected Workflow', 'From eligibility to insurance A/R']].map(([v, l, sub], i) => (
             <div key={i} className="border border-zinc-800 rounded-2xl p-7 text-center hover:border-zinc-700 transition-colors duration-300">
               <div className="font-mono text-3xl font-bold text-[#a3e635] mb-2"><Counter target={v} /></div>
               <div className="font-sans text-[13px] text-white font-medium mb-1">{l}</div>
@@ -175,13 +142,13 @@ const Impact = () => {
           {/* Left: heading */}
           <div className="lg:w-[300px] flex-shrink-0 reveal">
             <div style={{ background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20, display: 'inline-block' }} className="px-4 py-2 rounded-full font-mono text-[11px]">
-              Impact realized
+              Billing operations
             </div>
             <h2 className="font-serif text-[clamp(1.9rem,3.5vw,2.8rem)] text-white leading-[1.08] mb-4">
-              What our<br /><em className="not-italic text-[#a3e635]">clients say.</em>
+              What reliable<br /><em className="not-italic text-[#a3e635]">billing requires.</em>
             </h2>
             <p className="font-sans text-[13px] text-zinc-500 leading-[1.75] mb-8">
-              See how our RCM work has improved collections and clarity for practices.
+              BJ Medical Billing Service organizes the revenue cycle around visibility, timely action, and clear responsibility.
             </p>
 
             {/* Dot nav */}
@@ -218,7 +185,7 @@ const Impact = () => {
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(160deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.9) 100%)' }} />
                 <div style={{ position: 'absolute', inset: 0, padding: '22px 20px', display: 'flex', flexDirection: 'column' }}>
                   <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <Stars />
+                    <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 9.5, color: '#a3e635', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Service standard</span>
                     <p style={{ fontFamily: 'sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.88)', lineHeight: 1.78, marginTop: 14, flex: 1 }}>
                       &ldquo;{tms[activeCard].q}&rdquo;
                     </p>
@@ -228,9 +195,6 @@ const Impact = () => {
                       <div style={{ fontFamily: 'sans-serif', fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>{tms[activeCard].name}</div>
                       <div style={{ fontFamily: 'Space Mono, monospace', fontSize: 10, color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>{tms[activeCard].role} · {tms[activeCard].co}</div>
                     </div>
-                    <a href={tms[activeCard].linkedin} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.3)', flexShrink: 0, lineHeight: 0 }}>
-                      <LinkedInIcon />
-                    </a>
                   </div>
                 </div>
               </div>

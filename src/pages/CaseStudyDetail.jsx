@@ -2,7 +2,7 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
 import Cursor from '../components/ui/Cursor';
 import CaseStudyPage from '../components/pages/CaseStudyPage';
-import { caseStudies } from '../data/caseStudies';
+import { caseStudies } from '../data/billingCaseStudies';
 
 const CaseStudyDetail = () => {
   const { slug } = useParams();
@@ -14,9 +14,9 @@ const CaseStudyDetail = () => {
   return (
     <>
       <Head>
-        <title>{cs.title} — BJM Case Study</title>
+        <title>{cs.title} — BJ Medical Billing Service</title>
         <meta name="description" content={cs.summary} />
-        <meta property="og:title" content={`${cs.title} — BJM Case Study`} />
+        <meta property="og:title" content={`${cs.title} — BJ Medical Billing Service`} />
         <meta property="og:description" content={cs.summary} />
         <meta property="og:image" content={cs.image} />
         <meta property="og:url" content={`https://veloq.tech/work/${cs.id}`} />

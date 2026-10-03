@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import Ic from '../ui/Icon';
-import { withBase } from '../../utils/withBase';
 
 const Hero = () => {
   const layer0Ref = useRef(null);
@@ -89,51 +88,33 @@ const Hero = () => {
       <div className="depth-vignette" />
       <div ref={contentRef} className="hero-content max-w-5xl mx-auto text-center w-full" style={{ transition: 'transform 0.45s cubic-bezier(0.16,1,0.3,1)', willChange: 'transform' }}>
         <h1 className="hero-reveal hr-d2 font-serif text-[clamp(3rem,7.2vw,6rem)] leading-[0.93] tracking-tight text-black mb-7 hero-headline">
-          We protect the <em className="not-italic text-[#a3e635]">revenue</em><br />your practice
-          <span className="relative inline-block"><em className="not-italic text-[#a3e635]"> actually earns</em><em className="not-italic text-[#a3e635]">.</em>
+          Medical billing that<br /><em className="not-italic text-[#a3e635]">keeps your revenue</em>
+          <span className="relative inline-block"><em className="not-italic text-[#a3e635]"> moving</em><em className="not-italic text-[#a3e635]">.</em>
             <svg className="absolute -bottom-2 left-0 w-full" height="5" viewBox="0 0 400 5" preserveAspectRatio="none" fill="none"><path d="M0 2.5 Q100 0 200 2.5 Q300 5 400 2.5" stroke="#a3e635" strokeWidth="2.5" strokeLinecap="round" /></svg>
           </span>
         </h1>
         <p className="hero-reveal hr-d3 font-sans text-[14.5px] text-zinc-500 max-w-xl mx-auto mt-6 mb-8 leading-[1.8]">
-          BJM is a medical billing and RCM partner. From coding and clean claims to denials and A/R follow-up, <strong className="font-semibold text-black">you deliver care, we make sure you get paid for it.</strong>
+          BJ Medical Billing Service manages the revenue cycle from eligibility verification and medical coding through claim submission, payment posting, denial follow-up, and accounts receivable. <strong className="font-semibold text-black">Your team focuses on patient care while we keep billing work accurate, documented, and moving toward payment.</strong>
         </p>
         <div className="hero-reveal hr-d4 flex flex-wrap gap-3 justify-center mb-6">
           <button onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-sm hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 shadow-md btn-shine">
-            View Our Work <Ic n="arrow_r" size={14} color="white" />
+            Review Our RCM Work <Ic n="arrow_r" size={14} color="white" />
           </button>
           <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-sm hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
-            Book a Strategy Call
+            Book a Billing Review
           </button>
         </div>
       </div>
       <div className="hero-reveal hr-d5 w-full mt-6 text-center">
-        <p className="font-mono text-[10px] text-zinc-400 uppercase tracking-widest mb-5">Trusted by</p>
+        <p className="font-mono text-[10px] text-zinc-400 uppercase tracking-widest mb-5">Built for medical practices</p>
         <div className="mq-wrap">
           <div className="mq-track" style={{ animationDuration: '18s' }}>
             {[
-              { src: '/assets/logos/autoscale.png', alt: 'AutoScale' },
-              { src: '/assets/logos/diyar.png', alt: 'Diyar' },
-              { src: '/assets/logos/ezmd.webp', alt: 'EZMD' },
-              { src: '/assets/logos/phunware.webp', alt: 'Phunware' },
-              { src: '/assets/logos/blackpine.png', alt: 'Blackpine', darkBg: true },
-              { src: '/assets/logos/choicesflooringmackay.webp', alt: 'Choices Flooring Mackay' },
-              { src: '/assets/logos/trueclaim.avif', alt: 'TrueClaim', darkBg: true },
-              { src: '/assets/logos/autoscale.png', alt: 'AutoScale2' },
-              { src: '/assets/logos/diyar.png', alt: 'Diyar2' },
-              { src: '/assets/logos/ezmd.webp', alt: 'EZMD2' },
-              { src: '/assets/logos/phunware.webp', alt: 'Phunware2' },
-              { src: '/assets/logos/blackpine.png', alt: 'Blackpine2' },
-              { src: '/assets/logos/choicesflooringmackay.webp', alt: 'Choices Flooring Mackay2' },
-              { src: '/assets/logos/trueclaim.avif', alt: 'TrueClaim2', darkBg: true },
-            ].map(l => (
-              <div key={l.alt} style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 52px' }}>
-                <img
-                  src={withBase(l.src)}
-                  alt={l.alt}
-                  style={{ height: 40, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.55, transition: 'filter 0.25s, opacity 0.25s', ...(l.darkBg && { background: '#333', borderRadius: 6, padding: '4px 8px' }) }}
-                  onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0)'; e.currentTarget.style.opacity = '1'; }}
-                  onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(1)'; e.currentTarget.style.opacity = '0.55'; }}
-                />
+              'Primary Care', 'Behavioral Health', 'Cardiology', 'Orthopedics', 'Internal Medicine', 'Urgent Care', 'Therapy Practices',
+              'Primary Care', 'Behavioral Health', 'Cardiology', 'Orthopedics', 'Internal Medicine', 'Urgent Care', 'Therapy Practices',
+            ].map((specialty, index) => (
+              <div key={`${specialty}-${index}`} style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 42px' }}>
+                <span className="font-sans text-[13px] font-medium text-zinc-500 whitespace-nowrap">{specialty}</span>
               </div>
             ))}
           </div>

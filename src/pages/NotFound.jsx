@@ -4,7 +4,7 @@ import { Head } from 'vite-react-ssg';
 const NotFound = () => (
   <>
     <Head>
-      <title>404 — Page Not Found — BJM</title>
+      <title>404 — Page Not Found — BJ Medical Billing Service</title>
     </Head>
     <div className="min-h-[80vh] flex flex-col items-center justify-center px-6 py-32 text-center">
       <span className="font-mono text-[11px] text-zinc-400 uppercase tracking-widest mb-6">404</span>

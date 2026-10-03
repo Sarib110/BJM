@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import useReveal from './hooks/useReveal';
-import { caseStudies } from './data/caseStudies';
+import { caseStudies } from './data/billingCaseStudies';
 import Cursor from './components/ui/Cursor';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';

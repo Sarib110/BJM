@@ -18,20 +18,20 @@ const ServicesPage = () => {
   return (
   <>
     <Head>
-      <title>Medical Billing Services — BJM</title>
-      <meta name="description" content="BJM medical billing services: coding, claim submission, denial management, eligibility & benefits, A/R follow-up, and credentialing with full RCM." />
-      <meta property="og:title" content="Medical Billing Services — BJM" />
-      <meta property="og:description" content="Six RCM service lines. Coding, claims, denials, eligibility, A/R, and full-cycle partnership." />
+      <title>Medical Billing Services — BJ Medical Billing Service</title>
+      <meta name="description" content="Medical billing services including eligibility and benefits verification, CPT and ICD-10 coding support, claim submission, denial management, insurance A/R follow-up, credentialing, and full RCM." />
+      <meta property="og:title" content="Medical Billing Services — BJ Medical Billing Service" />
+      <meta property="og:description" content="Medical billing support across eligibility, coding, claims, payment posting, denials, insurance follow-up, credentialing, and reporting." />
       <meta property="og:url" content="https://veloq.tech/services" />
     </Head>
 
     <div className="pt-32 pb-4 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] text-black leading-[1.04] mb-5">
-          Everything<br /><em className="not-italic text-[#a3e635]">we bill for.</em>
+          Medical billing.<br /><em className="not-italic text-[#a3e635]">From intake to payment.</em>
         </h1>
         <p className="font-sans text-[14px] text-zinc-500 max-w-lg leading-[1.8]">
-          Six capabilities. All practice-ready. Built for clean claims, fewer denials, and faster cash.
+          Choose focused support for a specific workqueue or a complete revenue cycle service covering front-end verification, claims, remittance, denials, and A/R.
         </p>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
-import { caseStudies } from '../data/caseStudies';
+import { caseStudies } from '../data/billingCaseStudies';
 import { withBase } from '../utils/withBase';
 
-const WorkCard = ({ id, label, title, tagline, summary, image, stack, metric, bg }) => (
+const WorkCard = ({ id, label, title, summary, image, stack, metric }) => (
   <Link
     to={`/work/${id}`}
     className="group block rounded-2xl overflow-hidden border border-zinc-200 hover:border-zinc-400 transition-all duration-300 hover:shadow-xl bg-white"
@@ -27,7 +27,7 @@ const WorkCard = ({ id, label, title, tagline, summary, image, stack, metric, bg
       </div>
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <span className="font-mono text-[11px] font-bold text-white tracking-widest uppercase bg-black/50 px-4 py-2 rounded-full border border-white/20 backdrop-blur-sm">
-          Read Case Study →
+          View Billing Workflow →
         </span>
       </div>
     </div>
@@ -48,21 +48,21 @@ const WorkCard = ({ id, label, title, tagline, summary, image, stack, metric, bg
 const WorkIndex = () => (
   <>
     <Head>
-      <title>Case Studies — BJM</title>
-      <meta name="description" content="Medical billing case studies from BJM: denial recovery, coding accuracy, eligibility, A/R cleanup, credentialing, and multi-site RCM." />
-      <meta property="og:title" content="Case Studies — BJM" />
-      <meta property="og:description" content="Real practices. Real collections lift. Browse BJM revenue cycle case studies with measurable outcomes." />
+      <title>Medical Billing Workflows — BJ Medical Billing Service</title>
+      <meta name="description" content="Explore medical billing workflows for eligibility, coding, claims, payment posting, denial management, insurance A/R, credentialing, and full revenue cycle management." />
+      <meta property="og:title" content="Medical Billing Workflows — BJ Medical Billing Service" />
+      <meta property="og:description" content="See how BJ Medical Billing Service organizes medical billing work from front-end verification through payer follow-up." />
       <meta property="og:url" content="https://veloq.tech/work" />
     </Head>
 
     <div className="pt-32 pb-4 px-6 bg-[#0d0d0b]">
       <div className="max-w-6xl mx-auto">
-        <div className="inline-block px-4 py-2 rounded-full font-mono text-[11px] bg-[#a3e635]/10 text-[#a3e635]/70 border border-[#a3e635]/20 mb-5">Selected work</div>
+        <div className="inline-block px-4 py-2 rounded-full font-mono text-[11px] bg-[#a3e635]/10 text-[#a3e635]/70 border border-[#a3e635]/20 mb-5">Medical billing workflows</div>
         <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] text-white leading-[1.04] mb-5">
-          Revenue outcomes.<br /><em className="not-italic text-[#a3e635]">Real results.</em>
+          Revenue cycle work.<br /><em className="not-italic text-[#a3e635]">Clearly organized.</em>
         </h1>
         <p className="font-sans text-[14px] text-zinc-400 max-w-lg leading-[1.8]">
-          Nine billing engagements. Measurable collections impact. No fluff — just RCM results.
+          Review the workqueues, controls, handoffs, and reporting used to manage medical billing from patient intake through insurance A/R.
         </p>
       </div>
     </div>

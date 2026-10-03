@@ -5,10 +5,10 @@ import CalendlySection from '../components/sections/CalendlySection';
 const ContactPage = () => (
   <>
     <Head>
-      <title>Contact & Book a Call — Veloq</title>
-      <meta name="description" content="Get in touch with Veloq. Book a free 30-minute strategy call or send a message. We respond within 24 hours." />
-      <meta property="og:title" content="Contact Veloq — Book a Free Strategy Call" />
-      <meta property="og:description" content="30 minutes. Your automation roadmap. No sales pitch — just engineering." />
+      <title>Contact BJ Medical Billing Service</title>
+      <meta name="description" content="Contact BJ Medical Billing Service to discuss medical coding, claim submission, denial management, insurance verification, A/R follow-up, credentialing, or full revenue cycle management." />
+      <meta property="og:title" content="Contact BJ Medical Billing Service" />
+      <meta property="og:description" content="Book a billing review to discuss your practice workflow, payer issues, denials, and accounts receivable." />
       <meta property="og:url" content="https://veloq.tech/contact" />
     </Head>
 

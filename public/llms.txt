@@ -1,24 +1,24 @@
-# BJM
+# BJ Medical Billing Service
 
-> BJM is a medical billing and revenue cycle management partner that helps practices improve coding accuracy, clean claim rates, denial recovery, and A/R performance.
+> BJ Medical Billing Service supports healthcare practices with eligibility and benefits verification, medical coding, charge entry, claim submission, payment posting, denial management, insurance A/R follow-up, provider credentialing, and full revenue cycle management.
 
 ## Services
 
-- [Medical Coding](https://veloq.tech/services/medical-coding): CPT, ICD-10, and HCPCS coding with specialty-aware review to maximize clean claims and reduce compliance risk.
-- [Claim Submission](https://veloq.tech/services/claim-submission): End-to-end claim preparation, scrubbing, and electronic submission for higher first-pass acceptance.
-- [Denial Management](https://veloq.tech/services/denial-management): Denial triage, appeals, and root-cause prevention that recovers revenue and stops repeat losses.
-- [Eligibility & Benefits](https://veloq.tech/services/eligibility-benefits): Front-end verification that reduces surprise denials and improves point-of-service collections.
-- [AR Follow-Up](https://veloq.tech/services/ar-followup): Disciplined accounts receivable follow-up that shortens days in A/R and recovers aging balances.
-- [Credentialing & Full RCM](https://veloq.tech/services/credentialing-rcm): Provider enrollment plus full revenue cycle partnership from intake to cash.
+- [Medical Coding](https://veloq.tech/services/medical-coding): Documentation-led CPT, ICD-10-CM, HCPCS, and modifier review before claim submission.
+- [Claim Submission](https://veloq.tech/services/claim-submission): Charge entry, claim scrubbing, EDI submission, acknowledgement review, and rejection correction.
+- [Denial Management](https://veloq.tech/services/denial-management): Denial categorization, corrected claims, reconsiderations, appeals, deadline tracking, and root-cause reporting.
+- [Eligibility & Benefits](https://veloq.tech/services/eligibility-benefits): Active coverage, subscriber data, patient responsibility, referral, and authorization indicator verification.
+- [AR Follow-Up](https://veloq.tech/services/ar-followup): Insurance follow-up organized by aging, payer, claim status, filing risk, and documented next action.
+- [Credentialing & Full RCM](https://veloq.tech/services/credentialing-rcm): Provider file preparation, CAQH and payer enrollment tracking, plus full revenue cycle coordination.
 
 ## Key Pages
 
-- [Home](https://veloq.tech/): Overview of BJM and what we handle
+- [Home](https://veloq.tech/): Overview of BJ Medical Billing Service
 - [Services](https://veloq.tech/services): Full list of medical billing services
-- [Work](https://veloq.tech/work): Case studies and revenue outcomes
+- [Work](https://veloq.tech/work): Detailed medical billing workflows and operational controls
 - [About](https://veloq.tech/about): Team and company background
 - [Careers](https://veloq.tech/careers): Open roles and culture
-- [Contact](https://veloq.tech/contact): Get in touch with BJM
+- [Contact](https://veloq.tech/contact): Discuss medical billing needs with BJ Medical Billing Service
 
 ## Focus Areas
 
