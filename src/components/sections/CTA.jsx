@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Ic from '../ui/Icon';
+import { SOCIALS } from '../../data/socials';
 
 const EMAILJS_SERVICE_ID = 'service_7bmdg29';
 const EMAILJS_TEMPLATE_ID = 'template_q8paqxr';
@@ -126,7 +127,7 @@ const CTA = () => {
               </div>
 
               <div className="flex flex-wrap gap-3.5">
-                <a href="https://www.linkedin.com/company/veloqq" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-[13px] hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
+                <a href={SOCIALS.linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-[13px] hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
                   <Ic n="linkedin" size={13} color="#333" /> LinkedIn
                 </a>
               </div>
@@ -167,7 +168,7 @@ const CTA = () => {
 
               {status === 'success' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(163,230,53,0.15)', border: '1px solid rgba(163,230,53,0.35)', color: '#4a7a10', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>Message sent — we'll be in touch within 24 hours.</div>}
               {status === 'error-ratelimit' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>Too many messages sent. Please try again in a few minutes.</div>}
-              {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : 'Something went wrong — please email us directly at hello@veloq.tech'}</div>}
+              {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5, textAlign: 'left' }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : `Something went wrong — please email us directly at ${SOCIALS.email}`}</div>}
             </div>
           </div>
         </div>

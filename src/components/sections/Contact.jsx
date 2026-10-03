@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { SOCIALS } from '../../data/socials';
 
 const EMAILJS_SERVICE_ID = 'service_7bmdg29';
 const EMAILJS_TEMPLATE_ID = 'template_q8paqxr';
@@ -82,8 +83,8 @@ const Contact = () => {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 64, marginTop: 56, alignItems: 'start' }}>
           <div>
             {[
-              { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>, label: 'Email us', value: <a href="mailto:hello@veloq.tech" style={{ color: '#a3e635', textDecoration: 'none' }}>hello@veloq.tech</a> },
-              { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>, label: 'LinkedIn', value: <a href="https://www.linkedin.com/company/veloqq" target="_blank" rel="noopener noreferrer" style={{ color: '#a3e635', textDecoration: 'none' }}>linkedin.com/company/veloqq</a> },
+              { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>, label: 'Email us', value: <a href={SOCIALS.emailMailto} style={{ color: '#a3e635', textDecoration: 'none' }}>{SOCIALS.email}</a> },
+              { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>, label: 'LinkedIn', value: <a href={SOCIALS.linkedinUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#a3e635', textDecoration: 'none' }}>{SOCIALS.linkedinLabel}</a> },
               { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>, label: 'Response time', value: 'Within 24 hours' },
               { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>, label: 'Status', value: <span style={{ display: 'flex', alignItems: 'center', gap: 7 }}><span style={{ width: 6, height: 6, borderRadius: '50%', background: '#a3e635', display: 'inline-block' }} />Accepting new clients</span> },
               { icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>, label: 'What happens next', value: 'We review your billing needs and recommend the right service scope and onboarding step.' },
@@ -132,7 +133,7 @@ const Contact = () => {
 
             {status === 'success' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(163,230,53,0.1)', border: '1px solid rgba(163,230,53,0.25)', color: 'rgba(163,230,53,0.85)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>Message sent — we'll be in touch within 24 hours.</div>}
             {status === 'error-ratelimit' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>Too many messages sent. Please try again in a few minutes.</div>}
-            {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : 'Something went wrong — please email us directly at hello@veloq.tech'}</div>}
+            {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : `Something went wrong — please email us directly at ${SOCIALS.email}`}</div>}
           </div>
         </div>
       </div>

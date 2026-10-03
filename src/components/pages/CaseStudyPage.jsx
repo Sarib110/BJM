@@ -132,7 +132,7 @@ const CaseStudyPage = ({ cs, onBack }) => {
               <div style={{ fontFamily: 'DM Serif Display,serif', fontSize: 48, color: '#a3e635', lineHeight: 1 }}>{cs.roi}</div>
               <div style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.4)', marginTop: 4 }}>{cs.roiPeriod}</div>
             </div>
-            <a href="mailto:hello@veloq.tech" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 24px', background: '#a3e635', color: '#000', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13, borderRadius: 12, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#b5f059'} onMouseLeave={e => e.currentTarget.style.background = '#a3e635'}>
+            <a href="mailto:hello@bjmedicalbilling.com" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 24px', background: '#a3e635', color: '#000', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13, borderRadius: 12, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#b5f059'} onMouseLeave={e => e.currentTarget.style.background = '#a3e635'}>
               Discuss This Billing Workflow <ArrowRight />
             </a>
           </div>

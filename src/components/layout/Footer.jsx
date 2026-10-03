@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Ic from '../ui/Icon';
 import Logo from '../ui/Logo';
+import { SOCIALS } from '../../data/socials';
 
 const Footer = () => (
   <footer className="py-16 px-6 bg-[#10141d] border-t border-[#a3e635]/20">
@@ -35,9 +36,9 @@ const Footer = () => (
         <div>
           <p className="font-mono text-[10px] text-zinc-600 uppercase tracking-widest mb-4">Connect</p>
           {[
-            ['arrow_ur', 'Upwork', 'https://www.upwork.com/companies/veloq'],
-            ['mail', 'hello@veloq.tech', 'mailto:hello@veloq.tech'],
-            ['linkedin', 'LinkedIn', 'https://www.linkedin.com/company/veloqq'],
+            ['arrow_ur', SOCIALS.upworkLabel, SOCIALS.upworkUrl],
+            ['mail', SOCIALS.email, SOCIALS.emailMailto],
+            ['linkedin', 'LinkedIn', SOCIALS.linkedinUrl],
           ].map(([icon, label, href]) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 font-sans text-[12.5px] text-zinc-500 hover:text-white transition-colors mb-2.5">
               <Ic n={icon} size={11} color="currentColor" /> {label}

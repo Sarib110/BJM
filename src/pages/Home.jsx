@@ -8,6 +8,7 @@ import Work from '../components/sections/Work';
 import Impact from '../components/sections/Impact';
 import CTA from '../components/sections/CTA';
 import { services } from '../data/services';
+import { SOCIALS } from '../data/socials';
 import Ic from '../components/ui/Icon';
 
 const RowArrow = () => (
@@ -145,14 +146,14 @@ const Home = () => {
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "BJ Medical Billing Service",
-          url: "https://veloq.tech",
-          logo: "https://veloq.tech/assets/bjm-logo.png",
+          url: "https://sarib110.github.io/BJM/",
+          logo: "https://sarib110.github.io/BJM/assets/bjm-logo.png",
           description: "Medical billing and revenue cycle management services for healthcare practices.",
           sameAs: [
-            "https://www.linkedin.com/company/veloqq",
-            "https://www.upwork.com/companies/veloq",
+            SOCIALS.linkedinUrl,
+            SOCIALS.upworkUrl,
           ],
-          contactPoint: { "@type": "ContactPoint", email: "hello@veloq.tech", contactType: "customer service" },
+          contactPoint: { "@type": "ContactPoint", email: SOCIALS.email, contactType: "customer service" },
         })}</script>
       </Head>
 
