@@ -4,7 +4,7 @@ export const teamMembers = [
     role: 'Founder',
     img: '/assets/team/anser_ali.jpg',
     objectPosition: 'center 18%',
-    desc: 'Founder of BJ Medical Billing Service with 17+ years of U.S. healthcare revenue cycle experience across Medicare, Medicaid, and commercial payers. Leads end-to-end medical billing operations including eligibility verification, prior authorizations, claim processing, denial management, AR follow-up, and credentialing support for Home Health, Mental Health, Behavioral Health, and outpatient programs.',
+    desc: 'Founder of BJ Medical Billing Service with 17+ years of U.S. healthcare RCM experience across Medicare, Medicaid, and commercial payers. Leads medical billing operations including eligibility, prior authorizations, claim processing, denial management, AR follow-up, and credentialing for Home Health, Mental Health, Behavioral Health, and outpatient programs.',
     tags: ['RCM', 'Medical Billing', 'Denials', 'AR Follow-Up'],
     linkedin: 'https://www.linkedin.com/in/anser-ali-597315145/',
   },
