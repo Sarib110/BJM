@@ -141,7 +141,7 @@ const CaseStudyPage = ({ cs, onBack }) => {
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', padding: '32px 24px', marginTop: 80 }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <button className="back-btn text-[#fefcfd]" onClick={onBack}><ArrowLeft /> All Case Studies</button>
-          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>veloq © 2026</span>
+          <span style={{ fontFamily: 'Space Mono,monospace', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>bjm © 2026</span>
         </div>
       </div>
     </div>

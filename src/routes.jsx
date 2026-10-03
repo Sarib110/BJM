@@ -7,8 +7,6 @@ import CaseStudyDetail from './pages/CaseStudyDetail';
 import AboutPage from './pages/About';
 import CareersPage from './pages/Careers';
 import ContactPage from './pages/Contact';
-import FreeToolsPage from './components/pages/FreeToolsPage';
-import ToolPage from './components/pages/ToolPage';
 import NotFound from './pages/NotFound';
 import { caseStudies } from './data/caseStudies';
 import { services } from './data/services';
@@ -29,15 +27,6 @@ export const routes = [
       { path: 'about', element: <AboutPage /> },
       { path: 'careers', element: <CareersPage /> },
       { path: 'contact', element: <ContactPage /> },
-      { path: 'tools', element: <FreeToolsPage /> },
-      {
-        path: 'tools/visibility-check',
-        element: <ToolPage url="https://veloq-visibility-check.vercel.app/" />,
-      },
-      {
-        path: 'tools/ai-crawl-audit',
-        element: <ToolPage url="https://veloq-ai-crawl-audit.vercel.app/" />,
-      },
       { path: '404', element: <NotFound /> },
       { path: '*', element: <NotFound /> },
     ],
@@ -48,4 +37,3 @@ export const routes = [
     getStaticPaths: () => caseStudies.map(cs => `work/${cs.id}`),
   },
 ];
-

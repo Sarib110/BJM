@@ -1,27 +1,25 @@
-# Veloq
+# BJM
 
-> Veloq is a Pakistani AI software house that builds custom AI solutions, automation systems, and intelligent software products for startups and enterprises. Based in Pakistan, led by Usman Safdar.
+> BJM is a medical billing and revenue cycle management partner that helps practices improve coding accuracy, clean claim rates, denial recovery, and A/R performance.
 
 ## Services
 
-- [Agentic AI Systems](https://veloq.tech/services/agentic-ai): Multi-agent orchestration using LangGraph and custom pipelines. Autonomous systems that reason, plan, and execute across tools and APIs 24/7.
-- [RAG & Knowledge Systems](https://veloq.tech/services/rag-knowledge): Retrieval-augmented generation pipelines that turn documents, contracts, and internal data into a queryable AI layer with sub-100ms latency.
-- [Full-Stack AI Products](https://veloq.tech/services/fullstack-ai): End-to-end SaaS product engineering — auth, billing, dashboards, and AI built in from day one using Next.js, Supabase, and Vercel.
-- [Workflow Automation](https://veloq.tech/services/workflow-automation): Event-driven automation pipelines using n8n and Python that eliminate repetitive manual operations permanently.
-- [Voice AI Agents](https://veloq.tech/services/voice-ai): Voice agents built on Retell AI and Deepgram for inbound/outbound calls, appointment booking, and CRM updates with sub-600ms response times.
-- [Custom AI Integrations](https://veloq.tech/services/ai-integrations): Injecting AI capabilities into existing CRMs, ERPs, and internal tools via REST, webhooks, OAuth, and GraphQL — no rip-and-replace.
+- [Medical Coding](https://veloq.tech/services/medical-coding): CPT, ICD-10, and HCPCS coding with specialty-aware review to maximize clean claims and reduce compliance risk.
+- [Claim Submission](https://veloq.tech/services/claim-submission): End-to-end claim preparation, scrubbing, and electronic submission for higher first-pass acceptance.
+- [Denial Management](https://veloq.tech/services/denial-management): Denial triage, appeals, and root-cause prevention that recovers revenue and stops repeat losses.
+- [Eligibility & Benefits](https://veloq.tech/services/eligibility-benefits): Front-end verification that reduces surprise denials and improves point-of-service collections.
+- [AR Follow-Up](https://veloq.tech/services/ar-followup): Disciplined accounts receivable follow-up that shortens days in A/R and recovers aging balances.
+- [Credentialing & Full RCM](https://veloq.tech/services/credentialing-rcm): Provider enrollment plus full revenue cycle partnership from intake to cash.
 
 ## Key Pages
 
-- [Home](https://veloq.tech/): Overview of Veloq and what we build
-- [Services](https://veloq.tech/services): Full list of AI services
+- [Home](https://veloq.tech/): Overview of BJM and what we handle
+- [Services](https://veloq.tech/services): Full list of medical billing services
+- [Work](https://veloq.tech/work): Case studies and revenue outcomes
 - [About](https://veloq.tech/about): Team and company background
-- [Contact](https://veloq.tech/contact): Get in touch with Veloq
+- [Careers](https://veloq.tech/careers): Open roles and culture
+- [Contact](https://veloq.tech/contact): Get in touch with BJM
 
-## Tech Stack
+## Focus Areas
 
-LangGraph, OpenAI, Python, AutoGen, Pinecone, LlamaIndex, FastAPI, Next.js, Supabase, Vercel, Stripe, n8n, Zapier, Retell AI, Deepgram, Twilio, REST, GraphQL, Webhooks, OAuth
-
-## Optional: Full Content
-
-- [llms-full.txt](https://veloq.tech/llms-full.txt)
+CPT, ICD-10, HCPCS, EDI claims, clearinghouse workflows, eligibility, prior auth, denial codes, appeals, A/R aging, CAQH, credentialing, HIPAA-aware operations

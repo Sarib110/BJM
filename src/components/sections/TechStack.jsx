@@ -1,5 +1,5 @@
 const TechStack = () => {
-  const s = ['OpenAI', 'LangChain', 'Pinecone', 'Python', 'FastAPI', 'Next.js', 'React', 'Supabase', 'Vercel', 'HuggingFace', 'Llama 3', 'Docker', 'PostgreSQL', 'Anthropic', 'Retell AI', 'n8n', 'Tailwind CSS'];
+  const s = ['CPT', 'ICD-10', 'HCPCS', 'EDI 837', 'Clearinghouse', 'Eligibility 270/271', 'ERA/EOB', 'CAQH', 'Prior Auth', 'Denial Codes', 'A/R Aging', 'HIPAA', 'EMR Workflows', 'Modifier Rules', 'Payer Portals', 'Clean Claim Edits', 'Appeals'];
   const d = [...s, ...s];
   return (
     <div className="py-10 bg-white border-y border-zinc-100 overflow-hidden">

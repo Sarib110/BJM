@@ -27,9 +27,10 @@ const Navbar = () => {
     <>
       <nav className={`fixed left-1/2 -translate-x-1/2 z-50 glass-nav rounded-2xl transition-all duration-500 ${scrolled ? 'top-3 w-[calc(100%-24px)] sm:w-[92vw] max-w-5xl px-4 sm:px-5 py-2.5' : 'top-5 w-[calc(100%-24px)] sm:w-[94vw] max-w-5xl px-4 sm:px-6 py-3.5'}`}>
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5">
-            <div className="flex items-center justify-center"><Logo size={48} /></div>
-            <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 22, letterSpacing: '0.08em', color: '#111111' }}>veloq</span>
+          <Link to="/" className="flex items-center overflow-visible" style={{ height: 36 }}>
+            <span style={{ display: 'inline-flex', transform: 'scale(1.35)', transformOrigin: 'left center' }}>
+              <Logo size={45} />
+            </span>
           </Link>
           <div className="hidden md:flex items-center gap-8">
             {links.map(([label, to]) => (
@@ -43,14 +44,6 @@ const Navbar = () => {
                 {label}
               </NavLink>
             ))}
-            <NavLink
-              to="/tools"
-              className={({ isActive }) =>
-                `nav-link font-sans text-[13px] font-medium transition-colors duration-200 ${isActive ? 'text-black' : 'text-zinc-500 hover:text-black'}`
-              }
-            >
-              Free Tools
-            </NavLink>
           </div>
           <Link
             to="/contact"
@@ -71,9 +64,6 @@ const Navbar = () => {
           </Link>
         ))}
         <div className="h-[1px] bg-zinc-100 my-2" />
-        <Link to="/tools" onClick={close} className="font-serif text-2xl text-left text-black hover:text-zinc-400 transition-colors">
-          Free Tools
-        </Link>
         <Link to="/contact" onClick={close} className="mt-2 px-5 py-3 rounded-xl bg-black text-white font-sans font-medium text-sm text-center">
           Book a Call
         </Link>

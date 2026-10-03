@@ -6,10 +6,10 @@ import Impact from '../components/sections/Impact';
 const AboutPage = () => (
   <>
     <Head>
-      <title>About — Veloq</title>
-      <meta name="description" content="Veloq is an engineer-led AI software house. Two founding engineers — a system architect and an AI specialist — building production AI systems that actually ship." />
-      <meta property="og:title" content="About Veloq — Engineers Who Build, Not Manage" />
-      <meta property="og:description" content="No managers. No demos. Just engineers building autonomous AI infrastructure that runs 24/7." />
+      <title>About — BJM</title>
+      <meta name="description" content="BJM is a medical billing and RCM partner. A focused team that helps practices protect revenue through coding, claims, denials, and A/R excellence." />
+      <meta property="og:title" content="About BJM — Medical Billing Partners" />
+      <meta property="og:description" content="Revenue-first billing operators who own outcomes — clean claims, denial recovery, and collections clarity." />
       <meta property="og:url" content="https://veloq.tech/about" />
     </Head>
 

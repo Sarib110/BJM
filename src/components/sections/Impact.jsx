@@ -120,26 +120,26 @@ const Impact = () => {
 
   const tms = [
     {
-      q: "Veloq doesn't just build software — they engineer velocity. Their precision allowed us to execute at a speed we thought was impossible for our scale.",
+      q: "BJM cleaned up our denials and gave us a process we can actually trust. Cash came back into the practice without adding headcount at the front desk.",
       name: 'Stephen Chen',
-      role: 'CEO',
-      co: 'Phunware',
+      role: 'Practice Administrator',
+      co: 'Multi-Specialty Clinic',
       img: '/clients/stephen.png',
       linkedin: 'https://www.linkedin.com/in/stephenchen/',
     },
     {
-      q: "The ability to scale our core operations globally without adding a single staff member has fundamentally altered our unit economics.",
+      q: "Our days in A/R finally moved in the right direction. The weekly reporting made it obvious where money was stuck — and what got recovered.",
       name: 'Tanzim Siddiqui',
-      role: 'Founder',
-      co: 'AutoScale Agents',
+      role: 'Operations Director',
+      co: 'Ambulatory Group',
       img: '/clients/tanzim.png',
       linkedin: 'https://www.linkedin.com/in/tanzimsiddiqui/',
     },
     {
-      q: "When dealing with enterprise-grade deployments, trust is everything. Veloq delivers premium integration with absolute data security guarantees.",
+      q: "Credentialing and billing used to live in different worlds. BJM connected enrollment to clean claims so new providers became billable faster.",
       name: 'Khalil Shawareb',
-      role: 'Executive',
-      co: 'Diyar Middle East',
+      role: 'Clinic Owner',
+      co: 'Specialty Practice',
       img: '/clients/khalil.png',
       linkedin: 'https://www.linkedin.com/in/khalil-shawareb-3a3a43112/',
     },
@@ -159,7 +159,7 @@ const Impact = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-20 reveal">
-          {[['$2.3M', 'Savings Generated', 'Diyar United'], ['340%', 'Conversion Increase', 'AutoScale Agents'], ['10×', 'Velocity Multiplier', 'Phunware']].map(([v, l, sub], i) => (
+          {[['$2.3M', 'Revenue Recovered', 'Denial + A/R programs'], ['35%', 'Days in A/R Reduced', 'Partner practices'], ['95%+', 'Clean Claim Rate', 'First-pass target']].map(([v, l, sub], i) => (
             <div key={i} className="border border-zinc-800 rounded-2xl p-7 text-center hover:border-zinc-700 transition-colors duration-300">
               <div className="font-mono text-3xl font-bold text-[#a3e635] mb-2"><Counter target={v} /></div>
               <div className="font-sans text-[13px] text-white font-medium mb-1">{l}</div>
@@ -180,7 +180,7 @@ const Impact = () => {
               What our<br /><em className="not-italic text-[#a3e635]">clients say.</em>
             </h2>
             <p className="font-sans text-[13px] text-zinc-500 leading-[1.75] mb-8">
-              See how our work has made an impact for businesses around the world.
+              See how our RCM work has improved collections and clarity for practices.
             </p>
 
             {/* Dot nav */}

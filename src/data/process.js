@@ -1,6 +1,6 @@
 export const processSteps = [
-  { n: '01', icon: 'cpu', title: 'Discovery & Blueprint', desc: 'We map your operational bottlenecks and design a hyper-specific agentic architecture tailored to your exact workflow and data.' },
-  { n: '02', icon: 'server', title: 'Core Architecture', desc: 'Deployment of custom RAG pipelines, workflow engines, and integrations tuned to your data and existing stack.' },
-  { n: '03', icon: 'shield', title: 'Red-Team Evaluation', desc: 'Rigorous adversarial testing to ensure zero hallucinations, absolute data security, and production reliability.' },
-  { n: '04', icon: 'trending', title: 'Velocity Deployment', desc: 'Seamless go-live with your existing infrastructure. Immediate ROI realization from day one of launch.' },
+  { n: '01', icon: 'cpu', title: 'Practice Assessment', desc: 'We review your specialty mix, payer mix, denial patterns, and current billing workflows to pinpoint where revenue is leaking.' },
+  { n: '02', icon: 'server', title: 'RCM Blueprint', desc: 'We design a clear operating plan covering coding, claim scrubbing, denial handling, and A/R cadence tailored to your practice.' },
+  { n: '03', icon: 'shield', title: 'Compliance & Quality Checks', desc: 'Coding accuracy, documentation alignment, and HIPAA-aware processes are validated before we scale volume.' },
+  { n: '04', icon: 'trending', title: 'Go-Live & Optimization', desc: 'We onboard your EMR/clearinghouse workflows, start billing, and continuously tune KPIs like clean claims and days in A/R.' },
 ];

@@ -1,10 +1,15 @@
-const Logo = ({ size = 20, onDark = false }) => (
+const Logo = ({ size = 40, onDark = false }) => (
   <img
-    src={onDark ? '/assets/logo_white.svg' : '/assets/logo_black.svg'}
-    alt="Veloq Logo"
-    width={size}
+    src="/assets/bjm-logo.png"
+    alt="BJ Medical Billing Service"
     height={size}
-    style={{ objectFit: 'contain', borderRadius: '4px' }}
+    style={{
+      height: size,
+      width: 'auto',
+      objectFit: 'contain',
+      display: 'block',
+      ...(onDark ? { filter: 'brightness(0) invert(1)' } : {}),
+    }}
   />
 );
 

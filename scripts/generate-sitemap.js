@@ -11,9 +11,6 @@ const staticRoutes = [
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/careers', priority: '0.7', changefreq: 'monthly' },
   { path: '/contact', priority: '0.8', changefreq: 'monthly' },
-  { path: '/tools', priority: '0.7', changefreq: 'monthly' },
-  { path: '/tools/visibility-check', priority: '0.6', changefreq: 'monthly' },
-  { path: '/tools/ai-crawl-audit', priority: '0.6', changefreq: 'monthly' },
 ];
 
 const allRoutes = [

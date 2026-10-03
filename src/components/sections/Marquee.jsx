@@ -1,5 +1,5 @@
 const Marquee = ({ reverse = false }) => {
-  const items = ['Full-Stack AI', 'GenAI Products', 'Workflow Automation', 'RAG Systems', 'Custom SaaS', 'LLM Integration', 'Voice Agents', 'Agentic Pipelines', 'Fine-Tuning', 'Production Engineering'];
+  const items = ['Medical Coding', 'Claim Submission', 'Denial Management', 'Eligibility Checks', 'AR Follow-Up', 'Credentialing', 'Clean Claims', 'RCM Partnership', 'Payer Appeals', 'Revenue Recovery'];
   const d = [...items, ...items];
   return (
     <div className="py-5 border-y border-zinc-200 bg-white mq-wrap">

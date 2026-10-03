@@ -47,10 +47,10 @@ const WorkCard = ({ id, label, title, tagline, summary, image, stack, metric, bg
 const WorkIndex = () => (
   <>
     <Head>
-      <title>Case Studies — Veloq</title>
-      <meta name="description" content="Production AI systems built by Veloq: voice agents, multi-agent research pipelines, logistics AI, recruitment platforms, and enterprise document intelligence." />
-      <meta property="og:title" content="Case Studies — Veloq" />
-      <meta property="og:description" content="Real systems. Real results. Browse Veloq's 8 production AI case studies with measurable ROI." />
+      <title>Case Studies — BJM</title>
+      <meta name="description" content="Medical billing case studies from BJM: denial recovery, coding accuracy, eligibility, A/R cleanup, credentialing, and multi-site RCM." />
+      <meta property="og:title" content="Case Studies — BJM" />
+      <meta property="og:description" content="Real practices. Real collections lift. Browse BJM revenue cycle case studies with measurable outcomes." />
       <meta property="og:url" content="https://veloq.tech/work" />
     </Head>
 
@@ -58,10 +58,10 @@ const WorkIndex = () => (
       <div className="max-w-6xl mx-auto">
         <div className="inline-block px-4 py-2 rounded-full font-mono text-[11px] bg-[#a3e635]/10 text-[#a3e635]/70 border border-[#a3e635]/20 mb-5">Selected work</div>
         <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] text-white leading-[1.04] mb-5">
-          Production systems.<br /><em className="not-italic text-[#a3e635]">Real results.</em>
+          Revenue outcomes.<br /><em className="not-italic text-[#a3e635]">Real results.</em>
         </h1>
         <p className="font-sans text-[14px] text-zinc-400 max-w-lg leading-[1.8]">
-          Eight production deployments. Measurable ROI. No demos, no prototypes.
+          Nine billing engagements. Measurable collections impact. No fluff — just RCM results.
         </p>
       </div>
     </div>

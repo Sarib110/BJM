@@ -134,20 +134,20 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Veloq — Engineer-Led AI Software House</title>
-        <meta name="description" content="Veloq builds production-grade agentic AI systems, RAG pipelines, voice agents, and full-stack AI products that run 24/7. Engineer-led. Results-focused." />
-        <meta property="og:title" content="Veloq — Engineer-Led AI Software House" />
-        <meta property="og:description" content="We don't build demos. We build infrastructure. Autonomous AI systems, RAG, voice agents, and workflow automation at production scale." />
+        <title>BJM — Medical Billing & RCM Partner</title>
+        <meta name="description" content="BJM helps practices get paid with specialty-aware medical coding, clean claims, denial management, eligibility checks, and A/R follow-up. Revenue-first. Results-focused." />
+        <meta property="og:title" content="BJM — Medical Billing & RCM Partner" />
+        <meta property="og:description" content="Medical billing and revenue cycle management that protects what your practice earns — coding, claims, denials, and A/R." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://veloq.tech/" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Veloq",
+          name: "BJM",
           url: "https://veloq.tech",
-          logo: "https://veloq.tech/assets/logo_white.svg",
-          description: "Engineer-led AI software house building production-grade agentic AI systems.",
+          logo: "https://veloq.tech/assets/bjm-logo.png",
+          description: "Medical billing and RCM partner helping practices improve clean claims, reduce denials, and accelerate collections.",
           sameAs: [
             "https://www.linkedin.com/company/veloqq",
             "https://www.upwork.com/companies/veloq",
@@ -173,8 +173,8 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
             <div>
-              <div className="inline-block px-4 py-2 rounded-full font-mono text-[11px] bg-[#f5f4f0] text-zinc-500 mb-4">What we build</div>
-              <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] text-black leading-[1.06]">Engineering capabilities<br /><em className="not-italic text-[#a3e635]">that scale with you.</em></h2>
+              <div className="inline-block px-4 py-2 rounded-full font-mono text-[11px] bg-[#f5f4f0] text-zinc-500 mb-4">What we handle</div>
+              <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] text-black leading-[1.06]">Revenue cycle capabilities<br /><em className="not-italic text-[#a3e635]">that scale with you.</em></h2>
             </div>
             <Link to="/services" className="inline-flex items-center gap-2 font-sans text-[13px] font-medium text-black hover:text-zinc-500 transition-colors flex-shrink-0">
               View all services <Ic n="arrow_r" size={13} color="currentColor" />

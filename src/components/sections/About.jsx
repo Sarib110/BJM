@@ -8,10 +8,10 @@ const About = () => (
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       <div className="reveal">
         <span className="tag-pill mb-6 inline-block">The team</span>
-        <h2 className="font-serif text-[clamp(2rem,4vw,3.2rem)] text-black leading-[1.06] mb-7">We build.<br /><em className="not-italic text-[#a3e635]">You scale.</em></h2>
-        <p className="font-sans text-[13.5px] text-zinc-500 leading-[1.8] mb-5">We build AI that replaces work. Not wrappers, not chatbots. Custom-built agentic systems that execute real business functions, run unsupervised, and scale with your operations.</p>
-        <p className="font-sans text-[13.5px] text-zinc-500 leading-[1.8] mb-8">From startups to enterprises, we engineer bespoke AI workforces: systems that <strong className="font-semibold text-black">think, adapt, and deliver</strong> without a human in the loop.</p>
-        <div className="flex flex-wrap gap-2">{['Engineering-first', 'AI-driven', 'Results-focused'].map(t => <span key={t} className="tag-pill">{t}</span>)}</div>
+        <h2 className="font-serif text-[clamp(2rem,4vw,3.2rem)] text-black leading-[1.06] mb-7">We bill.<br /><em className="not-italic text-[#a3e635]">You care.</em></h2>
+        <p className="font-sans text-[13.5px] text-zinc-500 leading-[1.8] mb-5">We run medical billing that protects revenue. Not generic outsourced queues. Specialty-aware coding, clean claims, denial recovery, and A/R follow-up built around how your practice actually works.</p>
+        <p className="font-sans text-[13.5px] text-zinc-500 leading-[1.8] mb-8">From solo practices to multi-site groups, we partner on full RCM: processes that <strong className="font-semibold text-black">verify, code, submit, and collect</strong> with clear accountability.</p>
+        <div className="flex flex-wrap gap-2">{['Revenue-first', 'Compliance-driven', 'Results-focused'].map(t => <span key={t} className="tag-pill">{t}</span>)}</div>
       </div>
       <div className="grid grid-cols-2 gap-3 reveal">
         {smallStats.map(({ label, value }) => (
@@ -22,7 +22,7 @@ const About = () => (
         ))}
         <div className="col-span-2 glass-card rounded-2xl p-6 flex items-center justify-between lime-glow">
           <div><div className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest mb-1">Founded</div><div className="font-mono text-3xl font-bold text-black">2025</div></div>
-          <div className="text-right"><div className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest mb-1">Stage</div><div className="font-sans text-[13px] text-zinc-600">Post-Labor Economy</div></div>
+          <div className="text-right"><div className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest mb-1">Focus</div><div className="font-sans text-[13px] text-zinc-600">Medical Billing & RCM</div></div>
         </div>
       </div>
     </div>

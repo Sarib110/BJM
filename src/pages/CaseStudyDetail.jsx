@@ -14,9 +14,9 @@ const CaseStudyDetail = () => {
   return (
     <>
       <Head>
-        <title>{cs.title} — Veloq Case Study</title>
+        <title>{cs.title} — BJM Case Study</title>
         <meta name="description" content={cs.summary} />
-        <meta property="og:title" content={`${cs.title} — Veloq Case Study`} />
+        <meta property="og:title" content={`${cs.title} — BJM Case Study`} />
         <meta property="og:description" content={cs.summary} />
         <meta property="og:image" content={cs.image} />
         <meta property="og:url" content={`https://veloq.tech/work/${cs.id}`} />

@@ -106,14 +106,14 @@ const CTA = () => {
                 Tell us what's<br /><em className="not-italic text-[#a3e635]">slowing you down.</em>
               </h2>
               <p className="font-sans text-[13.5px] text-zinc-500 max-w-lg mb-8 leading-[1.8]">
-                You don't need to know the technical term for it. Describe the repetitive task, the manual process, or the bottleneck. We'll tell you exactly how we'd automate it.
+                You don't need perfect billing vocabulary. Describe the denials, aging, coding gaps, or front-desk friction. We'll tell you exactly how we'd fix it.
               </p>
 
               <div className="flex flex-col gap-4 mb-10">
                 {[
                   { n: '01', title: 'You describe the problem', desc: 'A few sentences is enough. No brief needed.' },
-                  { n: '02', title: 'We map the solution', desc: 'We send back a clear breakdown of what we\'d build and why.' },
-                  { n: '03', title: 'We build it', desc: 'Fixed scope, production-ready, no hand-holding required.' },
+                  { n: '02', title: 'We map the RCM plan', desc: 'We send back a clear breakdown of where revenue is leaking and how we\'d recover it.' },
+                  { n: '03', title: 'We run the cycle', desc: 'Coding, claims, denials, and A/R — with reporting you can actually use.' },
                 ].map(({ n, title, desc }) => (
                   <div key={n} className="flex items-start gap-4">
                     <span className="font-mono text-[10px] text-[#a3e635] pt-0.5 flex-shrink-0">{n}</span>
@@ -145,17 +145,17 @@ const CTA = () => {
                 <select style={inp} value={form.service} onChange={set('service')} onFocus={focus} onBlur={blur}>
                   <option value="">Pick the closest match...</option>
                   {[
-                    'I want to automate a repetitive task',
-                    'I need a smarter internal tool or dashboard',
-                    'I want AI integrated into my product',
-                    'I need a chatbot or voice agent for my business',
-                    'I want to build a full AI-powered product',
-                    'I have data I want to make searchable / queryable',
+                    'Our denial rate is too high',
+                    'Days in A/R keep climbing',
+                    'We need better medical coding support',
+                    'Eligibility / front-end is leaking revenue',
+                    'We need full RCM / billing partnership',
+                    'Provider credentialing is delayed',
                     'Something else, I\'ll explain',
                   ].map(s => <option key={s} value={s} style={{ background: '#fff', color: '#000' }}>{s}</option>)}
                 </select>
               </div>
-              <div style={{ marginBottom: 8 }}><label style={lbl}>Describe the problem in your own words <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder={'e.g. "We manually copy data between 3 tools every morning" or "Our team spends hours on reports that could be automated"'} onFocus={focus} onBlur={blur} /></div>
+              <div style={{ marginBottom: 8 }}><label style={lbl}>Describe the problem in your own words <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder={'e.g. "Our denial rate jumped last quarter" or "We have $200K stuck over 90 days"'} onFocus={focus} onBlur={blur} /></div>
 
               <button onClick={handleSubmit} disabled={loading}
                 style={{ width: '100%', padding: '14px 24px', borderRadius: 12, background: loading ? 'rgba(0,0,0,0.5)' : '#000', color: '#fff', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13.5, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 8, transition: 'background 0.2s' }}

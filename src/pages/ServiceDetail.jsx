@@ -127,7 +127,7 @@ const ServiceCTAForm = ({ serviceName }) => {
         <label style={lbl}>What are you looking to build?</label>
         <select style={{ ...inp, appearance: 'none' }} value={form.service} onChange={set('service')} onFocus={focus} onBlur={blur}>
           <option value="">Select a service...</option>
-          {['Agentic AI System', 'RAG / Knowledge System', 'Full-Stack AI Product', 'Workflow Automation', 'Voice AI Agent', 'Custom AI Integration', 'Something else'].map(s => <option key={s} value={s} style={{ background: '#1a1a18' }}>{s}</option>)}
+          {['Medical Coding', 'Claim Submission', 'Denial Management', 'Eligibility & Benefits', 'AR Follow-Up', 'Credentialing & Full RCM', 'Something else'].map(s => <option key={s} value={s} style={{ background: '#1a1a18' }}>{s}</option>)}
         </select>
       </div>
       <div style={{ marginBottom: 8 }}><label style={lbl}>Tell us about your project <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder="Describe the problem you're solving, your current bottleneck, or what you have in mind..." onFocus={focus} onBlur={blur} /></div>
@@ -164,9 +164,9 @@ const ServiceDetail = () => {
   return (
     <>
       <Head>
-        <title>{service.title} — Veloq</title>
+        <title>{service.title} — BJM</title>
         <meta name="description" content={service.longDesc} />
-        <meta property="og:title" content={`${service.title} — Veloq`} />
+        <meta property="og:title" content={`${service.title} — BJM`} />
         <meta property="og:description" content={service.desc} />
         <meta property="og:url" content={`https://veloq.tech/services/${service.id}`} />
       </Head>

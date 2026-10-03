@@ -7,8 +7,8 @@ const Process = () => (
       <div className="mb-16 reveal">
         <span className="tag-pill mb-5 inline-block">How we work</span>
         <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.5rem)] text-black leading-[1.06]">
-          The <span style={{ fontFamily: 'Urbanist, sans-serif', fontWeight: 500, letterSpacing: '0.04em', textDecoration: 'underline #a3e635', textDecorationThickness: '2px', textUnderlineOffset: '7px' }}>veloq</span>{' '}
-          <em className="not-italic text-[#a3e635]">Protocol.</em>
+          The <span style={{ fontFamily: 'Urbanist, sans-serif', fontWeight: 500, letterSpacing: '0.04em', textDecoration: 'underline #a3e635', textDecorationThickness: '2px', textUnderlineOffset: '7px' }}>bjm</span>{' '}
+          <em className="not-italic text-[#a3e635]">Playbook.</em>
         </h2>
       </div>
       <div className="space-y-3">

@@ -14,9 +14,12 @@ const Intro = ({ onDone }) => {
     <div id="intro-overlay">
       <div id="intro-mask" ref={maskRef} />
       <div id="intro-content" ref={contentRef}>
-        <img className="w-[72px] h-auto" src="/assets/logo_white.svg" alt="" />
-        <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 24, letterSpacing: '0.08em', color: '#fff' }}>veloq</span>
-        <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>Engineer-Led AI</span>
+        <img
+          src="/assets/bjm-logo.png"
+          alt="BJ Medical Billing Service"
+          style={{ height: 56, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+        />
+        <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>Medical Billing & RCM</span>
       </div>
     </div>
   );

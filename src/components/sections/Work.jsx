@@ -45,7 +45,7 @@ const Work = () => {
             Selected work
           </div>
           <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.5rem)] text-white leading-[1.06]">
-            Production systems.<br /><em className="not-italic text-[#a3e635]">Real results.</em>
+            Revenue outcomes.<br /><em className="not-italic text-[#a3e635]">Real results.</em>
           </h2>
         </div>
 
