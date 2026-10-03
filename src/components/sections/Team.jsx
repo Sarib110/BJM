@@ -120,8 +120,8 @@ const Team = () => {
   return (
     <section id="team" style={{ background: '#0d0d0b', padding: '112px 0', overflow: 'hidden' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto', paddingLeft: 24, paddingRight: 24, marginBottom: 56 }} className="reveal">
-        <span className="tag-pill" style={{ background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20, display: 'inline-block' }}>The service team</span>
-        <h2 className="font-serif" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06 }}>Every billing function.<br /><em className="not-italic" style={{ color: '#a3e635' }}>Clear ownership.</em></h2>
+        <span className="tag-pill" style={{ background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20, display: 'inline-block' }}>The people</span>
+        <h2 className="font-serif" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06 }}>Billing experts.<br /><em className="not-italic" style={{ color: '#a3e635' }}>Clear ownership.</em></h2>
       </div>
       <div style={{ overflow: 'hidden', cursor: 'grab', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%)', maskImage: 'linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%)' }} onMouseDown={e => onDragStart(e.clientX)} onMouseMove={e => onDragMove(e.clientX)} onMouseUp={onDragEnd} onMouseLeave={onDragEnd} onTouchStart={e => onDragStart(e.touches[0].clientX)} onTouchMove={e => { e.preventDefault(); onDragMove(e.touches[0].clientX); }} onTouchEnd={onDragEnd}>
         <div ref={trackRef} style={{ display: 'flex', gap: 16, width: 'max-content', paddingBottom: 4, userSelect: 'none' }}>
