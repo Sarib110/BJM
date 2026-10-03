@@ -41,22 +41,6 @@ export const teamMembers = [
     tags: ['Denials', 'Appeals', 'Prevention'],
   },
   {
-    name: 'Robert Wilson',
-    role: 'A/R Specialist',
-    img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
-    objectPosition: 'center 18%',
-    desc: 'Works insurance aging balances, payer follow-ups, and escalation paths that keep outstanding claims moving toward payment.',
-    tags: ['A/R', 'Collections', 'Aging'],
-  },
-  {
-    name: 'Sarah Brown',
-    role: 'Client Success',
-    img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
-    objectPosition: 'center 15%',
-    desc: 'Keeps practice stakeholders informed with clear reporting, onboarding support, and proactive issue escalation.',
-    tags: ['Onboarding', 'Reporting', 'Support'],
-  },
-  {
     name: 'David Miller',
     role: 'Eligibility Specialist',
     img: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=800&q=80',
