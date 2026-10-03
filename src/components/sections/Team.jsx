@@ -81,28 +81,46 @@ const Card = ({ p, pausedRef, isDraggingRef }) => {
 };
 
 const Team = () => {
+  const sectionRef = useRef(null);
   const trackRef = useRef(null);
   const paused = useRef(false);
+  const inView = useRef(false);
   const isDragging = useRef(false);
   const dragStartX = useRef(0);
   const dragStartPos = useRef(0);
-  const pos = useRef(0);
+  const START_OFFSET = 48;
+  const pos = useRef(START_OFFSET);
   const rafRef = useRef(null);
   const row = [...teamMembers, ...teamMembers];
   const SPEED = 0.45;
 
   useEffect(() => {
+    if (trackRef.current) trackRef.current.style.transform = `translateX(${START_OFFSET}px)`;
+
+    const section = sectionRef.current;
+    if (!section) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => { inView.current = entry.isIntersecting; },
+      { threshold: 0.35 }
+    );
+    observer.observe(section);
+
     const tick = () => {
-      if (!paused.current && !isDragging.current) {
+      if (inView.current && !paused.current && !isDragging.current) {
         const halfW = (trackRef.current?.scrollWidth ?? 0) / 2;
         pos.current -= SPEED;
-        if (halfW && Math.abs(pos.current) >= halfW) pos.current = 0;
+        if (halfW && Math.abs(pos.current) >= halfW) pos.current = START_OFFSET;
         if (trackRef.current) trackRef.current.style.transform = `translateX(${pos.current}px)`;
       }
       rafRef.current = requestAnimationFrame(tick);
     };
     rafRef.current = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafRef.current);
+
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   const onDragStart = (clientX) => { isDragging.current = true; paused.current = true; dragStartX.current = clientX; dragStartPos.current = pos.current; };
@@ -111,20 +129,20 @@ const Team = () => {
     const delta = clientX - dragStartX.current;
     const halfW = (trackRef.current?.scrollWidth ?? 0) / 2;
     let next = dragStartPos.current + delta;
-    if (halfW) { if (next > 0) next -= halfW; if (next < -halfW) next += halfW; }
+    if (halfW) { if (next > START_OFFSET) next -= halfW; if (next < -halfW + START_OFFSET) next += halfW; }
     pos.current = next;
     if (trackRef.current) trackRef.current.style.transform = `translateX(${next}px)`;
   };
   const onDragEnd = () => { isDragging.current = false; paused.current = false; };
 
   return (
-    <section id="team" style={{ background: '#0d0d0b', padding: '112px 0', overflow: 'hidden' }}>
+    <section id="team" ref={sectionRef} style={{ background: '#0d0d0b', padding: '112px 0', overflow: 'hidden' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto', paddingLeft: 24, paddingRight: 24, marginBottom: 56 }} className="reveal">
         <span className="tag-pill" style={{ background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20, display: 'inline-block' }}>The people</span>
         <h2 className="font-serif" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06 }}>Billing experts.<br /><em className="not-italic" style={{ color: '#a3e635' }}>Clear ownership.</em></h2>
       </div>
       <div style={{ overflow: 'hidden', cursor: 'grab', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%)', maskImage: 'linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%)' }} onMouseDown={e => onDragStart(e.clientX)} onMouseMove={e => onDragMove(e.clientX)} onMouseUp={onDragEnd} onMouseLeave={onDragEnd} onTouchStart={e => onDragStart(e.touches[0].clientX)} onTouchMove={e => { e.preventDefault(); onDragMove(e.touches[0].clientX); }} onTouchEnd={onDragEnd}>
-        <div ref={trackRef} style={{ display: 'flex', gap: 16, width: 'max-content', paddingBottom: 4, userSelect: 'none' }}>
+        <div ref={trackRef} style={{ display: 'flex', gap: 16, width: 'max-content', paddingBottom: 4, userSelect: 'none', transform: `translateX(${START_OFFSET}px)` }}>
           {row.map((p, i) => <Card key={i} p={p} pausedRef={paused} isDraggingRef={isDragging} />)}
         </div>
       </div>
