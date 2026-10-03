@@ -90,7 +90,7 @@ const Hero = () => {
       <div className="depth-vignette" />
       <div ref={contentRef} className="hero-content max-w-5xl mx-auto text-center w-full" style={{ transition: 'transform 0.45s cubic-bezier(0.16,1,0.3,1)', willChange: 'transform' }}>
         <h1 className="hero-reveal hr-d2 font-serif text-[clamp(3rem,7.2vw,6rem)] leading-[0.93] tracking-tight text-black mb-7 hero-headline">
-          Medical billing that<br /><em className="not-italic text-[#a3e635]">keeps your revenue</em>
+          Medical billing that<br /><em className="not-italic text-[#a3e635]">keeps your revenue </em>
           <span className="relative inline-block"><em className="not-italic text-[#a3e635]"> moving</em><em className="not-italic text-[#a3e635]">.</em>
             <svg className="absolute -bottom-2 left-0 w-full" height="5" viewBox="0 0 400 5" preserveAspectRatio="none" fill="none"><path d="M0 2.5 Q100 0 200 2.5 Q300 5 400 2.5" stroke="#a3e635" strokeWidth="2.5" strokeLinecap="round" /></svg>
           </span>
