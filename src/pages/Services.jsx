@@ -22,7 +22,7 @@ const ServicesPage = () => {
       <meta name="description" content="Medical billing services including eligibility and benefits verification, CPT and ICD-10 coding support, claim submission, denial management, insurance A/R follow-up, credentialing, and full RCM." />
       <meta property="og:title" content="Medical Billing Services — BJ Medical Billing Service" />
       <meta property="og:description" content="Medical billing support across eligibility, coding, claims, payment posting, denials, insurance follow-up, credentialing, and reporting." />
-      <meta property="og:url" content="https://veloq.tech/services" />
+      <meta property="og:url" content="https://bjmbilling.com/services" />
     </Head>
 
     <div className="pt-32 pb-4 px-6 bg-white">

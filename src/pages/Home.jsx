@@ -140,14 +140,14 @@ const Home = () => {
         <meta property="og:title" content="BJ Medical Billing Service — Medical Billing & RCM" />
         <meta property="og:description" content="End-to-end medical billing support from eligibility and coding through claims, denials, payment posting, and accounts receivable follow-up." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://veloq.tech/" />
+        <meta property="og:url" content={`${SOCIALS.siteUrl}/`} />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "BJ Medical Billing Service",
-          url: "https://sarib110.github.io/BJM/",
-          logo: "https://sarib110.github.io/BJM/assets/bjm-logo.png",
+          url: SOCIALS.siteUrl,
+          logo: `${SOCIALS.siteUrl}/assets/bjm-logo.png`,
           description: "Medical billing and revenue cycle management services for healthcare practices.",
           sameAs: [
             SOCIALS.linkedinUrl,

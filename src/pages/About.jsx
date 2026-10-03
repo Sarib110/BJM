@@ -10,7 +10,7 @@ const AboutPage = () => (
       <meta name="description" content="Learn how BJ Medical Billing Service manages eligibility, medical coding, claim submission, payment posting, denials, insurance A/R, credentialing, and revenue cycle reporting." />
       <meta property="og:title" content="About BJ Medical Billing Service" />
       <meta property="og:description" content="A medical billing team focused on accurate claims, documented payer follow-up, denial resolution, and clear revenue cycle reporting." />
-      <meta property="og:url" content="https://veloq.tech/about" />
+      <meta property="og:url" content="https://bjmbilling.com/about" />
     </Head>
 
     <About />

@@ -143,7 +143,7 @@ const ServiceCTAForm = ({ serviceName }) => {
 
       {status === 'success' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(163,230,53,0.1)', border: '1px solid rgba(163,230,53,0.25)', color: 'rgba(163,230,53,0.85)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>Message sent — we'll be in touch within 24 hours.</div>}
       {status === 'error-ratelimit' && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>Too many messages sent. Please try again in a few minutes.</div>}
-      {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : 'Something went wrong — please email us directly at hello@bjmedicalbilling.com'}</div>}
+      {(status === 'error' || status === 'error-validation') && <div style={{ marginTop: 14, padding: '12px 16px', borderRadius: 10, background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', color: 'rgba(239,68,68,0.75)', fontFamily: 'DM Sans,sans-serif', fontSize: 12.5 }}>{status === 'error-validation' ? 'Please fill in your name, email, and message.' : 'Something went wrong — please email us directly at hello@bjmbilling.com'}</div>}
     </div>
   );
 };
@@ -169,7 +169,7 @@ const ServiceDetail = () => {
         <meta name="description" content={service.longDesc} />
         <meta property="og:title" content={`${service.title} — BJ Medical Billing Service`} />
         <meta property="og:description" content={service.desc} />
-        <meta property="og:url" content={`https://veloq.tech/services/${service.id}`} />
+        <meta property="og:url" content={`https://bjmbilling.com/services/${service.id}`} />
       </Head>
 
       {/* ── Hero Section ── */}
@@ -321,7 +321,7 @@ const ServiceDetail = () => {
 
               {/* Quick info */}
               {[
-                { icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>, label: 'Email', value: 'hello@bjmedicalbilling.com' },
+                { icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>, label: 'Email', value: 'hello@bjmbilling.com' },
                 { icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>, label: 'Response time', value: 'Within 24 hours' },
                 { icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>, label: 'Status', value: <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: '50%', background: '#a3e635' }} />Accepting practice partnerships</span> },
               ].map(({ icon, label, value }, i) => (

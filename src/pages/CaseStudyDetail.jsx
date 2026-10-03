@@ -19,7 +19,7 @@ const CaseStudyDetail = () => {
         <meta property="og:title" content={`${cs.title} — BJ Medical Billing Service`} />
         <meta property="og:description" content={cs.summary} />
         <meta property="og:image" content={cs.image} />
-        <meta property="og:url" content={`https://veloq.tech/work/${cs.id}`} />
+        <meta property="og:url" content={`https://bjmbilling.com/work/${cs.id}`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Cursor />

@@ -27,7 +27,7 @@ const CareersPage = () => (
       <meta name="description" content="Career opportunities with BJ Medical Billing Service across eligibility, medical coding, claim submission, payment posting, denial management, insurance A/R, credentialing, and client reporting." />
       <meta property="og:title" content="Careers at BJ Medical Billing Service" />
       <meta property="og:description" content="Billing professionals who want ownership, accuracy, and real impact on practice cash flow." />
-      <meta property="og:url" content="https://veloq.tech/careers" />
+      <meta property="og:url" content="https://bjmbilling.com/careers" />
     </Head>
 
     {/* Hero */}
@@ -63,7 +63,7 @@ const CareersPage = () => (
                   <p className="font-sans text-[13px] text-zinc-500 leading-[1.7] max-w-xl">{job.blurb}</p>
                 </div>
                 <a
-                  href={`mailto:hello@bjmedicalbilling.com?subject=Application: ${job.title}`}
+                  href={`mailto:hello@bjmbilling.com?subject=Application: ${job.title}`}
                   className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all"
                 >
                   Apply
@@ -81,7 +81,7 @@ const CareersPage = () => (
               We're not actively hiring at the moment, but we're always interested in billing professionals who care about accuracy and outcomes. Send us your resume and we'll keep you in mind.
             </p>
             <a
-              href="mailto:hello@bjmedicalbilling.com?subject=General Application — Medical Billing"
+              href="mailto:hello@bjmbilling.com?subject=General Application — Medical Billing"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all"
             >
               Send Your Resume
@@ -123,7 +123,7 @@ const CareersPage = () => (
           No open roles doesn't mean not interested. Send a short note and your experience across coding, claims, denials, or A/R. That's enough to start a conversation.
         </p>
         <a
-          href="mailto:hello@bjmedicalbilling.com?subject=Hey, I work in medical billing"
+          href="mailto:hello@bjmbilling.com?subject=Hey, I work in medical billing"
           className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-[13px] hover:bg-zinc-800 transition-all btn-shine"
         >
           Get in Touch

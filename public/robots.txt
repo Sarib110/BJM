@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sarib110.github.io/BJM/sitemap.xml
+Sitemap: https://bjmbilling.com/sitemap.xml

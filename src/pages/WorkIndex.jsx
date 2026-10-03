@@ -52,7 +52,7 @@ const WorkIndex = () => (
       <meta name="description" content="Explore medical billing workflows for eligibility, coding, claims, payment posting, denial management, insurance A/R, credentialing, and full revenue cycle management." />
       <meta property="og:title" content="Medical Billing Workflows — BJ Medical Billing Service" />
       <meta property="og:description" content="See how BJ Medical Billing Service organizes medical billing work from front-end verification through payer follow-up." />
-      <meta property="og:url" content="https://veloq.tech/work" />
+      <meta property="og:url" content="https://bjmbilling.com/work" />
     </Head>
 
     <div className="pt-32 pb-4 px-6 bg-[#0d0d0b]">

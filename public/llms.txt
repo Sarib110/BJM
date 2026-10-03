@@ -4,21 +4,21 @@
 
 ## Services
 
-- [Medical Coding](https://veloq.tech/services/medical-coding): Documentation-led CPT, ICD-10-CM, HCPCS, and modifier review before claim submission.
-- [Claim Submission](https://veloq.tech/services/claim-submission): Charge entry, claim scrubbing, EDI submission, acknowledgement review, and rejection correction.
-- [Denial Management](https://veloq.tech/services/denial-management): Denial categorization, corrected claims, reconsiderations, appeals, deadline tracking, and root-cause reporting.
-- [Eligibility & Benefits](https://veloq.tech/services/eligibility-benefits): Active coverage, subscriber data, patient responsibility, referral, and authorization indicator verification.
-- [AR Follow-Up](https://veloq.tech/services/ar-followup): Insurance follow-up organized by aging, payer, claim status, filing risk, and documented next action.
-- [Credentialing & Full RCM](https://veloq.tech/services/credentialing-rcm): Provider file preparation, CAQH and payer enrollment tracking, plus full revenue cycle coordination.
+- [Medical Coding](https://bjmbilling.com/services/medical-coding): Documentation-led CPT, ICD-10-CM, HCPCS, and modifier review before claim submission.
+- [Claim Submission](https://bjmbilling.com/services/claim-submission): Charge entry, claim scrubbing, EDI submission, acknowledgement review, and rejection correction.
+- [Denial Management](https://bjmbilling.com/services/denial-management): Denial categorization, corrected claims, reconsiderations, appeals, deadline tracking, and root-cause reporting.
+- [Eligibility & Benefits](https://bjmbilling.com/services/eligibility-benefits): Active coverage, subscriber data, patient responsibility, referral, and authorization indicator verification.
+- [AR Follow-Up](https://bjmbilling.com/services/ar-followup): Insurance follow-up organized by aging, payer, claim status, filing risk, and documented next action.
+- [Credentialing & Full RCM](https://bjmbilling.com/services/credentialing-rcm): Provider file preparation, CAQH and payer enrollment tracking, plus full revenue cycle coordination.
 
 ## Key Pages
 
-- [Home](https://veloq.tech/): Overview of BJ Medical Billing Service
-- [Services](https://veloq.tech/services): Full list of medical billing services
-- [Work](https://veloq.tech/work): Detailed medical billing workflows and operational controls
-- [About](https://veloq.tech/about): Team and company background
-- [Careers](https://veloq.tech/careers): Open roles and culture
-- [Contact](https://veloq.tech/contact): Discuss medical billing needs with BJ Medical Billing Service
+- [Home](https://bjmbilling.com/): Overview of BJ Medical Billing Service
+- [Services](https://bjmbilling.com/services): Full list of medical billing services
+- [Work](https://bjmbilling.com/work): Detailed medical billing workflows and operational controls
+- [About](https://bjmbilling.com/about): Team and company background
+- [Careers](https://bjmbilling.com/careers): Open roles and culture
+- [Contact](https://bjmbilling.com/contact): Discuss medical billing needs with BJ Medical Billing Service
 
 ## Focus Areas
 

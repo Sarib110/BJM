@@ -9,7 +9,7 @@ const ContactPage = () => (
       <meta name="description" content="Contact BJ Medical Billing Service to discuss medical coding, claim submission, denial management, insurance verification, A/R follow-up, credentialing, or full revenue cycle management." />
       <meta property="og:title" content="Contact BJ Medical Billing Service" />
       <meta property="og:description" content="Book a billing review to discuss your practice workflow, payer issues, denials, and accounts receivable." />
-      <meta property="og:url" content="https://veloq.tech/contact" />
+      <meta property="og:url" content="https://bjmbilling.com/contact" />
     </Head>
 
     <Contact />
