@@ -100,7 +100,7 @@ const CTA = () => {
             {/* Left Column: CTA Info */}
             <div className="text-left">
               <div className="inline-flex items-center gap-2 mb-7 px-4 py-2 rounded-full bg-[#f0fad3] border border-[#c8f57a] font-mono text-[11px] text-[#4a7a10]">
-                <span className="lime-dot" style={{ width: 6, height: 6 }} /> Currently accepting new clients
+                <span className="lime-dot" style={{ width: 6, height: 6 }} /> Accepting new practice partnerships
               </div>
               <h2 className="font-serif text-[clamp(2rem,4.5vw,3.2rem)] text-black leading-[1.06] mb-6">
                 Tell us where your<br /><em className="not-italic text-[#a3e635]">billing needs support.</em>

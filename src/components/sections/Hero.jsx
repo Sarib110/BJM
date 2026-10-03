@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Ic from '../ui/Icon';
 
 const Hero = () => {
+  const navigate = useNavigate();
   const layer0Ref = useRef(null);
   const layer1Ref = useRef(null);
   const layer2Ref = useRef(null);
@@ -100,7 +102,7 @@ const Hero = () => {
           <button onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-sm hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 shadow-md btn-shine">
             Review Our RCM Work <Ic n="arrow_r" size={14} color="white" />
           </button>
-          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-sm hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
+          <button onClick={() => navigate('/contact')} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-sm hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
             Book a Billing Review
           </button>
         </div>
