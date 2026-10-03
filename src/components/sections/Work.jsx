@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { projects } from '../../data/projects';
+import { withBase } from '../../utils/withBase';
 
 const ArrowIcon = () => (
   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -133,7 +134,7 @@ const Work = () => {
               {projects.map((proj, i) => (
                 <img
                   key={proj.caseStudyId}
-                  src={proj.image}
+                  src={withBase(proj.image)}
                   alt={proj.title}
                   style={{
                     position: 'absolute', inset: 0,

@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { services } from '../data/services';
 import { caseStudies } from '../data/caseStudies';
 import Ic from '../components/ui/Icon';
+import { withBase } from '../utils/withBase';
 
 const EMAILJS_SERVICE_ID = 'service_7bmdg29';
 const EMAILJS_TEMPLATE_ID = 'template_q8paqxr';
@@ -26,7 +27,7 @@ const ProjectCard = ({ cs }) => (
   >
     <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
       <img
-        src={cs.image}
+        src={withBase(cs.image)}
         alt={cs.title}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
@@ -226,7 +227,7 @@ const ServiceDetail = () => {
           {/* Hero Image */}
           <div className="rounded-2xl overflow-hidden" style={{ height: 'clamp(260px, 40vw, 480px)' }}>
             <img
-              src={service.image}
+              src={withBase(service.image)}
               alt={service.title}
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: service.imagePosition || 'center' }}
             />

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Counter from '../ui/Counter';
+import { withBase } from '../../utils/withBase';
 
 const LinkedInIcon = () => (
   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -35,7 +36,7 @@ const ClientCard = ({ t, isActive, onClick, extraClass }) => (
     }}
   >
     <img
-      src={t.img}
+      src={withBase(t.img)}
       alt={t.name}
       style={{
         position: 'absolute', inset: 0,
@@ -210,7 +211,7 @@ const Impact = () => {
             <div className="block lg:hidden" style={{ height: 380, borderRadius: 20, overflow: 'hidden', position: 'relative', width: '100%' }}>
               <div style={{ position: 'relative', width: '100%', height: '100%', borderRadius: 20, overflow: 'hidden' }}>
                 <img
-                  src={tms[activeCard].img}
+                  src={withBase(tms[activeCard].img)}
                   alt={tms[activeCard].name}
                   style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
                 />

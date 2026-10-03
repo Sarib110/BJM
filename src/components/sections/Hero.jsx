@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Ic from '../ui/Icon';
+import { withBase } from '../../utils/withBase';
 
 const Hero = () => {
   const layer0Ref = useRef(null);
@@ -127,7 +128,7 @@ const Hero = () => {
             ].map(l => (
               <div key={l.alt} style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0 52px' }}>
                 <img
-                  src={l.src}
+                  src={withBase(l.src)}
                   alt={l.alt}
                   style={{ height: 40, width: 'auto', objectFit: 'contain', filter: 'grayscale(1)', opacity: 0.55, transition: 'filter 0.25s, opacity 0.25s', ...(l.darkBg && { background: '#333', borderRadius: 6, padding: '4px 8px' }) }}
                   onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0)'; e.currentTarget.style.opacity = '1'; }}

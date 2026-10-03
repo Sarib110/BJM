@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { withBase } from '../../utils/withBase';
 
 const Intro = ({ onDone }) => {
   const maskRef = useRef(null);
@@ -15,7 +16,7 @@ const Intro = ({ onDone }) => {
       <div id="intro-mask" ref={maskRef} />
       <div id="intro-content" ref={contentRef}>
         <img
-          src="/assets/bjm-logo.png"
+          src={withBase('/assets/bjm-logo.png')}
           alt="BJ Medical Billing Service"
           style={{ height: 56, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
         />

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Head } from 'vite-react-ssg';
 import { caseStudies } from '../data/caseStudies';
+import { withBase } from '../utils/withBase';
 
 const WorkCard = ({ id, label, title, tagline, summary, image, stack, metric, bg }) => (
   <Link
@@ -9,7 +10,7 @@ const WorkCard = ({ id, label, title, tagline, summary, image, stack, metric, bg
   >
     <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
       <img
-        src={image}
+        src={withBase(image)}
         alt={title}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />

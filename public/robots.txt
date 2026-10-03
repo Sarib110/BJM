@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://veloq.tech/sitemap.xml
+Sitemap: https://sarib110.github.io/BJM/sitemap.xml

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { services } from '../../data/services';
+import { withBase } from '../../utils/withBase';
 
 const ArrowUpRight = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -147,7 +148,7 @@ const ServiceBlock = ({ service, index }) => {
       position: 'relative',
     }}>
       <img
-        src={service.image}
+        src={withBase(service.image)}
         alt={service.title}
         style={{
           width: '100%', height: '100%',

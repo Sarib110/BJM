@@ -1,6 +1,8 @@
+import { withBase } from '../../utils/withBase';
+
 const Logo = ({ size = 40, onDark = false }) => (
   <img
-    src="/assets/bjm-logo.png"
+    src={withBase('/assets/bjm-logo.png')}
     alt="BJ Medical Billing Service"
     height={size}
     style={{
