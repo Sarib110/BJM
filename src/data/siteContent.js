@@ -814,7 +814,7 @@ export const contentPages = [
         "path": "/medical-billing-rcm/reporting-analytics"
       }
     ],
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/rcm-main.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -869,7 +869,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/medical-billing.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -933,7 +933,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1554224158-7a7a6c4f32c4?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/revenue-cycle-management.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -979,7 +979,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/insurance-verification.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1025,7 +1025,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/charge-entry.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1080,7 +1080,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/claim-submission.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1135,7 +1135,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/payment-posting.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1190,7 +1190,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/ar-management.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1245,7 +1245,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/denial-management.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1291,7 +1291,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/prior-authorization.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1346,7 +1346,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/provider-credentialing.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1401,7 +1401,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/reporting-analytics.jpg",
     "faqs": [
       {
         "q": "Can BJ work inside our existing billing system?",
@@ -1527,7 +1527,7 @@ export const contentPages = [
         "path": "/it-solutions/ui-ux-design"
       }
     ],
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/it-main.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -1582,7 +1582,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/website-design-development.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -1637,7 +1637,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/software-development.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -1692,7 +1692,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/ai-automation.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -1747,7 +1747,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/it-support-maintenance.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -1802,7 +1802,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/cloud-network-solutions.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -1857,7 +1857,7 @@ export const contentPages = [
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/ui-ux-design.jpg",
     "faqs": [
       {
         "q": "Can BJ work with our existing website, app, or IT setup?",
@@ -3053,7 +3053,7 @@ export const contentPages = [
     "title": "Gastroenterology Billing Services",
     "eyebrow": "Specialties",
     "description": "Gastroenterology billing support for clinic visits, colonoscopy and endoscopy workflows, screening versus diagnostic rules, authorizations, pathology coordination, denials, and A/R follow-up.",
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+    "image": "/assets/content/rcm-it/rcm-main.jpg",
     "sections": [
       {
         "title": "Specialty Overview",
