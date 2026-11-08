@@ -684,87 +684,87 @@ export const contentPages = [
     "path": "/medical-billing-rcm",
     "title": "Medical Billing & Revenue Cycle Management",
     "eyebrow": "Medical Billing & RCM",
-    "description": "End-to-end billing and revenue cycle management support for healthcare practices.",
+    "description": "Practical medical billing and revenue cycle management support for eligibility, charge entry, clean claim submission, payment posting, denial recovery, credentialing, A/R follow-up, and performance reporting.",
     "sections": [
       {
         "title": "Overview of Medical Billing Services",
-        "body": "Overview of Medical Billing Services explains how BJ supports medical billing & revenue cycle management with defined workflows, careful review, and follow-up that keeps revenue-cycle work visible.",
+        "body": "BJ helps practices organize the financial workflow that starts before the patient visit and continues until the account is correctly resolved. The service is built around accurate data capture, payer-aware claim review, documented follow-up, and clear communication with the practice team.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Eligibility, demographics, charge, claim, payment, denial, and A/R workflows connected in one operating rhythm",
+          "Responsibility clearly separated between BJ tasks and practice decisions",
+          "Reporting focused on problems that can be acted on instead of generic activity summaries"
         ]
       },
       {
         "title": "End-to-End Revenue Cycle Management",
-        "body": "End-to-End Revenue Cycle Management is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "End-to-end RCM support covers front-end checks, mid-cycle claim preparation, and back-end follow-up. BJ can also work on a targeted scope when a practice only needs help with one backlog, payer issue, or recurring denial category.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Front-end verification and authorization indicators",
+          "Charge review, claim scrubbing, submission, and tracking",
+          "Payment posting, denial management, appeals, A/R follow-up, and reconciliation support"
         ]
       },
       {
         "title": "Our Medical Billing Workflow",
-        "body": "This workflow connects intake, verification, documentation, claim review, submission, payment, denial handling, and account resolution so issues are not lost between teams.",
+        "body": "The workflow is designed to reduce missed handoffs. Open items are tracked by account, payer, task owner, status, next action, and deadline so the practice can see what is pending and why.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Discovery and scope confirmation before production work begins",
+          "Daily or scheduled workqueues based on claim status and payer priority",
+          "Escalations for missing records, coding questions, clinical decisions, or payer-specific requirements"
         ]
       },
       {
         "title": "Individual Billing Services",
-        "body": "Individual Billing Services is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Practices can choose full RCM coverage or individual support for the services that need attention most. Each service page explains the specific workflow, inputs, outputs, and reporting expectations.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Medical billing, RCM, verification, charge entry, submission, posting, A/R, denials, prior authorization, credentialing, and reporting",
+          "Flexible service scope for new practices, growing groups, or backlog recovery",
+          "Process documentation so work is repeatable and measurable"
         ]
       },
       {
         "title": "Specialties We Support",
-        "body": "Specialties We Support is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Billing requirements vary by specialty. BJ adapts follow-up, authorization tracking, documentation routing, and denial prevention to the specialty, payer mix, procedure type, and internal workflow of the practice.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Support for primary care, behavioral health, podiatry, cardiology, orthopedics, neurology, dermatology, GI, pain management, therapy, and multispecialty groups",
+          "Specialty-specific denial and A/R categories",
+          "Documentation gaps routed back through approved practice channels"
         ]
       },
       {
         "title": "Technology & Billing Platforms",
-        "body": "Technology & Billing Platforms is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "BJ works with the systems and payer portals approved by the client. During onboarding, the team reviews access, permissions, claim status tools, reports, clearinghouse workflows, and communication channels.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Experience with common billing and EHR platforms such as eClinicalWorks, AdvancedMD, Athenahealth, Kareo / Tebra, and Office Ally",
+          "Platform-specific workqueue setup and report review where access allows",
+          "No unsupported software migration or compliance claim is assumed without confirmed scope"
         ]
       },
       {
         "title": "Why Choose BJ for Medical Billing?",
-        "body": "Why Choose BJ for Medical Billing? is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "BJ focuses on dependable execution: clean workqueues, documented follow-up, payer-aware communication, root-cause visibility, and practical reporting that helps owners and administrators decide what to fix next.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Clear communication instead of vague claim status updates",
+          "Scalable support for selected services or full RCM operations",
+          "Quality checks aimed at reducing repeat denials and avoidable rework"
         ]
       },
       {
         "title": "Frequently Asked Questions",
-        "body": "Frequently Asked Questions is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Most conversations begin with scope, access, claim volume, payer mix, current backlog, denial trends, and reporting expectations. After review, BJ recommends a realistic service plan and onboarding path.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Targeted support and full RCM both available",
+          "Workflow review before implementation",
+          "Regular reporting cadence based on service scope"
         ]
       },
       {
         "title": "Request a Free RCM Assessment",
-        "body": "Request a Free RCM Assessment is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "A free assessment helps identify where revenue is slowing down: front-end errors, claim edits, payer rejections, denials, underpayments, aging balances, or unclear ownership between teams.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Review your current process and top pain points",
+          "Discuss claim volume, payer mix, platforms, and staffing needs",
+          "Receive a practical recommendation for the next step"
         ]
       }
     ],
@@ -817,12 +817,12 @@ export const contentPages = [
     "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support medical billing & revenue cycle management only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -830,54 +830,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/medical-billing",
     "title": "Medical Billing",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Billing overview, workflow, benefits, and BJ approach.",
+    "description": "Complete medical billing support for patient data review, charge workflow, clean claim preparation, submission tracking, payment posting coordination, denials, and account resolution.",
     "sections": [
       {
         "title": "Billing Overview",
-        "body": "Billing Overview explains how BJ supports medical billing with defined workflows, careful review, and follow-up that keeps revenue-cycle work visible.",
+        "body": "Medical billing is the operational bridge between care delivery and payment. BJ supports the administrative workflow that turns accurate patient, insurance, provider, service, and payer information into claims that can be submitted, tracked, and resolved.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Review patient and insurance details before billing work begins",
+          "Coordinate with approved practice contacts for missing information",
+          "Keep claim status, next action, and responsibility visible"
         ]
       },
       {
         "title": "Billing Workflow",
-        "body": "This workflow connects intake, verification, documentation, claim review, submission, payment, denial handling, and account resolution so issues are not lost between teams.",
+        "body": "A dependable billing workflow reduces avoidable rework. BJ follows a structured path from intake review through claim preparation, submission, payment activity, denial handling, and account follow-up.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Verify required demographics and payer information",
+          "Review charges and claim readiness before submission",
+          "Track submitted claims until payment, denial, or next payer action is documented"
         ]
       },
       {
         "title": "Benefits",
-        "body": "Verification helps confirm active coverage, member details, patient responsibility, plan limits, referrals, and authorization indicators before billing problems occur.",
+        "body": "Strong billing support helps practices reduce missed claims, improve follow-up consistency, understand denial patterns, and give administrators clearer visibility into open revenue-cycle tasks.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Cleaner handoffs between front office, billing, and follow-up teams",
+          "More consistent claim and payer-status tracking",
+          "Better visibility into bottlenecks that affect cash flow"
         ]
       },
       {
         "title": "Our Approach",
-        "body": "Our Approach is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "BJ does not treat billing as a one-time submission task. The team focuses on complete account movement: what is ready, what is blocked, who owns the next action, and how recurring issues can be prevented.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Use documented workqueues and escalation rules",
+          "Separate billing tasks from clinical or coding decisions that require practice review",
+          "Provide updates that explain the issue and the next practical step"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support medical billing only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -885,63 +885,63 @@ export const contentPages = [
     "path": "/medical-billing-rcm/revenue-cycle-management",
     "title": "Revenue Cycle Management",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Complete RCM lifecycle support from front-end through back-end follow-up.",
+    "description": "Revenue cycle management support across front-end verification, mid-cycle claim readiness, back-end payment posting, denials, appeals, A/R follow-up, and performance visibility.",
     "sections": [
       {
         "title": "RCM Overview",
-        "body": "RCM Overview explains how BJ supports revenue cycle management with defined workflows, careful review, and follow-up that keeps revenue-cycle work visible.",
+        "body": "Revenue cycle management is the full financial workflow from appointment preparation to final account resolution. BJ helps practices connect each stage so issues are not hidden in separate queues.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Map the current process before implementation",
+          "Define handoffs between practice staff, BJ, payers, and clearinghouse workflows",
+          "Report on open balances, denials, underpayments, and blocked accounts"
         ]
       },
       {
         "title": "RCM Lifecycle",
-        "body": "This workflow connects intake, verification, documentation, claim review, submission, payment, denial handling, and account resolution so issues are not lost between teams.",
+        "body": "A strong RCM lifecycle includes pre-visit checks, charge capture, coding or documentation coordination where applicable, claim submission, posting, denial work, appeals, patient responsibility updates, and A/R follow-up.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Front-end, mid-cycle, and back-end workflows aligned",
+          "Status and next actions tracked by payer and account",
+          "Performance reviewed for recurring root causes"
         ]
       },
       {
         "title": "Front-End RCM",
-        "body": "Front-end work focuses on demographics, insurance details, eligibility, benefits, referrals, authorizations, and information needed before claims are created.",
+        "body": "Front-end RCM protects claims before they are created. BJ can support eligibility checks, benefit details, demographic accuracy, referral or authorization indicators, and missing-information follow-up.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Eligibility and benefit verification",
+          "Patient responsibility and plan limitation capture where available",
+          "Authorization or referral prompts routed early"
         ]
       },
       {
         "title": "Mid-Cycle RCM",
-        "body": "Mid-cycle work includes charge review, documentation questions, coding coordination where applicable, claim edits, scrubbing, and submission readiness.",
+        "body": "Mid-cycle support focuses on claim readiness. This includes charge review, documentation questions, claim edits, clearinghouse rejections, payer-specific requirements, and submission tracking.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Charge and claim review before submission",
+          "Claim-scrub and rejection follow-up",
+          "Escalation when documentation or coding clarification is needed"
         ]
       },
       {
         "title": "Back-End RCM",
-        "body": "Back-end work includes payment posting, denial review, appeals, A/R follow-up, underpayment review, patient responsibility updates, and performance reporting.",
+        "body": "Back-end RCM turns payer responses into action. BJ supports posting coordination, denial categorization, appeal tracking, underpayment review, payer follow-up, and aging balance management.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Payments, denials, and adjustments reviewed for next action",
+          "A/R prioritized by balance, age, payer, and denial risk",
+          "Root-cause reporting to reduce repeat issues"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1554224158-7a7a6c4f32c4?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support revenue cycle management only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -949,45 +949,45 @@ export const contentPages = [
     "path": "/medical-billing-rcm/insurance-verification",
     "title": "Insurance Verification",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Eligibility, benefits, coverage, and limitation verification.",
+    "description": "Insurance verification support for eligibility status, benefits, patient responsibility, coverage limitations, referral indicators, and authorization requirements before service or claim submission.",
     "sections": [
       {
         "title": "Eligibility Verification",
-        "body": "Verification helps confirm active coverage, member details, patient responsibility, plan limits, referrals, and authorization indicators before billing problems occur.",
+        "body": "BJ checks whether coverage appears active for the planned service date and verifies key member details that affect billing accuracy.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Member ID, plan, payer, subscriber, and effective-date review",
+          "Inactive, mismatched, or unclear coverage flagged for practice follow-up",
+          "Verification notes documented for billing visibility"
         ]
       },
       {
         "title": "Benefits Verification",
-        "body": "Verification helps confirm active coverage, member details, patient responsibility, plan limits, referrals, and authorization indicators before billing problems occur.",
+        "body": "Benefit review helps the practice understand patient responsibility and service-level requirements before claims are submitted.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Copay, deductible, coinsurance, and out-of-pocket details where available",
+          "Visit limits, referral indicators, and plan-specific notes",
+          "Benefit results routed through the agreed workflow"
         ]
       },
       {
         "title": "Coverage & Limitations",
-        "body": "Verification helps confirm active coverage, member details, patient responsibility, plan limits, referrals, and authorization indicators before billing problems occur.",
+        "body": "Coverage limitations can create denials when they are missed. BJ helps identify common limits and payer instructions that affect claim preparation or patient communication.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Service coverage and frequency limitations noted where available",
+          "Authorization or referral requirements highlighted",
+          "Unclear payer responses documented for follow-up"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support insurance verification only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -995,45 +995,45 @@ export const contentPages = [
     "path": "/medical-billing-rcm/charge-entry",
     "title": "Charge Entry",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Accurate charge capture, review, and entry support.",
+    "description": "Charge entry support focused on complete charge capture, review of key billing fields, payer-aware edits, and accurate entry into the approved billing system.",
     "sections": [
       {
         "title": "Charge Capture",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "BJ helps confirm that billable encounters or services are available for the charge-entry workflow and that required information is present before claim creation.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Encounter, provider, location, date, patient, and payer details reviewed",
+          "Missing charge information routed to the practice",
+          "Unbilled items tracked so they are not overlooked"
         ]
       },
       {
         "title": "Charge Review",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "Charge review checks the non-clinical claim fields that commonly create avoidable rejections or denials when entered incorrectly.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Provider, place of service, payer, modifier, diagnosis linkage, and authorization fields reviewed where applicable",
+          "System edits and payer prompts checked before release",
+          "Questions escalated instead of guessed"
         ]
       },
       {
         "title": "Charge Entry Accuracy",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "Accurate entry depends on a repeatable process. BJ uses documented steps, system notes, and exception handling to reduce rework and improve claim readiness.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Consistent entry method by service type and payer rules",
+          "Quality checks before claim submission",
+          "Audit trail for items requiring practice clarification"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support charge entry only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1041,54 +1041,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/claim-submission",
     "title": "Claim Submission",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Claim preparation, scrubbing, electronic submission, and tracking.",
+    "description": "Claim submission support for claim preparation, payer and clearinghouse edits, electronic submission, rejection correction, and submitted-claim tracking.",
     "sections": [
       {
         "title": "Claim Preparation",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "BJ prepares claims by confirming required claim fields, payer setup, provider details, patient information, billing format, and supporting notes available inside the approved workflow.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Claim fields reviewed before release",
+          "Known payer requirements followed where documented",
+          "Missing information routed before submission when possible"
         ]
       },
       {
         "title": "Claim Scrubbing",
-        "body": "Claim Scrubbing is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Claim scrubbing reduces preventable rejections. BJ reviews system edits, clearinghouse prompts, payer warnings, and common formatting issues before claims move forward.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Demographic, payer, provider, code, modifier, and authorization edits reviewed",
+          "Rejections corrected or routed based on ownership",
+          "Recurring edits tracked for prevention"
         ]
       },
       {
         "title": "Electronic Submission",
-        "body": "Electronic Submission is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Claims are submitted through approved clearinghouse or payer workflows and monitored for acceptance, rejection, or payer response.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Batch or individual submission based on platform workflow",
+          "Acceptance and rejection status monitored",
+          "Submission issues documented for follow-up"
         ]
       },
       {
         "title": "Claim Tracking",
-        "body": "Claim Tracking is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Submitted claims require follow-up. BJ tracks payer status, requests, delays, denials, and next actions so unresolved claims do not sit without ownership.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Claim status checked by payer priority and aging",
+          "No-response claims escalated through payer follow-up",
+          "Status notes updated for visibility"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support claim submission only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1096,54 +1096,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/payment-posting",
     "title": "Payment Posting",
     "eyebrow": "Medical Billing & RCM",
-    "description": "ERA, EOB, insurance payment, patient payment, and reconciliation support.",
+    "description": "Payment posting support for ERA and EOB review, insurance and patient payment allocation, adjustments, denials, recoupments, and reconciliation visibility.",
     "sections": [
       {
         "title": "ERA/EOB Posting",
-        "body": "ERA/EOB Posting is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "BJ supports posting from electronic remittance advice and paper or scanned EOB information based on the client workflow and access.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Payments, contractual adjustments, denials, and remarks reviewed",
+          "Unclear remittance items flagged for follow-up",
+          "Posting notes maintained for downstream A/R work"
         ]
       },
       {
         "title": "Insurance Payments",
-        "body": "Payment posting aligns remittance details with claims, adjustments, patient responsibility, denial notes, and reconciliation needs where available.",
+        "body": "Insurance posting is reviewed to identify payer denials, unusual adjustments, underpayment indicators, takebacks, or balances requiring next action.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Allowed amount and payment details reviewed where available",
+          "Denial and remark codes routed to denial or A/R workflow",
+          "Potential underpayments flagged for review"
         ]
       },
       {
         "title": "Patient Payments",
-        "body": "Payment posting aligns remittance details with claims, adjustments, patient responsibility, denial notes, and reconciliation needs where available.",
+        "body": "Patient payment posting requires careful allocation and balance updates. BJ follows the approved process for payment source, date, account, and responsibility changes.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Patient payments and adjustments posted according to client workflow",
+          "Remaining balances reviewed after payer payment",
+          "Questions escalated when account ownership is unclear"
         ]
       },
       {
         "title": "Payment Reconciliation",
-        "body": "Payment posting aligns remittance details with claims, adjustments, patient responsibility, denial notes, and reconciliation needs where available.",
+        "body": "Reconciliation helps confirm that posted activity aligns with deposits, ERA batches, and unresolved items that still need attention.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Batch totals and posting exceptions reviewed",
+          "Unposted or unmatched payments tracked",
+          "Posting issues reported for correction"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support payment posting only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1151,54 +1151,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/ar-management",
     "title": "AR Management",
     "eyebrow": "Medical Billing & RCM",
-    "description": "A/R follow-up, aging analysis, insurance follow-ups, and underpayment identification.",
+    "description": "A/R management support for aging analysis, payer follow-up, no-response claims, denial-linked balances, underpayment indicators, and high-priority account resolution.",
     "sections": [
       {
         "title": "AR Follow-up",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "BJ works A/R by aging, payer, balance, denial risk, and probability of recovery instead of treating every account the same.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Follow-up queues prioritized by agreed rules",
+          "Payer calls, portals, and claim status checks documented",
+          "Next action and follow-up date recorded"
         ]
       },
       {
         "title": "Aging Analysis",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "Aging reports show where revenue is slowing down. BJ reviews balances by payer, service line, provider, denial reason, and age bucket to identify the work that matters first.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "0-30, 31-60, 61-90, 91-120, and 120+ balances reviewed",
+          "Old high-value accounts prioritized",
+          "Trends reported to improve front-end and claim workflows"
         ]
       },
       {
         "title": "Insurance Follow-ups",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "Insurance follow-up focuses on payer status, missing information, claim delays, recoupments, denials, and payment issues.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Portal and phone follow-up based on payer workflow",
+          "Reference numbers and payer instructions documented",
+          "Requested records or corrections routed through approved channels"
         ]
       },
       {
         "title": "Underpayment Identification",
-        "body": "Payment posting aligns remittance details with claims, adjustments, patient responsibility, denial notes, and reconciliation needs where available.",
+        "body": "Underpayments can be difficult to see without review. BJ flags payment differences, unusual adjustments, and payer responses that may require contract or fee-schedule review by the practice.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Allowed amounts and adjustments reviewed where available",
+          "Potential underpayments separated from standard denials",
+          "Escalations documented with payer details"
         ]
       }
     ],
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support ar management only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1206,54 +1206,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/denial-management",
     "title": "Denial Management",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Denial analysis, root cause identification, appeals, and prevention.",
+    "description": "Denial management support for denial categorization, root-cause review, appeal tracking, corrected claims, payer follow-up, and prevention reporting.",
     "sections": [
       {
         "title": "Denial Analysis",
-        "body": "Denials are categorized by reason, payer, responsible workflow, required documentation, deadline, and next action so recovery and prevention can happen together.",
+        "body": "BJ categorizes denials by payer, service, balance, reason, responsibility, and deadline so the team can see whether a denial needs appeal, correction, documentation, or write-off review.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "CARC/RARC and payer messaging reviewed",
+          "Denials separated by preventable, payer-driven, documentation, authorization, and benefit categories",
+          "High-value and time-sensitive denials prioritized"
         ]
       },
       {
         "title": "Root Cause Identification",
-        "body": "Root Cause Identification is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Root-cause work turns denial activity into operational improvement. BJ looks for patterns tied to verification, authorization, documentation, claim edits, payer rules, or posting issues.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Recurring reasons summarized for management review",
+          "Responsible workflow identified where possible",
+          "Prevention recommendations tied to real denial data"
         ]
       },
       {
         "title": "Appeals",
-        "body": "Denials are categorized by reason, payer, responsible workflow, required documentation, deadline, and next action so recovery and prevention can happen together.",
+        "body": "Appeals require deadlines, supporting records, payer instructions, and follow-through. BJ tracks appeal packages and payer responses based on the scope approved by the practice.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Appeal deadlines and submission status tracked",
+          "Medical records or letters routed to the practice when required",
+          "Payer responses recorded and followed through"
         ]
       },
       {
         "title": "Denial Prevention",
-        "body": "Denials are categorized by reason, payer, responsible workflow, required documentation, deadline, and next action so recovery and prevention can happen together.",
+        "body": "Prevention focuses on fixing repeat problems before new claims are affected. BJ reports trends in a practical format so teams can address the workflow causing the denial.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Training or workflow changes identified for recurring errors",
+          "Payer-specific patterns documented",
+          "Prevention reports aligned with the service scope"
         ]
       }
     ],
     "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support denial management only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1261,45 +1261,45 @@ export const contentPages = [
     "path": "/medical-billing-rcm/prior-authorization",
     "title": "Prior Authorization",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Authorization verification, submission, and tracking.",
+    "description": "Prior authorization support for requirement checks, submission tracking, payer status follow-up, authorization numbers, expiration dates, and documentation requests.",
     "sections": [
       {
         "title": "Authorization Verification",
-        "body": "Authorization Verification is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "BJ checks whether authorization appears required based on payer, plan, service, and available policy information. Clinical decisions and medical necessity determinations remain with the provider or authorized clinical team.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Authorization requirement reviewed before service or claim workflow where applicable",
+          "Payer instructions and reference details documented",
+          "Unclear requirements escalated instead of assumed"
         ]
       },
       {
         "title": "Authorization Submission",
-        "body": "Authorization Submission is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Authorization submission support depends on payer workflow and practice-provided documentation. BJ can help organize information, submit through approved channels, and track requested items.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Payer portals, forms, or fax workflows followed as approved",
+          "Required records requested from the practice team",
+          "Submission confirmation and pending status recorded"
         ]
       },
       {
         "title": "Status Tracking",
-        "body": "Status Tracking is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Authorization status must be visible before services are delivered or claims are billed. BJ tracks pending, approved, denied, expired, or additional-information statuses.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Authorization number, date range, units, and service details tracked",
+          "Expiring or pending authorizations flagged",
+          "Denials or peer-review requests escalated to the practice"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support prior authorization only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1307,54 +1307,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/provider-credentialing",
     "title": "Provider Credentialing",
     "eyebrow": "Medical Billing & RCM",
-    "description": "Provider enrollment, payer enrollment, recredentialing, and application follow-up.",
+    "description": "Provider credentialing support for enrollment preparation, payer applications, CAQH coordination, recredentialing dates, application follow-up, and participation status tracking.",
     "sections": [
       {
         "title": "Provider Enrollment",
-        "body": "Credentialing support organizes provider details, payer applications, CAQH-related information, recredentialing reminders, and follow-up until status is documented.",
+        "body": "BJ helps organize provider demographic, license, NPI, taxonomy, practice location, ownership, and document information needed for enrollment workflows.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Provider and practice details collected through approved checklists",
+          "Missing or expiring documents flagged early",
+          "Enrollment status tracked from preparation through payer response"
         ]
       },
       {
         "title": "Payer Enrollment",
-        "body": "Credentialing support organizes provider details, payer applications, CAQH-related information, recredentialing reminders, and follow-up until status is documented.",
+        "body": "Payer enrollment requires careful application completion and follow-up. BJ tracks submission dates, reference numbers, payer requests, effective dates, and participation status.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Commercial, Medicare, Medicaid, or network-specific workflows followed as scoped",
+          "Payer requests and corrections tracked",
+          "Effective date and contracting notes recorded"
         ]
       },
       {
         "title": "Recredentialing",
-        "body": "Credentialing support organizes provider details, payer applications, CAQH-related information, recredentialing reminders, and follow-up until status is documented.",
+        "body": "Recredentialing protects network participation. BJ can monitor upcoming revalidation or recredentialing dates and support the administrative workflow to keep files current.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "CAQH and payer profile updates tracked where applicable",
+          "Revalidation deadlines monitored",
+          "Renewal documents requested before deadlines"
         ]
       },
       {
         "title": "Application Follow-up",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "Credentialing applications often stall when follow-up is inconsistent. BJ documents payer contact, pending items, correction requests, and final outcomes.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Regular payer follow-up cadence",
+          "Open items and responsible party visible",
+          "Delayed applications escalated with documented history"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support provider credentialing only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1362,54 +1362,54 @@ export const contentPages = [
     "path": "/medical-billing-rcm/reporting-analytics",
     "title": "Reporting & Analytics",
     "eyebrow": "Medical Billing & RCM",
-    "description": "AR, denial, payment, and performance monitoring reports.",
+    "description": "Reporting and analytics support for A/R aging, denial trends, payment activity, claim status, underpayment indicators, productivity, and management-level performance monitoring.",
     "sections": [
       {
         "title": "AR Reports",
-        "body": "A/R work is prioritized by age, payer, balance, claim status, filing risk, and previous action so outstanding accounts receive documented follow-up.",
+        "body": "A/R reports help practices understand where balances sit, which payers need attention, and which accounts are blocked by denials, information requests, or no payer response.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Aging by payer, provider, location, and balance bucket where data is available",
+          "High-balance and old accounts highlighted",
+          "Follow-up outcomes summarized for management"
         ]
       },
       {
         "title": "Denial Reports",
-        "body": "Denials are categorized by reason, payer, responsible workflow, required documentation, deadline, and next action so recovery and prevention can happen together.",
+        "body": "Denial reports identify recurring claim problems. BJ organizes denial data by payer, reason, specialty, service type, dollar amount, and preventability where the system supports it.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Top denial categories and root causes summarized",
+          "Appeal volume and outcome tracking where available",
+          "Prevention opportunities clearly documented"
         ]
       },
       {
         "title": "Payment Reports",
-        "body": "Payment posting aligns remittance details with claims, adjustments, patient responsibility, denial notes, and reconciliation needs where available.",
+        "body": "Payment reports provide visibility into posted payments, adjustments, takebacks, patient responsibility, and unusual payment patterns that may need review.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "Insurance payment and adjustment activity summarized",
+          "Patient payment and balance movement tracked where scoped",
+          "Potential underpayment or posting issues flagged"
         ]
       },
       {
         "title": "Performance Monitoring",
-        "body": "Performance Monitoring is handled with payer-aware review, clear documentation, exception tracking, and communication with the practice when decisions or missing information are required.",
+        "body": "Performance monitoring connects operational activity with results. BJ tracks the indicators most relevant to the agreed scope instead of flooding the practice with unused report exports.",
         "bullets": [
-          "Documented workflow steps and status updates",
-          "Payer-aware review and exception tracking",
-          "Clear handoffs with the practice team"
+          "KPIs selected during onboarding",
+          "Trend reporting by week or month",
+          "Action notes included with metrics"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ support reporting & analytics only?",
-        "a": "Yes. BJ can provide selected service support or combine it with broader RCM workflows depending on the practice’s needs."
+        "q": "Can BJ work inside our existing billing system?",
+        "a": "Yes. BJ reviews your current platform, payer portals, access requirements, task ownership, and reporting needs during onboarding before work begins."
       },
       {
-        "q": "How does onboarding begin?",
-        "a": "Onboarding begins with scope confirmation, system access review, workflow mapping, payer priorities, communication preferences, and reporting expectations."
+        "q": "Can BJ support only one part of the revenue cycle?",
+        "a": "Yes. Support can be scoped for a specific problem such as verification, A/R cleanup, denial follow-up, posting, credentialing, or full-service RCM."
       }
     ]
   },
@@ -1417,87 +1417,87 @@ export const contentPages = [
     "path": "/it-solutions",
     "title": "IT Solutions & Technology Services",
     "eyebrow": "IT Solutions",
-    "description": "Technology services covering websites, software, AI, support, cloud, network, and UI/UX.",
+    "description": "Technology services for growing businesses and healthcare organizations, including websites, custom software, AI-assisted automation, IT support, cloud infrastructure, network setup, and UI/UX design.",
     "sections": [
       {
         "title": "IT Solutions Overview",
-        "body": "IT Solutions Overview explains how BJ plans and delivers technology support around business goals, user needs, maintainability, and practical implementation.",
+        "body": "BJ builds practical technology solutions that support day-to-day operations, customer communication, reporting, automation, and secure collaboration. The focus is not just launching software, but solving the business problem behind it.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Websites and applications planned around real user needs",
+          "Automation scoped around repeatable tasks and clear review points",
+          "Support and maintenance options after launch"
         ]
       },
       {
         "title": "Our Technology Services",
-        "body": "Our Technology Services is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Services include website design, software development, AI and automation, IT support, cloud and network solutions, and UI/UX design. Each service can stand alone or combine into a larger modernization plan.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Business and healthcare website design",
+          "Custom applications and integrations",
+          "Cloud, network, support, maintenance, and workflow automation"
         ]
       },
       {
         "title": "Custom IT Solutions",
-        "body": "Custom IT Solutions is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Custom solutions begin with discovery. BJ reviews the current workflow, the people using the system, data inputs, reporting needs, integrations, risks, and what a successful outcome should look like.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Requirements mapped before design begins",
+          "Priorities separated into launch essentials and future improvements",
+          "Recommended scope based on business value and maintainability"
         ]
       },
       {
         "title": "Our Development Process",
-        "body": "The delivery process moves through discovery, scope, design, implementation, review, launch, and support so clients understand what is happening at each step.",
+        "body": "The work moves through discovery, planning, design, implementation, testing, launch, and support. Clients receive clear checkpoints so feedback can be handled before the final handoff.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Discovery and requirements confirmation",
+          "Prototype or design review for user-facing work",
+          "Testing, deployment, documentation, and support planning"
         ]
       },
       {
         "title": "Technology Stack & Tools",
-        "body": "Technology Stack & Tools is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "The tools depend on the project. BJ can work with modern web frameworks, CMS platforms, APIs, databases, automation tools, cloud services, collaboration platforms, and support systems where appropriate.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Technology selected around maintainability and client needs",
+          "Integration planning for existing systems",
+          "Documentation for handoff and ongoing support"
         ]
       },
       {
         "title": "Industries We Support",
-        "body": "Industries We Support is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "BJ supports healthcare practices, service companies, startups, professional teams, and growing businesses that need practical digital systems rather than generic templates.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Healthcare and business service websites",
+          "Internal tools for operations and reporting",
+          "Customer-facing portals, automations, and support workflows"
         ]
       },
       {
         "title": "Why Choose BJ for IT Solutions?",
-        "body": "Why Choose BJ for IT Solutions? is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "BJ combines business understanding with technical execution. The team focuses on clarity, usability, maintainability, and support so the final product is useful beyond launch day.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Clear scope and communication",
+          "Design and development aligned with real workflows",
+          "Maintenance and improvement options after deployment"
         ]
       },
       {
         "title": "Frequently Asked Questions",
-        "body": "Frequently Asked Questions is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Common questions involve timelines, platform choice, content requirements, integrations, maintenance, hosting, ownership, support, and whether the project should improve an existing system or start fresh.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Discovery before final scope",
+          "Existing systems can be improved when practical",
+          "Support can be included as an ongoing service"
         ]
       },
       {
         "title": "Request an IT Consultation",
-        "body": "Request an IT Consultation is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "A consultation helps clarify what you need, what already exists, what is blocking progress, and which solution would create the most practical value for your business.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Discuss goals, audience, users, and workflows",
+          "Review current tools, websites, or applications",
+          "Receive a practical recommendation for scope and next steps"
         ]
       }
     ],
@@ -1530,12 +1530,12 @@ export const contentPages = [
     "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -1543,54 +1543,54 @@ export const contentPages = [
     "path": "/it-solutions/website-design-development",
     "title": "Website Design & Development",
     "eyebrow": "IT Solutions",
-    "description": "Business and healthcare websites with responsive design and maintenance support.",
+    "description": "Website design and development for business and healthcare brands that need clear messaging, responsive layouts, conversion-focused pages, accessible content, and reliable maintenance.",
     "sections": [
       {
         "title": "Business Websites",
-        "body": "Websites are planned to communicate services clearly, build trust, support mobile visitors, and guide users toward consultation or inquiry actions.",
+        "body": "BJ designs business websites that explain services clearly, build trust quickly, and guide visitors toward the right action, whether that is booking a consultation, requesting a quote, or sending an inquiry.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Clear service structure and page flow",
+          "Conversion-focused calls to action",
+          "Content areas planned for trust, proof, process, and contact"
         ]
       },
       {
         "title": "Healthcare Websites",
-        "body": "Websites are planned to communicate services clearly, build trust, support mobile visitors, and guide users toward consultation or inquiry actions.",
+        "body": "Healthcare websites need clarity, professionalism, and careful wording. BJ can create pages for practices, billing services, specialties, contact flows, and patient or business inquiries without making unsupported clinical or compliance claims.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Practice and service pages built for easy scanning",
+          "Mobile-friendly layouts for patients and administrators",
+          "HIPAA-aware wording where applicable and substantiated"
         ]
       },
       {
         "title": "Responsive Design",
-        "body": "Responsive Design is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Responsive design makes the website usable across phones, tablets, laptops, and desktops. BJ plans spacing, navigation, forms, media, and content hierarchy so the site feels intentional on every screen.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Mobile navigation and CTA visibility",
+          "Readable typography and accessible spacing",
+          "Performance-conscious image and layout choices"
         ]
       },
       {
         "title": "Website Maintenance",
-        "body": "Websites are planned to communicate services clearly, build trust, support mobile visitors, and guide users toward consultation or inquiry actions.",
+        "body": "A website needs updates after launch. BJ can support content changes, page additions, issue fixes, backups, plugin or dependency review, analytics checks, and ongoing improvements based on business priorities.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Maintenance scope agreed before work begins",
+          "Content and image updates handled through a defined process",
+          "Issue tracking and support options after launch"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -1598,54 +1598,54 @@ export const contentPages = [
     "path": "/it-solutions/software-development",
     "title": "Software Development",
     "eyebrow": "IT Solutions",
-    "description": "Custom software, business applications, web applications, and integrations.",
+    "description": "Custom software development for internal operations, business applications, web apps, dashboards, integrations, and workflow tools built around real processes.",
     "sections": [
       {
         "title": "Custom Software",
-        "body": "Software work focuses on business workflows, user roles, data movement, reporting needs, integrations, and long-term maintainability.",
+        "body": "BJ develops custom software when off-the-shelf tools cannot support the workflow properly. Discovery focuses on users, roles, data, approvals, reporting, notifications, and what must be reliable from day one.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Requirements based on actual workflow steps",
+          "User roles, permissions, and data needs reviewed early",
+          "Launch scope separated from future enhancements"
         ]
       },
       {
         "title": "Business Applications",
-        "body": "Software work focuses on business workflows, user roles, data movement, reporting needs, integrations, and long-term maintainability.",
+        "body": "Business applications can manage tasks, records, teams, reports, client requests, approvals, and operational data. BJ structures applications so teams can use them consistently without unnecessary complexity.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Operational dashboards and internal tools",
+          "Forms, records, search, status tracking, and notifications",
+          "Admin workflows for managing data and users"
         ]
       },
       {
         "title": "Web Applications",
-        "body": "Software work focuses on business workflows, user roles, data movement, reporting needs, integrations, and long-term maintainability.",
+        "body": "Web applications provide browser-based access for teams or customers. BJ plans usability, authentication needs, data flow, responsive screens, hosting, deployment, and support before build-out.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Responsive app screens and practical navigation",
+          "API and database planning where required",
+          "Testing before deployment and handoff"
         ]
       },
       {
         "title": "Software Integration",
-        "body": "Software work focuses on business workflows, user roles, data movement, reporting needs, integrations, and long-term maintainability.",
+        "body": "Many businesses already rely on multiple systems. BJ can plan integrations that reduce duplicate entry, move data between approved tools, or connect reporting across systems.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "API and webhook feasibility review",
+          "Data mapping and error handling planning",
+          "Documentation for ongoing maintenance"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -1653,54 +1653,54 @@ export const contentPages = [
     "path": "/it-solutions/ai-automation",
     "title": "AI & Automation",
     "eyebrow": "IT Solutions",
-    "description": "AI solutions, chatbots, workflow automation, and intelligent business processes.",
+    "description": "AI and automation solutions for repeatable workflows, internal assistants, chatbots, data routing, document handling, notifications, reporting, and human-reviewed process improvement.",
     "sections": [
       {
         "title": "AI Solutions",
-        "body": "Automation and AI projects are scoped around repeatable tasks, defined data boundaries, human review points, and measurable workflow value.",
+        "body": "BJ scopes AI solutions around clear use cases, controlled data, human review, and measurable workflow value. The goal is to reduce repetitive effort without removing accountability from important decisions.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Use cases selected around practical business value",
+          "Data boundaries and review points defined",
+          "Outputs tested before production use"
         ]
       },
       {
         "title": "AI Chatbots",
-        "body": "Automation and AI projects are scoped around repeatable tasks, defined data boundaries, human review points, and measurable workflow value.",
+        "body": "Chatbots can help answer common questions, route inquiries, qualify leads, collect structured information, or support internal knowledge lookup when content and escalation rules are clear.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Website or internal chatbot planning",
+          "Knowledge base and fallback responses reviewed",
+          "Escalation to human contact when needed"
         ]
       },
       {
         "title": "Workflow Automation",
-        "body": "Automation and AI projects are scoped around repeatable tasks, defined data boundaries, human review points, and measurable workflow value.",
+        "body": "Automation is best for repeatable steps such as notifications, task creation, form routing, file movement, status updates, report generation, and handoffs between tools.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Manual steps mapped before automation",
+          "Triggers, conditions, exceptions, and owners defined",
+          "Automation logs and failure handling considered"
         ]
       },
       {
         "title": "Intelligent Business Processes",
-        "body": "The delivery process moves through discovery, scope, design, implementation, review, launch, and support so clients understand what is happening at each step.",
+        "body": "Intelligent processes combine automation with decisions, reviews, and reporting. BJ helps design hybrid workflows where people stay in control and software handles repetitive movement.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Human approval steps for sensitive actions",
+          "Process visibility through statuses and dashboards",
+          "Continuous improvement after launch"
         ]
       }
     ],
     "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -1708,54 +1708,54 @@ export const contentPages = [
     "path": "/it-solutions/it-support-maintenance",
     "title": "IT Support & Maintenance",
     "eyebrow": "IT Solutions",
-    "description": "Technical support, troubleshooting, system maintenance, and IT management.",
+    "description": "IT support and maintenance for troubleshooting, updates, system health, website support, user issues, documentation, and ongoing technical management.",
     "sections": [
       {
         "title": "Technical Support",
-        "body": "Technical Support is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "BJ provides structured support for defined systems, websites, applications, accounts, workflows, or tools. Support begins with agreed scope, priority rules, access, and communication channels.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Support channels and response expectations defined",
+          "Issues logged with status and next action",
+          "Escalations handled when vendor or client decisions are required"
         ]
       },
       {
         "title": "Troubleshooting",
-        "body": "Troubleshooting is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Troubleshooting focuses on reproducing the issue, identifying likely causes, testing safe fixes, documenting the result, and preventing the same problem when possible.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "User, browser, device, account, and system context reviewed",
+          "Root-cause notes documented where identifiable",
+          "Fixes tested before closing issues"
         ]
       },
       {
         "title": "System Maintenance",
-        "body": "Automation and AI projects are scoped around repeatable tasks, defined data boundaries, human review points, and measurable workflow value.",
+        "body": "Maintenance helps systems stay reliable. BJ can support updates, content changes, backups, uptime checks, dependency review, access cleanup, and performance improvements based on the approved environment.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Routine maintenance checklist created by scope",
+          "Update and backup processes documented",
+          "Risky changes planned before execution"
         ]
       },
       {
         "title": "IT Management",
-        "body": "IT Management is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "For small teams, technology can become scattered. BJ helps organize tools, access, support tickets, vendor communication, documentation, and improvement planning.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Access and ownership documentation",
+          "Vendor and platform coordination",
+          "Improvement roadmap for recurring issues"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -1763,54 +1763,54 @@ export const contentPages = [
     "path": "/it-solutions/cloud-network-solutions",
     "title": "Cloud & Network Solutions",
     "eyebrow": "IT Solutions",
-    "description": "Cloud infrastructure, network setup, migration, and administration.",
+    "description": "Cloud and network solutions for infrastructure planning, secure access, migration support, system administration, backups, collaboration tools, and reliable connectivity.",
     "sections": [
       {
         "title": "Cloud Infrastructure",
-        "body": "Cloud and network support covers planning, configuration coordination, migration considerations, access control, monitoring, and administration needs.",
+        "body": "Cloud infrastructure should match the workload, budget, access needs, and security expectations of the business. BJ helps plan environments that are practical to manage after launch.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Hosting and infrastructure needs reviewed",
+          "User access, storage, backup, and monitoring considered",
+          "Cost and maintainability discussed before implementation"
         ]
       },
       {
         "title": "Network Setup",
-        "body": "Cloud and network support covers planning, configuration coordination, migration considerations, access control, monitoring, and administration needs.",
+        "body": "Network setup can include connectivity planning, device configuration support, user access, segmentation needs, printer or workstation connectivity, and vendor coordination based on scope.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Office and remote-work requirements reviewed",
+          "Access and device needs documented",
+          "Vendor handoffs coordinated where required"
         ]
       },
       {
         "title": "Cloud Migration",
-        "body": "Cloud and network support covers planning, configuration coordination, migration considerations, access control, monitoring, and administration needs.",
+        "body": "Migration work requires planning for downtime, data movement, users, permissions, backups, testing, and rollback options. BJ helps organize the steps before anything is moved.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Migration inventory and dependency review",
+          "Backup and validation plan before cutover",
+          "User communication and post-migration support"
         ]
       },
       {
         "title": "System Administration",
-        "body": "Cloud and network support covers planning, configuration coordination, migration considerations, access control, monitoring, and administration needs.",
+        "body": "System administration keeps accounts, permissions, storage, updates, and support tasks under control. BJ can help maintain documented access and routine checks.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "User and permission management support",
+          "Backup, update, and monitoring workflows",
+          "Documentation for recurring admin tasks"
         ]
       }
     ],
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -1818,54 +1818,54 @@ export const contentPages = [
     "path": "/it-solutions/ui-ux-design",
     "title": "UI/UX Design",
     "eyebrow": "IT Solutions",
-    "description": "User research, wireframing, interface design, and experience optimization.",
+    "description": "UI/UX design for websites and applications, including user research, wireframes, interface design, interaction flow, content hierarchy, and experience optimization.",
     "sections": [
       {
         "title": "User Research",
-        "body": "User Research is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Good interface design starts with understanding who uses the product, what they are trying to do, what information they need, and where the current experience creates friction.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Stakeholder and user goals reviewed",
+          "Audience, tasks, and pain points documented",
+          "Design decisions tied to real behavior instead of assumptions"
         ]
       },
       {
         "title": "Wireframing",
-        "body": "UI/UX work improves structure, readability, navigation, forms, accessibility, responsiveness, and the ease with which users complete key tasks.",
+        "body": "Wireframes define structure before visual polish. BJ uses them to confirm page flow, content priority, screen states, forms, navigation, and calls to action before development effort increases.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Low-fidelity layouts for feedback",
+          "User pathways and content hierarchy mapped",
+          "Complex screens simplified before styling"
         ]
       },
       {
         "title": "Interface Design",
-        "body": "Interface Design is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Interface design turns structure into a polished digital experience. BJ focuses on visual hierarchy, spacing, color usage, typography, components, and consistency across pages or screens.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Reusable components and consistent styles",
+          "Accessible contrast and readable layouts",
+          "Responsive interface patterns"
         ]
       },
       {
         "title": "User Experience Optimization",
-        "body": "User Experience Optimization is delivered with clear scope, business-aware planning, structured implementation, testing, documentation, and support options after launch.",
+        "body": "Optimization improves the experience after launch or testing. BJ reviews analytics, feedback, support questions, conversion paths, and user behavior to recommend focused improvements.",
         "bullets": [
-          "Business-focused planning",
-          "Responsive and maintainable implementation",
-          "Support options after launch"
+          "Friction points identified from evidence",
+          "Forms, navigation, and CTAs refined",
+          "Incremental improvements prioritized by impact"
         ]
       }
     ],
     "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80",
     "faqs": [
       {
-        "q": "Can BJ customize this service for our business?",
-        "a": "Yes. Scope, features, timeline, integrations, and maintenance needs are reviewed during discovery before a proposal is finalized."
+        "q": "Can BJ work with our existing website, app, or IT setup?",
+        "a": "Yes. BJ can assess the current setup first and recommend targeted improvements, maintenance, integrations, or a rebuild only when it is justified."
       },
       {
-        "q": "Can BJ improve an existing system?",
-        "a": "Yes. BJ can assess an existing website, application, automation, or support workflow and recommend targeted improvements when a rebuild is not required."
+        "q": "How are timelines and scope confirmed?",
+        "a": "BJ starts with discovery, requirements, priorities, dependencies, and support expectations before confirming a practical scope and implementation plan."
       }
     ]
   },
@@ -4393,5 +4393,4 @@ export const contentPages = [
     "image": "/assets/bjm-logo.png"
   }
 ];
-
 export const contentPagePaths = contentPages.map(page => page.path);
