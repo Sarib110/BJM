@@ -1,16 +1,16 @@
 export const teamMembers = [
   {
     name: 'Anser Ali',
-    role: 'Cofounder',
+    role: 'Co-Founder',
     img: '/assets/team/anser_ali.jpg',
     objectPosition: 'center 18%',
-    desc: 'Cofounder of BJ Medical Billing Service with 17+ years of U.S. healthcare RCM experience across Medicare, Medicaid, and commercial payers. Leads medical billing operations including eligibility, prior authorizations, claim processing, denial management, AR follow-up, and credentialing for Home Health, Mental Health, Behavioral Health, and outpatient programs.',
+    desc: 'Co-Founder of BJ Medical Billing Service with 17+ years of U.S. healthcare RCM experience across Medicare, Medicaid, and commercial payers. Leads medical billing operations including eligibility, prior authorizations, claim processing, denial management, AR follow-up, and credentialing for Home Health, Mental Health, Behavioral Health, and outpatient programs.',
     tags: ['RCM', 'Medical Billing', 'Denials', 'AR Follow-Up'],
     linkedin: 'https://www.linkedin.com/in/anser-ali-597315145/',
   },
   {
     name: 'Syed Hanza',
-    role: 'Cofounder',
+    role: 'Co-Founder',
     img: '/assets/team/syed_hanza.png',
     objectPosition: 'center 12%',
     desc: 'Results-driven Medical Billing and RCM specialist helping U.S. healthcare providers increase collections, reduce denials, and maintain accuracy, compliance, and growth. Brings hands-on expertise across charge entry, coding coordination, claim submission, denial management, AR follow-ups, payment posting, team training, and process improvement reporting.',
@@ -19,7 +19,7 @@ export const teamMembers = [
   },
   {
     name: 'Syed Sarib Naveed',
-    role: 'Cofounder',
+    role: 'Co-Founder',
     img: '/assets/team/syed_sarib_naveed.png',
     objectPosition: 'center 12%',
     desc: 'Backend AI engineer and applied AI researcher focused on production-grade AI agent systems, cloud AI, and scalable backend architecture. Connects healthcare operations with automation by building deterministic, reliable workflows across Azure, GCP, microservices, and multi-agent systems.',

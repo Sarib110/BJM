@@ -7,7 +7,6 @@ import Marquee from '../components/sections/Marquee';
 import Work from '../components/sections/Work';
 import Impact from '../components/sections/Impact';
 import CTA from '../components/sections/CTA';
-import HomepageStructure from '../components/sections/HomepageStructure';
 import { services } from '../data/services';
 import { SOCIALS } from '../data/socials';
 import Ic from '../components/ui/Icon';
@@ -212,7 +211,6 @@ const Home = () => {
       <Marquee reverse />
 
       <Impact />
-      <HomepageStructure />
       <CTA />
     </>
   );
