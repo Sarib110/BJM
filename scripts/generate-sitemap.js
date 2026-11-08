@@ -1,5 +1,6 @@
 import { writeFileSync } from 'fs';
 import { caseStudies } from '../src/data/billingCaseStudies.js';
+import { contentPagePaths } from '../src/data/siteContent.js';
 
 const BASE_URL = 'https://bjmbilling.com';
 const today = new Date().toISOString().split('T')[0];
@@ -15,6 +16,7 @@ const staticRoutes = [
 
 const allRoutes = [
   ...staticRoutes,
+  ...contentPagePaths.map(path => ({ path, priority: '0.7', changefreq: 'monthly' })),
   ...caseStudies.map(cs => ({ path: `/work/${cs.id}`, priority: '0.8', changefreq: 'monthly' })),
 ];
 

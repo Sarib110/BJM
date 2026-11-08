@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+﻿import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { SOCIALS } from '../../data/socials';
 
@@ -11,7 +11,7 @@ const RATE_LIMIT = 3;
 const RATE_WINDOW_MS = 15 * 60 * 1000;
 
 const Contact = () => {
-  const [form, setForm] = useState({ fname: '', lname: '', email: '', company: '', service: '', message: '' });
+  const [form, setForm] = useState({ fname: '', lname: '', email: '', company: '', phone: '', country: '', service: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
   const sendTimestamps = useRef([]);
@@ -61,7 +61,7 @@ const Contact = () => {
 
       sendTimestamps.current.push(Date.now());
       setStatus('success');
-      setForm({ fname: '', lname: '', email: '', company: '', service: '', message: '' });
+      setForm({ fname: '', lname: '', email: '', company: '', phone: '', country: '', service: '', message: '' });
     } catch {
       setStatus('error');
     }
@@ -76,9 +76,9 @@ const Contact = () => {
   return (
     <section id="contact" style={{ background: '#0d0d0b', padding: '112px 24px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        <span style={{ display: 'inline-block', fontFamily: 'Space Mono,monospace', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '3px 12px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20 }}>Get in touch</span>
-        <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06, marginBottom: 14 }}>Tell us where<br />your billing needs <em style={{ fontStyle: 'normal', color: '#a3e635' }}>support.</em></h2>
-        <p style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 13.5, color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, maxWidth: 440, marginBottom: 0 }}>Share your practice specialty, current billing setup, payer challenges, denial concerns, or A/R backlog. We will review the information and respond with a clear next step within one business day.</p>
+        <span style={{ display: 'inline-block', fontFamily: 'Space Mono,monospace', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', padding: '3px 12px', borderRadius: 999, background: 'rgba(163,230,53,0.08)', color: 'rgba(163,230,53,0.7)', border: '1px solid rgba(163,230,53,0.15)', marginBottom: 20 }}>Contact us</span>
+        <h2 style={{ fontFamily: 'DM Serif Display,serif', fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: '#fff', lineHeight: 1.06, marginBottom: 14 }}>Request a free<br />consultation with <em style={{ fontStyle: 'normal', color: '#a3e635' }}>BJ.</em></h2>
+        <p style={{ fontFamily: 'DM Sans,sans-serif', fontSize: 13.5, color: 'rgba(255,255,255,0.45)', lineHeight: 1.8, maxWidth: 440, marginBottom: 0 }}>Use this page for contact information, inquiries, free consultations, customized proposals, scheduling, business hours, office location, and social media links.</p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 64, marginTop: 56, alignItems: 'start' }}>
           <div>
@@ -101,33 +101,37 @@ const Contact = () => {
 
           <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '36px 32px' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
-              <div><label style={lbl}>First name <span style={{ color: '#ef4444' }}>*</span></label><input style={inp} value={form.fname} onChange={set('fname')} placeholder="First Name" onFocus={focus} onBlur={blur} /></div>
-              <div><label style={lbl}>Last name</label><input style={inp} value={form.lname} onChange={set('lname')} placeholder="Last Name" onFocus={focus} onBlur={blur} /></div>
+              <div><label style={lbl}>Full Name <span style={{ color: '#ef4444' }}>*</span></label><input style={inp} value={form.fname} onChange={set('fname')} placeholder="Full Name" onFocus={focus} onBlur={blur} /></div>
+              <div><label style={lbl}>Phone Number</label><input style={inp} value={form.phone} onChange={set('phone')} placeholder="Phone Number" onFocus={focus} onBlur={blur} /></div>
             </div>
             <div style={{ marginBottom: 16 }}><label style={lbl}>Email address <span style={{ color: '#ef4444' }}>*</span></label><input style={inp} type="email" value={form.email} onChange={set('email')} placeholder="you@company.com" onFocus={focus} onBlur={blur} /></div>
-            <div style={{ marginBottom: 16 }}><label style={lbl}>Practice or organization</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Practice name and specialty (optional)" onFocus={focus} onBlur={blur} /></div>
+            <div style={{ marginBottom: 16 }}><label style={lbl}>Company / Practice Name</label><input style={inp} value={form.company} onChange={set('company')} placeholder="Company or practice name" onFocus={focus} onBlur={blur} /></div>
+            <div style={{ marginBottom: 16 }}><label style={lbl}>Country</label><input style={inp} value={form.country} onChange={set('country')} placeholder="Country" onFocus={focus} onBlur={blur} /></div>
             <div style={{ marginBottom: 16 }}>
-              <label style={lbl}>What best describes your situation?</label>
+              <label style={lbl}>Service Interested In</label>
               <select style={{ ...inp, appearance: 'none' }} value={form.service} onChange={set('service')} onFocus={focus} onBlur={blur}>
-                <option value="">Pick the closest match...</option>
+                <option value="">Select a service...</option>
                 {[
-                  'We need complete medical billing and RCM',
-                  'We need medical coding or charge entry support',
-                  'Our claims are rejecting or denying too often',
-                  'Our A/R is aging and needs payer follow-up',
-                  'We need eligibility or benefits verification',
-                  'We need provider credentialing and enrollment',
-                  'Something else, I\'ll explain',
+                  'Medical Billing & RCM',
+                  'Insurance Verification',
+                  'Charge Entry & Claim Submission',
+                  'Payment Posting',
+                  'AR Management',
+                  'Denial Management',
+                  'Prior Authorization',
+                  'Provider Credentialing',
+                  'Reporting & Analytics',
+                  'IT Solutions',
                 ].map(s => <option key={s} value={s} style={{ background: '#1a1a18' }}>{s}</option>)}
               </select>
             </div>
-            <div style={{ marginBottom: 8 }}><label style={lbl}>Describe your billing needs <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder={'Include your specialty, billing system, monthly claim volume, payer issues, denial concerns, or aging A/R.'} onFocus={focus} onBlur={blur} /></div>
+            <div style={{ marginBottom: 8 }}><label style={lbl}>Message <span style={{ color: '#ef4444' }}>*</span></label><textarea style={{ ...inp, resize: 'none' }} rows={4} value={form.message} onChange={set('message')} placeholder={'Tell us about your needs, preferred meeting time, or proposal requirements.'} onFocus={focus} onBlur={blur} /></div>
 
             <button onClick={handleSubmit} disabled={loading}
               style={{ width: '100%', padding: '14px 24px', borderRadius: 12, background: loading ? 'rgba(163,230,53,0.5)' : '#a3e635', color: '#000', fontFamily: 'DM Sans,sans-serif', fontWeight: 600, fontSize: 13.5, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 8, transition: 'background 0.2s' }}
               onMouseEnter={e => { if (!loading) e.currentTarget.style.background = '#b5f059'; }}
               onMouseLeave={e => { if (!loading) e.currentTarget.style.background = '#a3e635'; }}>
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? 'Sending...' : 'Submit Inquiry'}
               {!loading && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>}
             </button>
 

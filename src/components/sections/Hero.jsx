@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+﻿import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Ic from '../ui/Icon';
 
@@ -99,11 +99,11 @@ const Hero = () => {
           BJ Medical Billing Service manages the revenue cycle from eligibility verification and medical coding through claim submission, payment posting, denial follow-up, and accounts receivable. <strong className="font-semibold text-black">Your team focuses on patient care while we keep billing work accurate, documented, and moving toward payment.</strong>
         </p>
         <div className="hero-reveal hr-d4 flex flex-wrap gap-3 justify-center mb-6">
-          <button onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-sm hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 shadow-md btn-shine">
-            Review Our RCM Work <Ic n="arrow_r" size={14} color="white" />
+          <button onClick={() => navigate('/medical-billing-rcm')} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-black text-white font-sans font-medium text-sm hover:bg-zinc-800 transition-all duration-200 hover:scale-[1.03] active:scale-95 shadow-md btn-shine">
+            Medical Billing & RCM <Ic n="arrow_r" size={14} color="white" />
           </button>
           <button onClick={() => navigate('/contact')} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-zinc-200 text-black font-sans font-medium text-sm hover:border-zinc-400 transition-all duration-200 hover:scale-[1.03] active:scale-95">
-            Book a Billing Review
+            Book a Free Consultation
           </button>
         </div>
       </div>
@@ -127,3 +127,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

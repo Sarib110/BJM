@@ -7,8 +7,10 @@ import CaseStudyDetail from './pages/CaseStudyDetail';
 import AboutPage from './pages/About';
 import CareersPage from './pages/Careers';
 import ContactPage from './pages/Contact';
+import ContentPage from './pages/ContentPage';
 import NotFound from './pages/NotFound';
 import { caseStudies } from './data/billingCaseStudies';
+import { contentPagePaths } from './data/siteContent';
 import { services } from './data/services';
 
 export const routes = [
@@ -27,6 +29,7 @@ export const routes = [
       { path: 'about', element: <AboutPage /> },
       { path: 'careers', element: <CareersPage /> },
       { path: 'contact', element: <ContactPage /> },
+      ...contentPagePaths.map(path => ({ path: path.slice(1), element: <ContentPage /> })),
       { path: '404', element: <NotFound /> },
       { path: '*', element: <NotFound /> },
     ],
