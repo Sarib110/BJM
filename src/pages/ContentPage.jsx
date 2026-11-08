@@ -28,6 +28,19 @@ const ContentPage = () => {
             <p className="font-sans text-[15px] text-zinc-500 leading-[1.8] max-w-2xl">{page.description}</p>
           </div>
 
+          {page.links && (
+            <div className="mb-12 rounded-3xl border border-black/5 bg-[#f9f9f7] p-6">
+              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.4rem)] text-black leading-[1.06] mb-5">Explore {page.eyebrow}</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {page.links.map(item => (
+                  <Link key={`${item.label}-${item.path}`} to={item.path} className="rounded-2xl bg-white border border-black/5 px-4 py-3 font-sans text-[13px] text-zinc-600 hover:text-black hover:border-[#a3e635]/60 transition-colors">
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {page.sections.map((section, index) => (
               <div key={section} className="rounded-2xl border border-black/5 bg-[#f9f9f7] p-6">
