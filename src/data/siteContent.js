@@ -153,23 +153,23 @@ export const resourcePages = [
 export const aboutPages = [
   {
     "label": "Company Overview",
-    "path": "/about-us"
+    "path": "/about-us#company-overview"
   },
   {
     "label": "Mission & Vision",
-    "path": "/about-us"
+    "path": "/about-us#mission-vision"
   },
   {
     "label": "Core Values",
-    "path": "/about-us"
+    "path": "/about-us#core-values"
   },
   {
     "label": "Our Team",
-    "path": "/about-us"
+    "path": "/about-us#our-team"
   },
   {
     "label": "Why Choose Us",
-    "path": "/about-us"
+    "path": "/about-us#why-choose-us"
   }
 ];
 
@@ -184,23 +184,23 @@ export const mainNavigation = [
     "children": [
       {
         "label": "Company Overview",
-        "path": "/about-us"
+        "path": "/about-us#company-overview"
       },
       {
         "label": "Mission & Vision",
-        "path": "/about-us"
+        "path": "/about-us#mission-vision"
       },
       {
         "label": "Core Values",
-        "path": "/about-us"
+        "path": "/about-us#core-values"
       },
       {
         "label": "Our Team",
-        "path": "/about-us"
+        "path": "/about-us#our-team"
       },
       {
         "label": "Why Choose Us",
-        "path": "/about-us"
+        "path": "/about-us#why-choose-us"
       }
     ]
   },
@@ -659,23 +659,23 @@ export const contentPages = [
     "links": [
       {
         "label": "Company Overview",
-        "path": "/about-us"
+        "path": "/about-us#company-overview"
       },
       {
         "label": "Mission & Vision",
-        "path": "/about-us"
+        "path": "/about-us#mission-vision"
       },
       {
         "label": "Core Values",
-        "path": "/about-us"
+        "path": "/about-us#core-values"
       },
       {
         "label": "Our Team",
-        "path": "/about-us"
+        "path": "/about-us#our-team"
       },
       {
         "label": "Why Choose Us",
-        "path": "/about-us"
+        "path": "/about-us#why-choose-us"
       }
     ],
     "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
