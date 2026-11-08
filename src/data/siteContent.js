@@ -2221,7 +2221,7 @@ export const contentPages = [
     "title": "Podiatry Billing Services",
     "eyebrow": "Specialties",
     "description": "Podiatry billing support for routine foot care, diabetic foot care, orthotics, procedures, DME-related workflows, denials, and payer-specific documentation requirements.",
-    "image": "https://images.unsplash.com/photo-1511174511562-5f97f4f4e0c8?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://plus.unsplash.com/premium_photo-1661578329699-5ba8837febde?auto=format&fit=crop&w=1200&q=80",
     "sections": [
       {
         "title": "Specialty Overview",
@@ -3157,7 +3157,7 @@ export const contentPages = [
     "title": "Pain Management Billing Services",
     "eyebrow": "Specialties",
     "description": "Pain management billing support for interventional procedures, injections, radiofrequency ablation, stimulators, authorizations, medical necessity denials, and high-value A/R follow-up.",
-    "image": "https://images.unsplash.com/photo-1576765607924-49d1d9317342?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://plus.unsplash.com/premium_photo-1664475686438-8871c1ceea31?auto=format&fit=crop&w=1200&q=80",
     "sections": [
       {
         "title": "Specialty Overview",
